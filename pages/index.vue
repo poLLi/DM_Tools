@@ -3,7 +3,7 @@
         <div>
             <Logo />
             <h1 class="title">
-                Dead Matter Tools
+                JLN | Dead Matter Tools
             </h1>
             <div class="links">
                 <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer" class="button--green">
