@@ -10,3 +10,8 @@
 // Import Bootstrap
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-vue/src/index';
+
+// Custom Addition
+.pt-10 {
+    padding-top: 10vh;
+}

@@ -4,14 +4,17 @@
 * ---------------------
 */
 
+// Options
+$enable-rounded: false;
+
 // Color Settings
-$primary: #f2a365;
-$secondary: #30475e;
-$dark: #14171d;
+$primary: #ca3e47;
+$secondary: #646464;
+$dark: #161616;
 $light: #aaaaaa;
 
 // Global Background / Text-Color
-$body-bg: #222831;
+$body-bg: #111111;
 $body-color: #ececec;
 
 // Card Settings
@@ -27,3 +30,6 @@ $input-focus-box-shadow: none;
 $input-group-addon-bg: $primary;
 $input-group-addon-color: $dark;
 $input-group-addon-border-color: transparent;
+
+// Navbar Settings
+$nav-link-padding-x: 1rem !important;
