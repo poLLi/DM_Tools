@@ -2,7 +2,12 @@
     <b-navbar id="mainNav" toggleable="lg" fixed="top" type="dark" variant="dark">
         <b-container>
             <b-navbar-brand to="/">
-                JLN | DM Tools
+                <img
+                    src="~/assets/images/jl_logo.png"
+                    alt="Just-Look Network Logo"
+                    class="d-inlineblock align-top nav-logo"
+                />
+                | Dead Matter - Web Tools
             </b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -29,3 +34,9 @@ export default {
     name: 'Header'
 };
 </script>
+
+<style lang="scss" scoped>
+.nav-logo {
+    width: 30px;
+}
+</style>
