@@ -33,3 +33,11 @@ $input-group-addon-border-color: transparent;
 
 // Navbar Settings
 $nav-link-padding-x: 1rem !important;
+
+// Grid container
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1400px
+);
