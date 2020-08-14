@@ -1,15 +1,23 @@
 <template>
     <b-container class="pt-10 mb-5">
         <b-row>
+            <b-col sm="12">
+                <h2 class="text-center">Character Buider</h2>
+                <br />
+                <b-alert show variant="danger" dismissible>
+                    <strong>WARNING:</strong> This Tool is still heavy WIP! Almost everything is suject to changes.
+                </b-alert>
+                <br />
+            </b-col>
             <b-col lg="4">
-                <b-card>
+                <b-card class="shadow-sm">
                     <b-card-title class="text-center bg-primary p-2">
                         Occupation
                     </b-card-title>
 
                     <div v-for="occupation in occupations" :key="occupation.id">
-                        <b-card class="occupation">
-                            <b-card-title :id="occupation.id" class="text-primary">
+                        <b-card :id="occupation.id" class="occupation" @click="changeOccupation(occupation.id)">
+                            <b-card-title class="text-primary">
                                 {{ occupation.title }}
                             </b-card-title>
 
@@ -18,8 +26,8 @@
                             </b-tooltip>
 
                             <b-card-text>
-                                <p class="small text-secondary m-0 p-0">Benefit: {{ occupation.benefit }}</p>
-                                <p class="small text-right m-0 p-0">Perk Points: {{ occupation.perkPoints }}</p>
+                                <p class="small text-secondary m-0 pb-2">Benefit: {{ occupation.benefit }}</p>
+                                <b-badge class="float-right">Perk Points: {{ occupation.perkPoints }}</b-badge>
                             </b-card-text>
                         </b-card>
                     </div>
@@ -28,7 +36,7 @@
             <b-col lg="4">
                 <b-row class="mb-4">
                     <b-col>
-                        <b-card>
+                        <b-card class="shadow-sm">
                             <b-card-title class="text-center bg-primary p-2">
                                 Character Data
                             </b-card-title>
@@ -136,19 +144,19 @@
                 </b-row>
                 <b-row>
                     <b-col>
-                        <b-card>
+                        <b-card class="shadow-sm">
                             <b-card-title class="text-center bg-primary p-2">
-                                Perk Points: 0
+                                Perk Points: {{ character.perkpoints }}
                             </b-card-title>
                             <b-card-body>
-                                asdsadasdsadsa
+                                <p>You need to have a balance of 0 or more perk points in order to finish the build.</p>
                             </b-card-body>
                         </b-card>
                     </b-col>
                 </b-row>
             </b-col>
             <b-col lg="4">
-                <b-card>
+                <b-card class="shadow-sm">
                     <b-card-title class="text-center bg-primary p-2">
                         Perk Selection
                     </b-card-title>
@@ -166,7 +174,7 @@ export default {
     data() {
         return {
             character: {
-                perkpoints: 0,
+                perkpoints: 10,
                 attributes: {
                     agility: 4,
                     charisma: 4,
@@ -183,6 +191,7 @@ export default {
                     medical: 10
                 }
             },
+            acvtivOccupation: 'unemployed',
             occupations: [
                 {
                     id: 'unemployed',
@@ -215,7 +224,7 @@ export default {
                     perkPoints: +2
                 },
                 {
-                    id: 'Chef',
+                    id: 'chef',
                     title: 'Chef',
                     description:
                         'Your´ve always liked to spend time in the kitches, ever since you were a child. Now you need to use your cooking skills to survive.',
@@ -241,11 +250,21 @@ export default {
                 {
                     id: 'pliceOfficer',
                     title: 'Police Officer',
-                    description: 'unknown',
-                    benefit: 'unknown',
-                    perkPoints: 'unknown'
+                    description: 'You were a police officer, once, enforcing the law. This is now a lawless world.',
+                    benefit:
+                        'Spawn with your work outfit complete with fleshlight and service pistol with a less then half empty magazine.',
+                    perkPoints: -4
+                },
+                {
+                    id: 'securityGuard',
+                    title: 'Security Guard',
+                    description:
+                        'You never really slept well at night, so you became a security guard at the mall. Might not be a bad thing once the power goes out for good.',
+                    benefit: 'Spawn with your security outfit and a melee weapon.',
+                    perkPoints: +2
                 }
             ],
+            activePerks: [''],
             perk: [
                 { id: 'cpr', Title: 'CPR Training', Type: 'Trait', Cost: -2 },
                 { id: 'astronomoer', Title: 'Astronomer', Type: 'Trait', Cost: -2 },
@@ -262,8 +281,18 @@ export default {
     },
 
     methods: {
-        test(target) {
-            console.log(target);
+        changeOccupation(target) {
+            let card = document.querySelector('#' + this.acvtivOccupation);
+            card.classList.remove('occupation-activ');
+
+            this.acvtivOccupation = target;
+
+            card = document.querySelector('#' + target);
+            card.classList.add('occupation-activ');
+        },
+
+        changeAttributes(occupation) {
+            console.log('shit');
         }
     }
 };
@@ -276,6 +305,10 @@ export default {
 .occupation {
     margin-bottom: 6px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+
+    &.occupation-activ {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
 }
 
 .card-occupation {
