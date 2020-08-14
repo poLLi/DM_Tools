@@ -5,8 +5,11 @@
                 <b-row class="h-100 text-center" align-h="center" align-content="center">
                     <b-col lg="10">
                         <img src="~/assets/images/dm_logo.png" alt="Dead Matter Tools" class="mainhead-logo" />
-                        <hr />
                         <h2 class="text-uppercase text-white font-weight-medium">Web Tools</h2>
+                        <hr class="divider my-4" />
+                    </b-col>
+                    <b-col lg="8" class="text-white font-weight-light mb-5">
+                        <p>Everything you need to survive the Zombie-Apocalypse!</p>
                     </b-col>
                 </b-row>
             </b-container>
@@ -20,6 +23,7 @@ export default {};
 
 <style lang="scss" scoped>
 .mainhead {
+    padding-top: 10vh;
     background: linear-gradient(to bottom, rgba(25, 25, 25, 0.5) 20%, #222831 80%),
         url(~assets/images/background-highres.jpg);
     background-position: center;
