@@ -27,10 +27,15 @@
                 <h2 class="title">Zusätzliche Angaben</h2>
                 <p class="font-weight-light">
                     Dead Matter and the Dead Matter Logo are Trademarks of
-                    <a href="https://qisoftware.ca/">Quantum Integrity Software Inc.</a> <br />
+                    <a href="https://qisoftware.ca/" target="_blank" rel="noopener noreferrer">
+                        Quantum Integrity Software Inc.
+                    </a>
+                    <br />
                     Just-Look Network is not associated with Qi Software Inc. <br />
                     Official Dead Matter Website:
-                    <a href="https://playdeadmatter.com">https://playdeadmatter.com</a>
+                    <a href="https://playdeadmatter.com" target="_blank" rel="noopener noreferrer">
+                        https://playdeadmatter.com
+                    </a>
                 </p>
                 <hr />
                 <p>
