@@ -4,9 +4,13 @@
             <b-container class="h-100">
                 <b-row class="h-100 text-center" align-h="center" align-content="center">
                     <b-col lg="10">
-                        <img src="~/assets/images/dm_logo.png" alt="Dead Matter Tools" class="mainhead-logo" />
+                        <img
+                            src="~/assets/images/dm_logo.png"
+                            alt="Dead Matter Tools"
+                            class="mainhead-logo img-fluid"
+                        />
                         <h2 class="text-uppercase text-white font-weight-medium">Community Web Tools</h2>
-                        <p>( unofficial )</p>
+                        <p class="text-primary">( unofficial )</p>
                         <hr class="divider my-4" />
                     </b-col>
                     <b-col lg="8" class="text-white font-weight-light mb-5">
@@ -36,6 +40,12 @@ export default {};
 }
 
 .mainhead-logo {
-    width: 450px;
+    max-width: 450px;
+}
+
+@media (max-width: 576px) {
+    .mainhead-logo {
+        max-width: 350px;
+    }
 }
 </style>
