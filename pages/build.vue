@@ -266,6 +266,14 @@ export default {
                         intelligence: 4,
                         strength: 4
                     },
+                    skills: {
+                        cooking: 10,
+                        farming: 10,
+                        mechanic: 10,
+                        crafting: 10,
+                        lockpicking: 10,
+                        medical: 10
+                    },
                     perkPoints: 8,
                     perkType: 'positive'
                 },
@@ -276,11 +284,19 @@ export default {
                         'You used to work on new housing projects all the time. This is the ideal choice if you like to build structures.',
                     benefit: 'Spawn with your work outfit and a melee weapon.',
                     attributes: {
-                        agility: 4,
+                        agility: 3,
                         charisma: 4,
-                        endurance: 4,
-                        intelligence: 4,
-                        strength: 4
+                        endurance: 7,
+                        intelligence: 3,
+                        strength: 8
+                    },
+                    skills: {
+                        cooking: 5,
+                        farming: 5,
+                        mechanic: 25,
+                        crafting: 50,
+                        lockpicking: 15,
+                        medical: 10
                     },
                     perkPoints: 0,
                     perkType: 'neutral'
@@ -292,10 +308,18 @@ export default {
                     benefit: 'Spawn with casual attiere and a random melee weapon',
                     attributes: {
                         agility: 4,
-                        charisma: 4,
-                        endurance: 4,
-                        intelligence: 4,
-                        strength: 4
+                        charisma: 5,
+                        endurance: 3,
+                        intelligence: 7,
+                        strength: 6
+                    },
+                    skills: {
+                        cooking: 5,
+                        farming: 5,
+                        mechanic: 50,
+                        crafting: 35,
+                        lockpicking: 5,
+                        medical: 5
                     },
                     perkPoints: 0,
                     perkType: 'neutral'
@@ -307,11 +331,19 @@ export default {
                         'Making an honest living is never something to be ashamed of. Everybody still needs to eat.',
                     benefit: 'Spawn with some basic clothes and a small backpack with survival gear.',
                     attributes: {
-                        agility: 4,
-                        charisma: 4,
+                        agility: 6,
+                        charisma: 6,
                         endurance: 4,
-                        intelligence: 4,
-                        strength: 4
+                        intelligence: 5,
+                        strength: 6
+                    },
+                    skills: {
+                        cooking: 15,
+                        farming: 50,
+                        mechanic: 15,
+                        crafting: 25,
+                        lockpicking: 5,
+                        medical: 15
                     },
                     perkPoints: 2,
                     perkType: 'positive'
@@ -323,11 +355,19 @@ export default {
                         'Your´ve always liked to spend time in the kitches, ever since you were a child. Now you need to use your cooking skills to survive.',
                     benefit: 'Spawn with your work outfit and a kitchen knife.',
                     attributes: {
-                        agility: 4,
-                        charisma: 4,
+                        agility: 7,
+                        charisma: 7,
                         endurance: 4,
-                        intelligence: 4,
-                        strength: 4
+                        intelligence: 6,
+                        strength: 3
+                    },
+                    skills: {
+                        cooking: 60,
+                        farming: 15,
+                        mechanic: 5,
+                        crafting: 15,
+                        lockpicking: 5,
+                        medical: 15
                     },
                     perkPoints: 2,
                     perkType: 'positive'
@@ -339,11 +379,19 @@ export default {
                         'In theory the hippocratic oath still applies even after society has fallen apart. You once swore a duty to help those that are in need.',
                     benefit: 'Spawn with your work clothes, some medical supplies and a melee weapon.',
                     attributes: {
-                        agility: 4,
-                        charisma: 4,
+                        agility: 7,
+                        charisma: 7,
                         endurance: 4,
-                        intelligence: 4,
-                        strength: 4
+                        intelligence: 8,
+                        strength: 3
+                    },
+                    skills: {
+                        cooking: 15,
+                        farming: 5,
+                        mechanic: 10,
+                        crafting: 5,
+                        lockpicking: 5,
+                        medical: 60
                     },
                     perkPoints: 4,
                     perkType: 'negative'
@@ -361,6 +409,14 @@ export default {
                         intelligence: 4,
                         strength: 7
                     },
+                    skills: {
+                        cooking: 10,
+                        farming: 10,
+                        mechanic: 10,
+                        crafting: 10,
+                        lockpicking: 10,
+                        medical: 10
+                    },
                     perkPoints: 0,
                     perkType: 'neutral'
                 },
@@ -371,11 +427,19 @@ export default {
                     benefit:
                         'Spawn with your work outfit complete with fleshlight and service pistol with a less then half empty magazine.',
                     attributes: {
-                        agility: 6,
-                        charisma: 7,
-                        endurance: 6,
-                        intelligence: 4,
+                        agility: 8,
+                        charisma: 2,
+                        endurance: 5,
+                        intelligence: 6,
                         strength: 7
+                    },
+                    skills: {
+                        cooking: 5,
+                        farming: 5,
+                        mechanic: 15,
+                        crafting: 5,
+                        lockpicking: 35,
+                        medical: 20
                     },
                     perkPoints: 4,
                     perkType: 'negative'
@@ -387,11 +451,19 @@ export default {
                         'You never really slept well at night, so you became a security guard at the mall. Might not be a bad thing once the power goes out for good.',
                     benefit: 'Spawn with your security outfit and a melee weapon.',
                     attributes: {
-                        agility: 6,
-                        charisma: 7,
+                        agility: 7,
+                        charisma: 4,
                         endurance: 6,
-                        intelligence: 4,
-                        strength: 7
+                        intelligence: 3,
+                        strength: 6
+                    },
+                    skills: {
+                        cooking: 5,
+                        farming: 5,
+                        mechanic: 20,
+                        crafting: 25,
+                        lockpicking: 5,
+                        medical: 15
                     },
                     perkPoints: 2,
                     perkType: 'positive'
@@ -1053,6 +1125,7 @@ export default {
             this.acvtivOccupation = target.id;
             this.calculatePoints();
             this.calculateAttributes();
+            this.calculateSkills();
         },
 
         togglePerk(target) {
@@ -1145,7 +1218,19 @@ export default {
             };
             this.character.skills = defaultSkills;
 
-            // calc active perks
+            // 1st - calc active occupation
+            const occupation = this.occupations.filter((o) => o.id === this.acvtivOccupation);
+            const newSkills = {
+                cooking: occupation[0].skills.cooking,
+                farming: occupation[0].skills.farming,
+                mechanic: occupation[0].skills.mechanic,
+                crafting: occupation[0].skills.crafting,
+                lockpicking: occupation[0].skills.lockpicking,
+                medical: occupation[0].skills.medical
+            };
+            this.character.skills = newSkills;
+
+            // 2nd calc active perks
             this.activePerks.forEach((perk) => {
                 const obj = this.perks.filter((p) => p.id === perk);
 
@@ -1219,6 +1304,7 @@ export default {
     .occupation {
         margin-bottom: 6px;
         border: 1px solid rgba(255, 255, 255, 0.1);
+        direction: ltr;
 
         &.occupation-active {
             background-color: rgba(0, 0, 0, 0.45);
