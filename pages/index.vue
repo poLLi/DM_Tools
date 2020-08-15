@@ -5,7 +5,8 @@
                 <b-row class="h-100 text-center" align-h="center" align-content="center">
                     <b-col lg="10">
                         <img src="~/assets/images/dm_logo.png" alt="Dead Matter Tools" class="mainhead-logo" />
-                        <h2 class="text-uppercase text-white font-weight-medium">Web Tools</h2>
+                        <h2 class="text-uppercase text-white font-weight-medium">Community Web Tools</h2>
+                        <p>( unofficial )</p>
                         <hr class="divider my-4" />
                     </b-col>
                     <b-col lg="8" class="text-white font-weight-light mb-5">

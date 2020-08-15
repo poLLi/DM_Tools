@@ -7,7 +7,7 @@
                     alt="Just-Look Network Logo"
                     class="d-inlineblock align-top nav-logo"
                 />
-                | Dead Matter - Web Tools
+                | DM - Community Web Tools
             </b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
