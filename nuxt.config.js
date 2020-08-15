@@ -37,7 +37,7 @@ export default {
      ** Plugins to load before mounting the App
      ** https://nuxtjs.org/guide/plugins
      */
-    plugins: [{ src: '~/plugins/vue-swal' }],
+    plugins: ['~/plugins/vue-clipboard.js'],
     /*
      ** Auto import components
      ** See https://nuxtjs.org/api/configuration-components
@@ -55,9 +55,10 @@ export default {
      */
     modules: [
         // Doc: https://bootstrap-vue.js.org
-        'bootstrap-vue/nuxt'
+        'bootstrap-vue/nuxt',
         // Doc: https://axios.nuxtjs.org/usage
         // '@nuxtjs/axios'
+        'vue-sweetalert2/nuxt'
     ],
     /*
      ** BootstrapVue Settings
@@ -75,7 +76,5 @@ export default {
      ** Build configuration
      ** See https://nuxtjs.org/api/configuration-build/
      */
-    build: {
-        vendor: ['vue-swal']
-    }
+    build: {}
 };
