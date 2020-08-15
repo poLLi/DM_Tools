@@ -170,9 +170,15 @@
                             <b-card-title class="text-center bg-secondary p-2">
                                 Perk Points: {{ perkPoints }}
                             </b-card-title>
-                            <b-card-body>
-                                <p>You need to have a balance of 0 or more perk points in order to finish the build.</p>
-                            </b-card-body>
+                            <p class="">
+                                You need to have a balance of 0 or more perk points in order to finish the build.
+                            </p>
+                            <b-button v-if="perkPoints >= 0" class="float-right" variant="success" @click="saveBuild">
+                                Save Build
+                            </b-button>
+                            <b-button v-if="perkPoints < 0" class="float-right" variant="primary" disabled>
+                                Save Build
+                            </b-button>
                         </b-card>
                     </b-col>
                 </b-row>
@@ -1027,6 +1033,19 @@ export default {
     mounted() {
         const card = document.querySelector('#' + this.acvtivOccupation);
         card.classList.add('occupation-active');
+
+        // check if query is present - load data
+        if (this.$route.query.b) {
+            const codec = require('json-url')('lzw');
+            codec.decompress(this.$route.query.b).then((resault) => {
+                this.activePerks = resault.perks;
+                this.acvtivOccupation = resault.occupation;
+
+                this.calculatePoints();
+                this.calculateAttributes();
+                this.calculateSkills();
+            });
+        }
     },
 
     methods: {
@@ -1143,6 +1162,27 @@ export default {
                         }
                     });
                 }
+            });
+        },
+
+        saveBuild() {
+            const build = {
+                occupation: this.acvtivOccupation,
+                perks: this.activePerks
+            };
+
+            const codec = require('json-url')('lzw');
+            codec.compress(build).then((resault) => {
+                const buildUrl = `https://polli.github.io/DM_Tools/build/?b=${resault}`;
+                this.$swal({
+                    icon: 'success',
+                    title: '<i>SAVED!</i>',
+                    html: 'Your Character Build url is ready.',
+                    confirmButtonText: `Copy to Clipboard`,
+                    focusConfirm: false
+                }).then((res) => {
+                    this.$copyText(buildUrl);
+                });
             });
         }
     }
