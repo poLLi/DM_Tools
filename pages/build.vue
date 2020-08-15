@@ -1,47 +1,61 @@
 <template>
-    <b-container class="pt-10 mb-5">
+    <b-container class="pt-8 mb-5">
         <b-row>
             <b-col sm="12">
-                <h2 class="text-center m-0">Character Buider</h2>
-                <br />
                 <b-alert show variant="danger" dismissible>
-                    <strong>WARNING:</strong> This Tool is still heavy WIP! Almost everything is subject to changes.
+                    <strong>WARNING:</strong> This Tool is still <strong>WIP!</strong> Almost everything is subject to
+                    change. <small>Current Verion: Pre-Alpha</small>
                 </b-alert>
-                <br />
             </b-col>
-            <b-col lg="4">
+            <b-col lg="4" class="no-select">
                 <b-card class="shadow">
                     <b-card-title class="text-center bg-secondary p-2">
                         Occupation
                     </b-card-title>
 
-                    <div v-for="occupation in occupations" :key="occupation.id">
-                        <b-card :id="occupation.id" class="occupation" @click="changeOccupation(occupation)">
-                            <b-card-title>
-                                {{ occupation.title }}
-                            </b-card-title>
+                    <div class="occupationList">
+                        <div v-for="occupation in occupations" :key="occupation.id">
+                            <b-card :id="occupation.id" class="occupation" @click="changeOccupation(occupation)">
+                                <b-card-title>
+                                    {{ occupation.title }}
+                                </b-card-title>
 
-                            <b-tooltip :target="occupation.id" placement="right" noninteractive :delay="tooltip.delay">
-                                <p class="m-0 p-1">{{ occupation.description }}</p>
-                            </b-tooltip>
+                                <b-tooltip
+                                    :target="occupation.id"
+                                    placement="right"
+                                    boundary="viewport"
+                                    noninteractive
+                                    :delay="tooltip.delay"
+                                >
+                                    <p class="m-0 p-1">{{ occupation.description }}</p>
+                                </b-tooltip>
 
-                            <b-card-text>
-                                <p class="small text-secondary m-0 pb-2">Benefit: {{ occupation.benefit }}</p>
-                                <b-badge v-if="occupation.perkType == 'neutral'" class="float-right">
-                                    Perk Points: {{ occupation.perkPoints }}
-                                </b-badge>
-                                <b-badge v-if="occupation.perkType == 'positive'" class="float-right" variant="success">
-                                    Perk Points: +{{ occupation.perkPoints }}
-                                </b-badge>
-                                <b-badge v-if="occupation.perkType == 'negative'" class="float-right" variant="danger">
-                                    Perk Points: -{{ occupation.perkPoints }}
-                                </b-badge>
-                            </b-card-text>
-                        </b-card>
+                                <b-card-text>
+                                    <p class="small text-secondary m-0 pb-2">Benefit: {{ occupation.benefit }}</p>
+                                    <b-badge v-if="occupation.perkType == 'neutral'" class="float-right">
+                                        Perk Points: {{ occupation.perkPoints }}
+                                    </b-badge>
+                                    <b-badge
+                                        v-if="occupation.perkType == 'positive'"
+                                        class="float-right"
+                                        variant="success"
+                                    >
+                                        Perk Points: +{{ occupation.perkPoints }}
+                                    </b-badge>
+                                    <b-badge
+                                        v-if="occupation.perkType == 'negative'"
+                                        class="float-right"
+                                        variant="danger"
+                                    >
+                                        Perk Points: -{{ occupation.perkPoints }}
+                                    </b-badge>
+                                </b-card-text>
+                            </b-card>
+                        </div>
                     </div>
                 </b-card>
             </b-col>
-            <b-col lg="4">
+            <b-col lg="4" class="no-select">
                 <b-row class="mb-4">
                     <b-col>
                         <b-card class="shadow">
@@ -163,37 +177,45 @@
                     </b-col>
                 </b-row>
             </b-col>
-            <b-col lg="4">
+            <b-col lg="4" class="no-select">
                 <b-card class="shadow">
                     <b-card-title class="text-center bg-secondary p-2">
                         Perk Selection
                     </b-card-title>
-                    <div v-for="perk in perks" :key="perk.id">
-                        <b-card
-                            :id="perk.id"
-                            class="perk mb-1"
-                            body-class="pt-2 pb-2 pl-3 pr-3"
-                            @click="togglePerk(perk)"
-                        >
-                            <b-tooltip :target="perk.id" placement="left" noninteractive :delay="tooltip.delay">
-                                <p class="m-0 p-1">{{ perk.description }}</p>
-                            </b-tooltip>
+                    <div class="perkList">
+                        <div v-for="perk in perks" :key="perk.id">
+                            <b-card
+                                :id="perk.id"
+                                class="perk mb-1"
+                                body-class="pt-2 pb-2 pl-3 pr-3"
+                                @click="togglePerk(perk)"
+                            >
+                                <b-tooltip
+                                    :target="perk.id"
+                                    placement="left"
+                                    boundary="viewport"
+                                    noninteractive
+                                    :delay="tooltip.delay"
+                                >
+                                    <p class="m-0 p-1">{{ perk.description }}</p>
+                                </b-tooltip>
 
-                            <div class="d-flex justify-content-between">
-                                <div class="flex-grow-1 font-weight-bold">{{ perk.title }}</div>
-                                <div class="mr-3">
-                                    <b-badge>{{ perk.type }}</b-badge>
+                                <div class="d-flex justify-content-between">
+                                    <div class="flex-grow-1 font-weight-bold">{{ perk.title }}</div>
+                                    <div class="mr-3">
+                                        <b-badge>{{ perk.type }}</b-badge>
+                                    </div>
+                                    <div>
+                                        <b-badge v-if="perk.perkType == 'positive'" variant="success">
+                                            Cost: +{{ perk.perkPoints }}
+                                        </b-badge>
+                                        <b-badge v-if="perk.perkType == 'negative'" variant="danger">
+                                            Cost: -{{ perk.perkPoints }}
+                                        </b-badge>
+                                    </div>
                                 </div>
-                                <div>
-                                    <b-badge v-if="perk.perkType == 'positive'" variant="success">
-                                        Cost: +{{ perk.perkPoints }}
-                                    </b-badge>
-                                    <b-badge v-if="perk.perkType == 'negative'" variant="danger">
-                                        Cost: -{{ perk.perkPoints }}
-                                    </b-badge>
-                                </div>
-                            </div>
-                        </b-card>
+                            </b-card>
+                        </div>
                     </div>
                 </b-card>
             </b-col>
@@ -1128,24 +1150,67 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.no-select {
+    user-select: none;
+}
 .attribute {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.occupation {
-    margin-bottom: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 
-    &.occupation-active {
-        background-color: rgba(0, 0, 0, 0.45);
+.occupationList {
+    max-height: 790px;
+    overflow-y: scroll;
+    padding-left: 6px;
+    direction: rtl;
+
+    &::-webkit-scrollbar-track {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #000;
+    }
+
+    .occupation {
+        margin-bottom: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        &.occupation-active {
+            background-color: rgba(0, 0, 0, 0.45);
+        }
     }
 }
 
-.perk {
-    margin-bottom: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.perkList {
+    max-height: 790px;
+    overflow-y: scroll;
+    padding-right: 6px;
 
-    &.perk-active {
-        background-color: rgba(0, 0, 0, 0.45);
+    &::-webkit-scrollbar-track {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #000;
+    }
+
+    .perk {
+        margin-bottom: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        &.perk-active {
+            background-color: rgba(0, 0, 0, 0.45);
+        }
     }
 }
 </style>
