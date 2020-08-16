@@ -184,7 +184,7 @@
                     </b-col>
                 </b-row>
             </b-col>
-            <b-col lg="4" class="no-select">
+            <b-col lg="4" class="no-select mb-4">
                 <b-card class="shadow">
                     <b-card-title class="text-center p-2 title-rounded">
                         Perk Selection
