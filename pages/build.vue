@@ -222,16 +222,20 @@
         <b-row>
             <b-col>
                 <b-card class="shadow">
-                    <b-card-title>
-                        <span class="font-weight-bold h2">Expanded Statistics</span>
+                    <b-button v-b-toggle:extendedStats block>
+                        <span class="h5 when-open">Close Extended Statistics</span>
+                        <span class="h5 when-closed">Open Extended Statistics</span>
+                        <br />
                         <small class="font-weight-light">
                             (Still Work in Progress!)
                         </small>
-                    </b-card-title>
+                    </b-button>
 
-                    <div v-for="activeStat in activeStats" :key="activeStat" class="pl-2">
-                        <b-badge class="text-monospace p-2 mt-2">{{ activeStat }}</b-badge>
-                    </div>
+                    <b-collapse id="extendedStats" class="mt-4" accordion="extendedStats" role="tabpanel">
+                        <div v-for="activeStat in activeStats" :key="activeStat" class="pl-2">
+                            <b-badge class="text-monospace p-2 mt-2">{{ activeStat }}</b-badge>
+                        </div>
+                    </b-collapse>
                 </b-card>
             </b-col>
         </b-row>
@@ -501,6 +505,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.collapsed > .when-open,
+.not-collapsed > .when-closed {
+    display: none;
+}
+
 .no-select {
     user-select: none;
 }
