@@ -19,7 +19,8 @@
                 <b-col class="align-self-end">
                     <p class="text-muted font-weight-light text-right">
                         <nuxt-link to="/imprint" class="text-muted font-weight-light">Imprint</nuxt-link> |
-                        <nuxt-link to="/privacy" class="text-muted font-weight-light">Privacy</nuxt-link>
+                        <nuxt-link to="/privacy" class="text-muted font-weight-light">Privacy</nuxt-link> |
+                        <nuxt-link to="/contact" class="text-muted font-weight-light">Contact</nuxt-link>
                         <br />
                         Copyright © 2020 Just-Look Network
                     </p>
