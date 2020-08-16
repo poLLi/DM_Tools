@@ -17,18 +17,27 @@ export default {
      ** See https://nuxtjs.org/api/configuration-head
      */
     head: {
-        title: 'JLN | Dead Matter Tools',
+        htmlAttrs: {
+            lang: 'en'
+        },
+        title: 'JLN | Dead Matter Tools (unofficial)',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             {
                 hid: 'description',
                 name: 'description',
-                content: 'Small usefull tools for the upcoming Zombie Survival Game Dead Matter from Qi Software'
+                content:
+                    'Small usefull community build tools for the upcoming Zombie Survival Game Dead Matter from Qi Software, unofficial'
             }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        link: [
+            { rel: 'icon', type: 'image/x-icon', href: 'favicon/favicon.ico' },
+            { rel: 'icon', type: 'image/png', href: 'favicon/android-icon-192x192.png', sizes: '192x192' },
+            { rel: 'apple-touch-icon', href: 'favicon/apple-icon-180x180.png', sizes: '180x180' }
+        ]
     },
+    loading: false,
     /*
      ** Global CSS
      */
@@ -37,7 +46,7 @@ export default {
      ** Plugins to load before mounting the App
      ** https://nuxtjs.org/guide/plugins
      */
-    plugins: ['~/plugins/vue-clipboard.js'],
+    plugins: ['~/plugins/vue-clipboard.js', '~/plugins/vue-bootstrap-icons.js'],
     /*
      ** Auto import components
      ** See https://nuxtjs.org/api/configuration-components

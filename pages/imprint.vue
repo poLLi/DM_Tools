@@ -37,13 +37,6 @@
                         https://playdeadmatter.com
                     </a>
                 </p>
-                <hr />
-                <p>
-                    SVG Illustrations made with Love by
-                    <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer">unDraw</a><br />
-                    Social-Media Icons:
-                    <a href="https://ionicons.com/" target="_blank" rel="noopener noreferrer">IonIcons</a>
-                </p>
             </div>
         </b-container>
     </section>

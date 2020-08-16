@@ -1,15 +1,16 @@
 <template>
-    <b-container class="pt-8 mb-5">
+    <b-container class="first-container mb-5">
         <b-row>
             <b-col sm="12">
                 <b-alert show variant="danger" dismissible>
+                    <b-icon icon="exclamation-circle" variant="danger" font-scale="1.5" class="mr-2"></b-icon>
                     <strong>WARNING:</strong> This Tool is still <strong>WIP!</strong> Almost everything is subject to
                     change. <small>Current Verion: Pre-Alpha</small>
                 </b-alert>
             </b-col>
-            <b-col lg="4" class="no-select">
+            <b-col lg="4" class="no-select mb-4">
                 <b-card class="shadow">
-                    <b-card-title class="text-center bg-secondary p-2">
+                    <b-card-title class="text-center p-2 title-rounded">
                         Occupation
                     </b-card-title>
 
@@ -21,6 +22,7 @@
                                 </b-card-title>
 
                                 <b-tooltip
+                                    v-if="!isMobile"
                                     :target="occupation.id"
                                     placement="right"
                                     boundary="viewport"
@@ -59,7 +61,7 @@
                 <b-row class="mb-4">
                     <b-col>
                         <b-card class="shadow">
-                            <b-card-title class="text-center bg-secondary p-2">
+                            <b-card-title class="text-center p-2 title-rounded">
                                 Character Data
                             </b-card-title>
 
@@ -164,17 +166,17 @@
                         </b-card>
                     </b-col>
                 </b-row>
-                <b-row>
+                <b-row class="mb-4">
                     <b-col>
                         <b-card class="shadow">
-                            <b-card-title class="text-center bg-secondary p-2">
+                            <b-card-title class="text-center p-2 title-rounded">
                                 Perk Points: {{ perkPoints }}
                             </b-card-title>
-                            <p class="">
+                            <p class="small pb-1">
                                 You need to have a balance of 0 or more perk points in order to finish the build.
                             </p>
                             <b-button v-if="perkPoints >= 0" class="float-right" variant="success" @click="saveBuild">
-                                Save Build
+                                <b-icon icon="clipboard-plus"></b-icon> Save Build
                             </b-button>
                             <b-button v-if="perkPoints < 0" class="float-right" variant="primary" disabled>
                                 Save Build
@@ -183,9 +185,9 @@
                     </b-col>
                 </b-row>
             </b-col>
-            <b-col lg="4" class="no-select">
+            <b-col lg="4" class="no-select mb-4">
                 <b-card class="shadow">
-                    <b-card-title class="text-center bg-secondary p-2">
+                    <b-card-title class="text-center p-2 title-rounded">
                         Perk Selection
                     </b-card-title>
                     <div class="perkList">
@@ -196,16 +198,6 @@
                                 body-class="pt-2 pb-2 pl-3 pr-3"
                                 @click="togglePerk(perk)"
                             >
-                                <b-tooltip
-                                    :target="perk.id"
-                                    placement="left"
-                                    boundary="viewport"
-                                    noninteractive
-                                    :delay="tooltip.delay"
-                                >
-                                    <p class="m-0 p-1">{{ perk.description }}</p>
-                                </b-tooltip>
-
                                 <div class="d-flex justify-content-between">
                                     <div class="flex-grow-1 font-weight-bold">{{ perk.title }}</div>
                                     <div class="mr-3">
@@ -220,9 +212,34 @@
                                         </b-badge>
                                     </div>
                                 </div>
+                                <p class="m-0 p-1 small text-secondary">{{ perk.description }}</p>
                             </b-card>
                         </div>
                     </div>
+                </b-card>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col>
+                <b-card class="shadow no-select">
+                    <b-button v-b-toggle:extendedStats block variant="outline-secondary">
+                        <span class="h5 when-open">
+                            Close Extended Statistics
+                        </span>
+                        <span class="h5 when-closed">
+                            Open Extended Statistics
+                        </span>
+                        <br />
+                        <small class="font-weight-light">
+                            (Still Work in Progress!)
+                        </small>
+                    </b-button>
+
+                    <b-collapse id="extendedStats" class="mt-3" accordion="extendedStats" role="tabpanel">
+                        <div v-for="activeStat in activeStats" :key="activeStat" class="pl-2">
+                            <b-badge class="text-monospace p-2 mt-2">{{ activeStat }}</b-badge>
+                        </div>
+                    </b-collapse>
                 </b-card>
             </b-col>
         </b-row>
@@ -230,12 +247,16 @@
 </template>
 
 <script>
+import occupations from '~/assets/data/occupations.json';
+import perks from '~/assets/data/perks.json';
+
 export default {
     data() {
         return {
             perkPoints: 10,
             acvtivOccupation: 'unemployed',
             activePerks: [],
+            activeStats: [],
             character: {
                 attributes: {
                     agility: 4,
@@ -253,751 +274,8 @@ export default {
                     medical: 10
                 }
             },
-            occupations: [
-                {
-                    id: 'unemployed',
-                    title: 'Unemployed',
-                    description: 'You were a talented but quick learner that decided against pursuing employment.',
-                    benefit: 'Spawn with the clothes on your back and a melee weapon.',
-                    attributes: {
-                        agility: 4,
-                        charisma: 4,
-                        endurance: 4,
-                        intelligence: 4,
-                        strength: 4
-                    },
-                    perkPoints: 8,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'constructionWorker',
-                    title: 'Constuction Worker',
-                    description:
-                        'You used to work on new housing projects all the time. This is the ideal choice if you like to build structures.',
-                    benefit: 'Spawn with your work outfit and a melee weapon.',
-                    attributes: {
-                        agility: 4,
-                        charisma: 4,
-                        endurance: 4,
-                        intelligence: 4,
-                        strength: 4
-                    },
-                    perkPoints: 0,
-                    perkType: 'neutral'
-                },
-                {
-                    id: 'repairMan',
-                    title: 'Repair Man',
-                    description: 'You were once a repair man with a broad variety of skills.',
-                    benefit: 'Spawn with casual attiere and a random melee weapon',
-                    attributes: {
-                        agility: 4,
-                        charisma: 4,
-                        endurance: 4,
-                        intelligence: 4,
-                        strength: 4
-                    },
-                    perkPoints: 0,
-                    perkType: 'neutral'
-                },
-                {
-                    id: 'farmer',
-                    title: 'Farmer',
-                    description:
-                        'Making an honest living is never something to be ashamed of. Everybody still needs to eat.',
-                    benefit: 'Spawn with some basic clothes and a small backpack with survival gear.',
-                    attributes: {
-                        agility: 4,
-                        charisma: 4,
-                        endurance: 4,
-                        intelligence: 4,
-                        strength: 4
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'chef',
-                    title: 'Chef',
-                    description:
-                        'Your´ve always liked to spend time in the kitches, ever since you were a child. Now you need to use your cooking skills to survive.',
-                    benefit: 'Spawn with your work outfit and a kitchen knife.',
-                    attributes: {
-                        agility: 4,
-                        charisma: 4,
-                        endurance: 4,
-                        intelligence: 4,
-                        strength: 4
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'doctor',
-                    title: 'Doctor',
-                    description:
-                        'In theory the hippocratic oath still applies even after society has fallen apart. You once swore a duty to help those that are in need.',
-                    benefit: 'Spawn with your work clothes, some medical supplies and a melee weapon.',
-                    attributes: {
-                        agility: 4,
-                        charisma: 4,
-                        endurance: 4,
-                        intelligence: 4,
-                        strength: 4
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'fireFighter',
-                    title: 'Fire Fighter',
-                    description:
-                        'You were once a firefighter, bravely battling many of the fires that sprung up during the outbreake. You´re one of the few remaining survivors from the city.',
-                    benefit: 'Spawn with your work outfit and a fireaxe',
-                    attributes: {
-                        agility: 6,
-                        charisma: 7,
-                        endurance: 6,
-                        intelligence: 4,
-                        strength: 7
-                    },
-                    perkPoints: 0,
-                    perkType: 'neutral'
-                },
-                {
-                    id: 'pliceOfficer',
-                    title: 'Police Officer',
-                    description: 'You were a police officer, once, enforcing the law. This is now a lawless world.',
-                    benefit:
-                        'Spawn with your work outfit complete with fleshlight and service pistol with a less then half empty magazine.',
-                    attributes: {
-                        agility: 6,
-                        charisma: 7,
-                        endurance: 6,
-                        intelligence: 4,
-                        strength: 7
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'securityGuard',
-                    title: 'Security Guard',
-                    description:
-                        'You never really slept well at night, so you became a security guard at the mall. Might not be a bad thing once the power goes out for good.',
-                    benefit: 'Spawn with your security outfit and a melee weapon.',
-                    attributes: {
-                        agility: 6,
-                        charisma: 7,
-                        endurance: 6,
-                        intelligence: 4,
-                        strength: 7
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                }
-            ],
-            perks: [
-                {
-                    id: 'cpr',
-                    title: 'CPR Training',
-                    description: 'Gain the ability to bring people out of unconsciusness by performing CPR.',
-                    type: 'Trait',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'astronomoer',
-                    title: 'Astronomer',
-                    description: 'Draws a compass on the screen at night when pressing the HUD promt key.',
-                    type: 'Trait',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'observant',
-                    title: 'Observant',
-                    description: 'Perks are listed when looking at a player with the HUD promt active',
-                    type: 'Trait',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 6,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'herbalist',
-                    title: 'Herbalist',
-                    description: 'Allows you to easy identify poisonous berries and mushrooms.',
-                    type: 'Trait',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'peanutAllergy',
-                    title: 'Peanut Allergy',
-                    description:
-                        'Triggers a servere allergic reaction when consuming foods containing peanuts. (Spawn with on epi-pen).',
-                    type: 'Trait',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 4,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'paranoid',
-                    title: 'Paranoid',
-                    description: 'You will randomly hear gunshots that are not real.',
-                    type: 'Trait',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 4,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'universalReceiver',
-                    title: 'Univeral Receiver',
-                    description:
-                        'Forces the blood type to AB+ which allows you to receive blood from anyone without triggering a hemolytic reaction.',
-                    type: 'Trait',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 4,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'unversalDonor',
-                    title: 'Universal Donor',
-                    description: 'Forces the blood type to O- which anyone can receive when in need of a transfusion.',
-                    type: 'Trait',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 6,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'jogger',
-                    title: 'Jogger',
-                    description: 'You used to enjoy running when it was just for fun. Gain +2 Agility',
-                    type: 'Hobby',
-                    effect: {
-                        attribut: [
-                            {
-                                agility: 2,
-                                type: 'positive'
-                            }
-                        ],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'nerd',
-                    title: 'Nerd',
-                    description: 'You used to play a lot of videogames in your spare time. Lose -2 Strength',
-                    type: 'Hobby',
-                    effect: {
-                        attribut: [
-                            {
-                                strength: 2,
-                                type: 'negative'
-                            }
-                        ],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'chessPlayer',
-                    title: 'Chess Player',
-                    description: 'You used to play competitive chess. Gain +2 Intelligence.',
-                    type: 'Hobby',
-                    effect: {
-                        attribut: [
-                            {
-                                intelligence: 2,
-                                type: 'positive'
-                            }
-                        ],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'partyBoy',
-                    title: 'Party Boy',
-                    description: 'You used to party... a lot. Lose -2 Intelligence.',
-                    type: 'Hobby',
-                    effect: {
-                        attribut: [
-                            {
-                                intelligence: 2,
-                                type: 'negative'
-                            }
-                        ],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'runner',
-                    title: 'Runner',
-                    description: 'You used to enjoy running marathons. Gain +300s sprint time and +1 Agility',
-                    type: 'Hobby',
-                    effect: {
-                        attribut: [
-                            {
-                                agility: 1,
-                                type: 'positive'
-                            }
-                        ],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'strengthTraining',
-                    title: 'Strength Training',
-                    description: 'Your life orients around lifting when you´re not at work. Gain +2 Strength.',
-                    type: 'Hobby',
-                    effect: {
-                        attribut: [
-                            {
-                                strength: 2,
-                                type: 'positive'
-                            }
-                        ],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'bartender',
-                    title: 'Weekend Bartender',
-                    description:
-                        'You used to be a bartender on weekends, it  gave you an insight into human behavior. Gain +2 Chraisma.',
-                    type: 'Hobby',
-                    effect: {
-                        attribut: [
-                            {
-                                charisma: 2,
-                                type: 'positive'
-                            }
-                        ],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'wrestler',
-                    title: 'Wrestler',
-                    description:
-                        'You used to be a wrestler when you were younger, it made you pretty hard to bring down. Gain +2 Endurance.',
-                    type: 'Hobby',
-                    effect: {
-                        attribut: [
-                            {
-                                endurance: 2,
-                                type: 'positive'
-                            }
-                        ],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'amateurCook',
-                    title: 'Amateur Cook',
-                    description:
-                        'You like to cook fancy meals at home and aren´t afraid of getting behind the stove. Gain +25 bonus to Cooking.',
-                    type: 'Skill',
-                    effect: {
-                        attribut: [],
-                        skill: [
-                            {
-                                cooking: 25,
-                                type: 'positive'
-                            }
-                        ]
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'awfulCook',
-                    title: 'Awful Cook',
-                    description: 'You´re terrible behind the stove. Reveive a -25 penalty to Cooking.',
-                    type: 'Skill',
-                    effect: {
-                        attribut: [],
-                        skill: [
-                            {
-                                cooking: 25,
-                                type: 'negative'
-                            }
-                        ]
-                    },
-                    perkPoints: 4,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'metalworker',
-                    title: 'Metalworker',
-                    description:
-                        'You´ve tinkered around with metalworking and locksmithing. Gain a +25 bonus to Lockpicking.',
-                    type: 'Skill',
-                    effect: {
-                        attribut: [],
-                        skill: [
-                            {
-                                lockpicking: 25,
-                                type: 'positive'
-                            }
-                        ]
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'greenThumb',
-                    title: 'Green Thumb',
-                    description: 'You enjoy gardening. Gain a +25 bonus to Farmin.',
-                    type: 'Skill',
-                    effect: {
-                        attribut: [],
-                        skill: [
-                            {
-                                farming: 25,
-                                type: 'positive'
-                            }
-                        ]
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'hobbyist',
-                    title: 'Hobbyist',
-                    description:
-                        'You enjoy model trains, playing with rockets and all sorts of different gadgets. Gain a +25 bonus to Crafting',
-                    type: 'Skill',
-                    effect: {
-                        attribut: [],
-                        skill: [
-                            {
-                                crafting: 25,
-                                type: 'positive'
-                            }
-                        ]
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'gearhead',
-                    title: 'Gearhead',
-                    description: 'You sepend a lot of time restoring old cars. Gain a +25 bonus to Mechanic.',
-                    type: 'Skill',
-                    effect: {
-                        attribut: [],
-                        skill: [
-                            {
-                                mechanic: 25,
-                                type: 'positive'
-                            }
-                        ]
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'volunteerFirefighter',
-                    title: 'Volunteer Firefighter',
-                    description: 'You were a volunteer firefighter when you were yunger. Gain a +25 bonus to Medical.',
-                    type: 'Skill',
-                    effect: {
-                        attribut: [],
-                        skill: [
-                            {
-                                medical: 25,
-                                type: 'positive'
-                            }
-                        ]
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'bigBoned',
-                    title: 'Big Boned',
-                    description: 'Absulute unit. More limb health and +750ml max blood.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'osteoporosis',
-                    title: 'Osteoporosis',
-                    description: 'You take increased limb damage.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'brave',
-                    title: 'Brave',
-                    description: 'Less supression when taking fire.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'fearful',
-                    title: 'Fearful',
-                    description: 'Take more supression when taking fire.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'noFear',
-                    title: 'No Fear',
-                    description: 'You´ve seen it all. You do not fear death. -80% supression from taking fire.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 6,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'frightful',
-                    title: 'Frightful',
-                    description: 'Additional +80% supression when being attacked.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 6,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'fastMetabolism',
-                    title: 'Fast Metabolism',
-                    description: 'You metabolize food 50% faster.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'slowMetabolism',
-                    title: 'Slow Metabolism',
-                    description: 'You metabolize food 50% more slowly.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'ironStomach',
-                    title: 'Iron Stomach',
-                    description: 'Get sick less often when drinking and eating.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'weakStomach',
-                    title: 'Weak Stomach',
-                    description: 'Get sick more often when drinking and eating.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'silentSearch',
-                    title: 'Silent Search',
-                    description: 'Make 50% less noise when searching a container.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'noisySearch',
-                    title: 'Noisy Search',
-                    description: 'Make 50% more noise when searching a container.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 4,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'thickSkinned',
-                    title: 'Thick Skinned',
-                    description: 'Take 15% less damage from melee attacks.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'thinSkinned',
-                    title: 'Thin Skinned',
-                    description: 'Take 15% more damage from melee attacks.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'nimbleFingers',
-                    title: 'Nimble Fingers',
-                    description: 'Search containers 50% faster.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'sausageFingers',
-                    title: 'Sausage Fingers',
-                    description: 'Search containers 50% more slowly.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 4,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'heavyWeight',
-                    title: 'Heavy Weight',
-                    description: 'You get drunk far less easily.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'lightWeight',
-                    title: 'Light Weight',
-                    description:
-                        'Impact of drinking too much alcohol is amplified. Lower threshold to start feeling the effects.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                },
-                {
-                    id: 'lightStep',
-                    title: 'Light Step',
-                    description: 'Your footsteps are 30% quieter.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 4,
-                    perkType: 'negative'
-                },
-                {
-                    id: 'heavyStep',
-                    title: 'Heavy Step',
-                    description: 'Your footsteps are 30% louder.',
-                    type: 'Stat',
-                    effect: {
-                        attribut: [],
-                        skill: []
-                    },
-                    perkPoints: 2,
-                    perkType: 'positive'
-                }
-            ],
+            occupations,
+            perks,
             tooltip: {
                 delay: {
                     show: 500,
@@ -1005,6 +283,16 @@ export default {
                 }
             }
         };
+    },
+
+    computed: {
+        isMobile() {
+            if (window.innerWidth < 576) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     },
 
     watch: {
@@ -1041,6 +329,12 @@ export default {
                 this.activePerks = resault.perks;
                 this.acvtivOccupation = resault.occupation;
 
+                // Add Perk Stats
+                resault.perks.forEach((perk) => {
+                    const obj = this.perks.filter((p) => p.id === perk);
+                    this.addStat(obj[0]);
+                });
+
                 this.calculatePoints();
                 this.calculateAttributes();
                 this.calculateSkills();
@@ -1053,6 +347,7 @@ export default {
             this.acvtivOccupation = target.id;
             this.calculatePoints();
             this.calculateAttributes();
+            this.calculateSkills();
         },
 
         togglePerk(target) {
@@ -1062,9 +357,21 @@ export default {
                 this.activePerks.push(target.id);
             }
 
+            this.addStat(target);
             this.calculatePoints();
             this.calculateAttributes();
             this.calculateSkills();
+        },
+
+        addStat(target) {
+            // Add stats
+            if (target.effect.stat !== '') {
+                if (this.activeStats.includes(target.effect.stat)) {
+                    this.activeStats = this.activeStats.filter((e) => e !== target.effect.stat);
+                } else {
+                    this.activeStats.push(target.effect.stat);
+                }
+            }
         },
 
         calculatePoints() {
@@ -1145,7 +452,19 @@ export default {
             };
             this.character.skills = defaultSkills;
 
-            // calc active perks
+            // 1st - calc active occupation
+            const occupation = this.occupations.filter((o) => o.id === this.acvtivOccupation);
+            const newSkills = {
+                cooking: occupation[0].skills.cooking,
+                farming: occupation[0].skills.farming,
+                mechanic: occupation[0].skills.mechanic,
+                crafting: occupation[0].skills.crafting,
+                lockpicking: occupation[0].skills.lockpicking,
+                medical: occupation[0].skills.medical
+            };
+            this.character.skills = newSkills;
+
+            // 2nd calc active perks
             this.activePerks.forEach((perk) => {
                 const obj = this.perks.filter((p) => p.id === perk);
 
@@ -1190,9 +509,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.collapsed > .when-open,
+.not-collapsed > .when-closed {
+    display: none;
+}
+
 .no-select {
     user-select: none;
 }
+
+.title-rounded {
+    border-bottom: 2px solid #5c6166;
+}
+
+.stat {
+    border-radius: 5px;
+}
+
 .attribute {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1205,23 +538,31 @@ export default {
 
     &::-webkit-scrollbar-track {
         background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
     }
 
     &::-webkit-scrollbar {
         width: 4px;
         background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: #000;
+        border-radius: 2px;
     }
 
     .occupation {
         margin-bottom: 6px;
         border: 1px solid rgba(255, 255, 255, 0.1);
+        direction: ltr;
+        transition: all 0.2s ease-out;
+        margin-right: 4px;
 
         &.occupation-active {
             background-color: rgba(0, 0, 0, 0.45);
+            box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.85);
+            margin-right: 0;
         }
     }
 }
@@ -1233,23 +574,30 @@ export default {
 
     &::-webkit-scrollbar-track {
         background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
     }
 
     &::-webkit-scrollbar {
         width: 4px;
         background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: #000;
+        border-radius: 2px;
     }
 
     .perk {
         margin-bottom: 6px;
         border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.2s ease-out;
+        margin-left: 4px;
 
         &.perk-active {
             background-color: rgba(0, 0, 0, 0.45);
+            box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.85);
+            margin-left: 0;
         }
     }
 }
