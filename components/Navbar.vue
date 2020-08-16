@@ -17,12 +17,13 @@
                     <b-nav-item to="/" exact>Start</b-nav-item>
                     <b-nav-item to="/build">Charcater-Builder</b-nav-item>
                     <b-nav-item to="/map" disabled>Map</b-nav-item>
-                    <b-nav-item-dropdown text="Info" right disabled>
+                    <b-nav-item-dropdown text="More" right>
                         <b-dropdown-item to="/info/weapons" disabled>Weapons</b-dropdown-item>
                         <b-dropdown-item to="/info/items" disabled>Items</b-dropdown-item>
                         <b-dropdown-item to="/info/Perks" disabled>Perks</b-dropdown-item>
                         <b-dropdown-item to="/info/stats" disabled>Stats</b-dropdown-item>
                     </b-nav-item-dropdown>
+                    <b-nav-item to="/contact">Contact</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
         </b-container>
