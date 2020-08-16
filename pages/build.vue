@@ -198,17 +198,6 @@
                                 body-class="pt-2 pb-2 pl-3 pr-3"
                                 @click="togglePerk(perk)"
                             >
-                                <!-- <b-tooltip
-                                    v-if="!isMobile"
-                                    :target="perk.id"
-                                    placement="left"
-                                    boundary="viewport"
-                                    noninteractive
-                                    :delay="tooltip.delay"
-                                >
-                                    <p class="m-0 p-1">{{ perk.description }}</p>
-                                </b-tooltip> -->
-
                                 <div class="d-flex justify-content-between">
                                     <div class="flex-grow-1 font-weight-bold">{{ perk.title }}</div>
                                     <div class="mr-3">

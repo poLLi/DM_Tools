@@ -6,7 +6,8 @@
         "type": "Trait",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -18,7 +19,8 @@
         "type": "Trait",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -30,7 +32,8 @@
         "type": "Trait",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 6,
         "perkType": "negative"
@@ -42,7 +45,8 @@
         "type": "Trait",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -54,7 +58,8 @@
         "type": "Trait",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 4,
         "perkType": "positive"
@@ -66,7 +71,8 @@
         "type": "Trait",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 4,
         "perkType": "positive"
@@ -78,10 +84,11 @@
         "type": "Trait",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "Blood Type: AB+"
         },
         "perkPoints": 4,
-        "perkType": "positive"
+        "perkType": "negative"
     },
     {
         "id": "unversalDonor",
@@ -90,10 +97,11 @@
         "type": "Trait",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "Blood Type: O-"
         },
         "perkPoints": 6,
-        "perkType": "positive"
+        "perkType": "negative"
     },
     {
         "id": "jogger",
@@ -107,7 +115,8 @@
                     "type": "positive"
                 }
             ],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -124,7 +133,8 @@
                     "type": "negative"
                 }
             ],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 2,
         "perkType": "positive"
@@ -141,7 +151,8 @@
                     "type": "positive"
                 }
             ],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -158,7 +169,8 @@
                     "type": "negative"
                 }
             ],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 2,
         "perkType": "positive"
@@ -175,7 +187,8 @@
                     "type": "positive"
                 }
             ],
-            "skill": []
+            "skill": [],
+            "stat": "+300s Sprint Time"
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -192,7 +205,8 @@
                     "type": "positive"
                 }
             ],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -209,7 +223,8 @@
                     "type": "positive"
                 }
             ],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -226,7 +241,8 @@
                     "type": "positive"
                 }
             ],
-            "skill": []
+            "skill": [],
+            "stat": ""
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -243,7 +259,8 @@
                     "cooking": 25,
                     "type": "positive"
                 }
-            ]
+            ],
+            "stat": ""
         },
         "perkPoints": 4,
         "perkType": "negative"
@@ -260,7 +277,8 @@
                     "cooking": 25,
                     "type": "negative"
                 }
-            ]
+            ],
+            "stat": ""
         },
         "perkPoints": 4,
         "perkType": "positive"
@@ -277,7 +295,8 @@
                     "lockpicking": 25,
                     "type": "positive"
                 }
-            ]
+            ],
+            "stat": ""
         },
         "perkPoints": 4,
         "perkType": "negative"
@@ -294,7 +313,8 @@
                     "farming": 25,
                     "type": "positive"
                 }
-            ]
+            ],
+            "stat": ""
         },
         "perkPoints": 4,
         "perkType": "negative"
@@ -311,7 +331,8 @@
                     "crafting": 25,
                     "type": "positive"
                 }
-            ]
+            ],
+            "stat": ""
         },
         "perkPoints": 4,
         "perkType": "negative"
@@ -328,7 +349,8 @@
                     "mechanic": 25,
                     "type": "positive"
                 }
-            ]
+            ],
+            "stat": ""
         },
         "perkPoints": 4,
         "perkType": "negative"
@@ -345,7 +367,8 @@
                     "medical": 25,
                     "type": "positive"
                 }
-            ]
+            ],
+            "stat": ""
         },
         "perkPoints": 4,
         "perkType": "negative"
@@ -357,7 +380,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "+750ml Blood Capacity"
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -369,7 +393,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "Take more Limb damage"
         },
         "perkPoints": 2,
         "perkType": "positive"
@@ -381,7 +406,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "Take less Supression"
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -393,7 +419,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "Take more Supression"
         },
         "perkPoints": 2,
         "perkType": "positive"
@@ -405,7 +432,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "-80% Supression"
         },
         "perkPoints": 6,
         "perkType": "negative"
@@ -417,7 +445,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "+80% Supression"
         },
         "perkPoints": 6,
         "perkType": "positive"
@@ -429,7 +458,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "+50% Metabolism"
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -441,7 +471,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "-50% Metabolism"
         },
         "perkPoints": 2,
         "perkType": "positive"
@@ -453,7 +484,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "Get less often sick"
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -465,7 +497,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "Get more often sick"
         },
         "perkPoints": 2,
         "perkType": "positive"
@@ -477,7 +510,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "-50% Searching Noise"
         },
         "perkPoints": 4,
         "perkType": "negative"
@@ -489,7 +523,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "+50% Searching Noise"
         },
         "perkPoints": 4,
         "perkType": "positive"
@@ -501,7 +536,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "-15% Damage take from melee"
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -513,7 +549,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "+15% Damage take from melee"
         },
         "perkPoints": 2,
         "perkType": "positive"
@@ -525,7 +562,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "+50% Container Search Speed"
         },
         "perkPoints": 4,
         "perkType": "negative"
@@ -537,7 +575,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "-50% Container Search Speed"
         },
         "perkPoints": 4,
         "perkType": "positive"
@@ -549,7 +588,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "Get Drunk less easily"
         },
         "perkPoints": 2,
         "perkType": "negative"
@@ -561,7 +601,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "Get Drunk more easily"
         },
         "perkPoints": 2,
         "perkType": "positive"
@@ -573,7 +614,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "+30% Footstep Noise"
         },
         "perkPoints": 4,
         "perkType": "negative"
@@ -585,7 +627,8 @@
         "type": "Stat",
         "effect": {
             "attribut": [],
-            "skill": []
+            "skill": [],
+            "stat": "-30% Footstep Noise"
         },
         "perkPoints": 2,
         "perkType": "positive"
