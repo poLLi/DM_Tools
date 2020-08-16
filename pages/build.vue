@@ -223,10 +223,15 @@
             <b-col>
                 <b-card class="shadow">
                     <b-card-title>
-                        Expanded Statistics
-                        <small class="font-weight-light text-secondary">(Skills / Traits / Stats)</small>
+                        <span class="font-weight-bold h2">Expanded Statistics</span>
+                        <small class="font-weight-light">
+                            (Still Work in Progress!)
+                        </small>
                     </b-card-title>
-                    <p>Coming soon! <b-icon icon="badge-tm"></b-icon></p>
+
+                    <div v-for="activeStat in activeStats" :key="activeStat" class="pl-2">
+                        <b-badge class="text-monospace p-2 mt-2">{{ activeStat }}</b-badge>
+                    </div>
                 </b-card>
             </b-col>
         </b-row>
@@ -243,6 +248,7 @@ export default {
             perkPoints: 10,
             acvtivOccupation: 'unemployed',
             activePerks: [],
+            activeStats: [],
             character: {
                 attributes: {
                     agility: 4,
@@ -315,6 +321,12 @@ export default {
                 this.activePerks = resault.perks;
                 this.acvtivOccupation = resault.occupation;
 
+                // Add Perk Stats
+                resault.perks.forEach((perk) => {
+                    const obj = this.perks.filter((p) => p.id === perk);
+                    this.addStat(obj[0]);
+                });
+
                 this.calculatePoints();
                 this.calculateAttributes();
                 this.calculateSkills();
@@ -337,9 +349,21 @@ export default {
                 this.activePerks.push(target.id);
             }
 
+            this.addStat(target);
             this.calculatePoints();
             this.calculateAttributes();
             this.calculateSkills();
+        },
+
+        addStat(target) {
+            // Add stats
+            if (target.effect.stat !== '') {
+                if (this.activeStats.includes(target.effect.stat)) {
+                    this.activeStats = this.activeStats.filter((e) => e !== target.effect.stat);
+                } else {
+                    this.activeStats.push(target.effect.stat);
+                }
+            }
         },
 
         calculatePoints() {
@@ -483,6 +507,10 @@ export default {
 
 .title-rounded {
     border-bottom: 2px solid #5c6166;
+}
+
+.stat {
+    border-radius: 5px;
 }
 
 .attribute {

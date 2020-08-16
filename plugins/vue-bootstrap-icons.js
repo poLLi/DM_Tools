@@ -5,7 +5,8 @@ import {
     BIconBadgeTm,
     BIconClipboardPlus,
     BIconHeart,
-    BIconChatRightDots
+    BIconChatRightDots,
+    BIconArrowDown
 } from 'bootstrap-vue';
 
 Vue.component('BIcon', BIcon);
@@ -14,3 +15,4 @@ Vue.component('BIconBadgeTm', BIconBadgeTm);
 Vue.component('BIconClipboardPlus', BIconClipboardPlus);
 Vue.component('BIconHeart', BIconHeart);
 Vue.component('BIconChatRightDots', BIconChatRightDots);
+Vue.component('BIconArrowDown', BIconArrowDown);
