@@ -43,7 +43,7 @@ export default {
      ** Plugins to load before mounting the App
      ** https://nuxtjs.org/guide/plugins
      */
-    plugins: ['~/plugins/vue-clipboard.js'],
+    plugins: ['~/plugins/vue-clipboard.js', '~/plugins/vue-bootstrap-icons.js'],
     /*
      ** Auto import components
      ** See https://nuxtjs.org/api/configuration-components

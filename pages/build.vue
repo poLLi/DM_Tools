@@ -3,6 +3,7 @@
         <b-row>
             <b-col sm="12">
                 <b-alert show variant="danger" dismissible>
+                    <b-icon icon="exclamation-circle" variant="danger" font-scale="1.5" class="mr-2"></b-icon>
                     <strong>WARNING:</strong> This Tool is still <strong>WIP!</strong> Almost everything is subject to
                     change. <small>Current Verion: Pre-Alpha</small>
                 </b-alert>
