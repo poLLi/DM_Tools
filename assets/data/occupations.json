@@ -164,7 +164,7 @@
         "id": "pliceOfficer",
         "title": "Police Officer",
         "description": "You were a police officer, once, enforcing the law. This is now a lawless world.",
-        "benefit": "Spawn with your work outfit complete with fleshlight and service pistol with a less then half empty magazine.",
+        "benefit": "Spawn with your work outfit complete with flashlight and service pistol with a less then half empty magazine.",
         "attributes": {
             "agility": 8,
             "charisma": 2,
