@@ -221,17 +221,21 @@
         </b-row>
         <b-row>
             <b-col>
-                <b-card class="shadow">
-                    <b-button v-b-toggle:extendedStats block>
-                        <span class="h5 when-open">Close Extended Statistics</span>
-                        <span class="h5 when-closed">Open Extended Statistics</span>
+                <b-card class="shadow no-select">
+                    <b-button v-b-toggle:extendedStats block variant="outline-secondary">
+                        <span class="h5 when-open">
+                            Close Extended Statistics
+                        </span>
+                        <span class="h5 when-closed">
+                            Open Extended Statistics
+                        </span>
                         <br />
                         <small class="font-weight-light">
                             (Still Work in Progress!)
                         </small>
                     </b-button>
 
-                    <b-collapse id="extendedStats" class="mt-4" accordion="extendedStats" role="tabpanel">
+                    <b-collapse id="extendedStats" class="mt-3" accordion="extendedStats" role="tabpanel">
                         <div v-for="activeStat in activeStats" :key="activeStat" class="pl-2">
                             <b-badge class="text-monospace p-2 mt-2">{{ activeStat }}</b-badge>
                         </div>
