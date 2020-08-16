@@ -24,6 +24,7 @@
         "bootstrap-vue": "^2.15.0",
         "json-url": "^2.6.0",
         "nuxt": "^2.14.0",
+        "nuxt-start": "^2.14.3",
         "vue-clipboard2": "^0.3.1",
         "vue-sweetalert2": "^3.0.6"
     },

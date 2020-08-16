@@ -287,11 +287,8 @@ export default {
 
     computed: {
         isMobile() {
-            if (window.innerWidth < 576) {
-                return true;
-            } else {
-                return false;
-            }
+            // fuck this... do it later
+            return false;
         }
     },
 
@@ -492,7 +489,7 @@ export default {
 
             const codec = require('json-url')('lzw');
             codec.compress(build).then((resault) => {
-                const buildUrl = `https://polli.github.io/DM_Tools/build/?b=${resault}`;
+                const buildUrl = `https://dm.just-look.net/build/?b=${resault}`;
                 this.$swal({
                     icon: 'success',
                     title: '<i>SAVED!</i>',
