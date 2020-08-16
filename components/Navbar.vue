@@ -7,7 +7,7 @@
                     alt="Just-Look Network Logo"
                     class="d-inlineblock align-top nav-logo"
                 />
-                | DM - Web Tools <small class="text-secondary">(unofficial)</small>
+                | Dead Matter Tools <small class="text-secondary">(unofficial)</small>
             </b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -15,9 +15,11 @@
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item to="/" exact>Start</b-nav-item>
-                    <b-nav-item to="/build">Charcater-Builder</b-nav-item>
+                    <b-nav-item to="/build">Character-Builder</b-nav-item>
                     <b-nav-item to="/map" disabled>Map</b-nav-item>
                     <b-nav-item-dropdown text="More" right>
+                        <b-dropdown-header> > Database</b-dropdown-header>
+                        <b-dropdown-divider></b-dropdown-divider>
                         <b-dropdown-item to="/info/weapons" disabled>Weapons</b-dropdown-item>
                         <b-dropdown-item to="/info/items" disabled>Items</b-dropdown-item>
                         <b-dropdown-item to="/info/Perks" disabled>Perks</b-dropdown-item>

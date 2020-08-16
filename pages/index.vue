@@ -2,7 +2,7 @@
     <div>
         <header class="mainhead">
             <b-container class="h-100">
-                <b-row class="h-100 text-center" align-h="center" align-content="center">
+                <b-row class="h-100 text-center mt-4" align-h="center" align-content="center">
                     <b-col lg="10">
                         <img
                             src="~/assets/images/dm_logo.png"
@@ -18,7 +18,8 @@
                     </b-col>
                     <b-col lg="12 mt-5">
                         <p class="font-weight-light text-secondary">
-                            Tools made with love by <span class="underline">Just-Look Network</span>
+                            Tools made with <b-icon icon="heart" class="text-primary"></b-icon> by
+                            <span class="underline">Just-Look Network</span>
                         </p>
                         <a
                             class="btn btn-primary"

@@ -176,7 +176,7 @@
                                 You need to have a balance of 0 or more perk points in order to finish the build.
                             </p>
                             <b-button v-if="perkPoints >= 0" class="float-right" variant="success" @click="saveBuild">
-                                Save Build
+                                <b-icon icon="clipboard-plus"></b-icon> Save Build
                             </b-button>
                             <b-button v-if="perkPoints < 0" class="float-right" variant="primary" disabled>
                                 Save Build
@@ -237,7 +237,7 @@
                         Expanded Statistics
                         <small class="font-weight-light text-secondary">(Skills / Traits / Stats)</small>
                     </b-card-title>
-                    <p>Coming soon!</p>
+                    <p>Coming soon! <b-icon icon="badge-tm"></b-icon></p>
                 </b-card>
             </b-col>
         </b-row>
