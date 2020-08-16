@@ -3,14 +3,14 @@
         <b-container>
             <div class="mb-5">
                 <h2 class="title text-primary">Contact</h2>
-                <p class="desc pl-4">The usual stuff here.</p>
+                <p class="desc pl-4">Yep thats me...</p>
             </div>
 
             <div class="info">
                 <h2 class="title">About Me</h2>
                 <p>
                     Hey, I´m PoLLi. I made this somewhat functional website... <br />
-                    if u would like to get in contact with me you can do so by the following details listed below.
+                    If u would like to get in contact with me you can do so by the following details listed below.
                 </p>
                 <h3 class="title mt-5">Channels</h3>
                 <p>

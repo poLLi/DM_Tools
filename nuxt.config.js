@@ -17,6 +17,9 @@ export default {
      ** See https://nuxtjs.org/api/configuration-head
      */
     head: {
+        htmlAttrs: {
+            lang: 'en'
+        },
         title: 'JLN | Dead Matter Tools (unofficial)',
         meta: [
             { charset: 'utf-8' },
