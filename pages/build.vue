@@ -1,5 +1,5 @@
 <template>
-    <b-container class="pt-8 mb-5">
+    <b-container class="first-container mb-5">
         <b-row>
             <b-col sm="12">
                 <b-alert show variant="danger" dismissible>
@@ -7,9 +7,9 @@
                     change. <small>Current Verion: Pre-Alpha</small>
                 </b-alert>
             </b-col>
-            <b-col lg="4" class="no-select">
+            <b-col lg="4" class="no-select mb-4">
                 <b-card class="shadow">
-                    <b-card-title class="text-center bg-secondary p-2">
+                    <b-card-title class="text-center p-2 title-rounded">
                         Occupation
                     </b-card-title>
 
@@ -21,6 +21,7 @@
                                 </b-card-title>
 
                                 <b-tooltip
+                                    v-if="!isMobile"
                                     :target="occupation.id"
                                     placement="right"
                                     boundary="viewport"
@@ -59,7 +60,7 @@
                 <b-row class="mb-4">
                     <b-col>
                         <b-card class="shadow">
-                            <b-card-title class="text-center bg-secondary p-2">
+                            <b-card-title class="text-center p-2 title-rounded">
                                 Character Data
                             </b-card-title>
 
@@ -164,13 +165,13 @@
                         </b-card>
                     </b-col>
                 </b-row>
-                <b-row>
+                <b-row class="mb-4">
                     <b-col>
                         <b-card class="shadow">
-                            <b-card-title class="text-center bg-secondary p-2">
+                            <b-card-title class="text-center p-2 title-rounded">
                                 Perk Points: {{ perkPoints }}
                             </b-card-title>
-                            <p class="">
+                            <p class="small pb-1">
                                 You need to have a balance of 0 or more perk points in order to finish the build.
                             </p>
                             <b-button v-if="perkPoints >= 0" class="float-right" variant="success" @click="saveBuild">
@@ -185,7 +186,7 @@
             </b-col>
             <b-col lg="4" class="no-select">
                 <b-card class="shadow">
-                    <b-card-title class="text-center bg-secondary p-2">
+                    <b-card-title class="text-center p-2 title-rounded">
                         Perk Selection
                     </b-card-title>
                     <div class="perkList">
@@ -196,7 +197,8 @@
                                 body-class="pt-2 pb-2 pl-3 pr-3"
                                 @click="togglePerk(perk)"
                             >
-                                <b-tooltip
+                                <!-- <b-tooltip
+                                    v-if="!isMobile"
                                     :target="perk.id"
                                     placement="left"
                                     boundary="viewport"
@@ -204,7 +206,7 @@
                                     :delay="tooltip.delay"
                                 >
                                     <p class="m-0 p-1">{{ perk.description }}</p>
-                                </b-tooltip>
+                                </b-tooltip> -->
 
                                 <div class="d-flex justify-content-between">
                                     <div class="flex-grow-1 font-weight-bold">{{ perk.title }}</div>
@@ -220,9 +222,21 @@
                                         </b-badge>
                                     </div>
                                 </div>
+                                <p class="m-0 p-1 small text-secondary">{{ perk.description }}</p>
                             </b-card>
                         </div>
                     </div>
+                </b-card>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col>
+                <b-card class="shadow">
+                    <b-card-title>
+                        Expanded Statistics
+                        <small class="font-weight-light text-secondary">(Skills / Traits / Stats)</small>
+                    </b-card-title>
+                    <p>Coming soon!</p>
                 </b-card>
             </b-col>
         </b-row>
@@ -1079,6 +1093,16 @@ export default {
         };
     },
 
+    computed: {
+        isMobile() {
+            if (window.innerWidth < 576) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    },
+
     watch: {
         acvtivOccupation(newValue, oldValue) {
             if (oldValue !== '') {
@@ -1278,6 +1302,11 @@ export default {
 .no-select {
     user-select: none;
 }
+
+.title-rounded {
+    border-bottom: 2px solid #5c6166;
+}
+
 .attribute {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1290,24 +1319,31 @@ export default {
 
     &::-webkit-scrollbar-track {
         background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
     }
 
     &::-webkit-scrollbar {
         width: 4px;
         background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: #000;
+        border-radius: 2px;
     }
 
     .occupation {
         margin-bottom: 6px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         direction: ltr;
+        transition: all 0.2s ease-out;
+        margin-right: 4px;
 
         &.occupation-active {
             background-color: rgba(0, 0, 0, 0.45);
+            box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.85);
+            margin-right: 0;
         }
     }
 }
@@ -1319,23 +1355,30 @@ export default {
 
     &::-webkit-scrollbar-track {
         background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
     }
 
     &::-webkit-scrollbar {
         width: 4px;
         background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: #000;
+        border-radius: 2px;
     }
 
     .perk {
         margin-bottom: 6px;
         border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.2s ease-out;
+        margin-left: 4px;
 
         &.perk-active {
             background-color: rgba(0, 0, 0, 0.45);
+            box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.85);
+            margin-left: 0;
         }
     }
 }
