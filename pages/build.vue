@@ -287,11 +287,8 @@ export default {
 
     computed: {
         isMobile() {
-            if (window.innerWidth < 576) {
-                return true;
-            } else {
-                return false;
-            }
+            // fuck this... do it later
+            return false;
         }
     },
 
