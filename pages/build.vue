@@ -4,7 +4,7 @@
             <b-col sm="12">
                 <b-alert show variant="warning" dismissible>
                     <b-icon icon="exclamation-circle" variant="danger" font-scale="1.5" class="mr-2"></b-icon>
-                    <strong>WARNING:</strong>Almost everything is subject to change.
+                    <strong>WARNING:</strong> Almost everything is subject to change.
                     <small>Current Verion: Closed-Alpha</small>
                 </b-alert>
             </b-col>
