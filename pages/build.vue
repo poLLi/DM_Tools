@@ -23,7 +23,7 @@
                                 @click="changeOccupation(occupation)"
                             >
                                 <b-card-title>
-                                    {{ occupation.title }}
+                                    {{ $t('BUILDER.OCCUPATION.' + occupation.title) }}
                                 </b-card-title>
 
                                 <b-tooltip
@@ -34,11 +34,13 @@
                                     noninteractive
                                     :delay="tooltip.delay"
                                 >
-                                    <p class="m-0 p-1">{{ occupation.description }}</p>
+                                    <p class="m-0 p-1">{{ $t('BUILDER.OCCUPATION.' + occupation.description) }}</p>
                                 </b-tooltip>
 
                                 <b-card-text>
-                                    <span class="small text-secondary m-0 pb-2">Benefit: {{ occupation.benefit }}</span>
+                                    <span class="small text-secondary m-0 pb-2">
+                                        Benefit: {{ $t('BUILDER.OCCUPATION.' + occupation.benefit) }}
+                                    </span>
                                     <b-badge v-if="occupation.perkType == 'neutral'" class="float-right">
                                         Perk Points: {{ occupation.perkPoints }}
                                     </b-badge>
