@@ -14,18 +14,24 @@
 
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav class="ml-auto">
-                    <b-nav-item to="/" exact>Start</b-nav-item>
-                    <b-nav-item to="/build">Character-Builder</b-nav-item>
-                    <b-nav-item to="/map" disabled>Map</b-nav-item>
-                    <b-nav-item-dropdown text="More" right>
+                    <b-nav-item :to="localePath('/')" exact>{{ $t('MENU.START') }}</b-nav-item>
+                    <b-nav-item :to="localePath('/build')">{{ $t('MENU.BUILDER') }}</b-nav-item>
+                    <b-nav-item :to="localePath('/map')" disabled>Map</b-nav-item>
+
+                    <b-nav-item-dropdown :text="$t('MENU.MORE')" right>
                         <b-dropdown-header> > Database</b-dropdown-header>
                         <b-dropdown-divider></b-dropdown-divider>
-                        <b-dropdown-item to="/info/weapons" disabled>Weapons</b-dropdown-item>
-                        <b-dropdown-item to="/info/items" disabled>Items</b-dropdown-item>
-                        <b-dropdown-item to="/info/Perks" disabled>Perks</b-dropdown-item>
-                        <b-dropdown-item to="/info/stats" disabled>Stats</b-dropdown-item>
+                        <b-dropdown-item :to="localePath('/info/weapons')" disabled>
+                            {{ $t('MENU.MORE_WEAPONS') }}
+                        </b-dropdown-item>
+                        <b-dropdown-item :to="localePath('/info/items')" disabled>
+                            {{ $t('MENU.MORE_ITEMS') }}
+                        </b-dropdown-item>
+                        <b-dropdown-divider></b-dropdown-divider>
+                        <b-dropdown-item :to="localePath('/changelog')">Changelog</b-dropdown-item>
                     </b-nav-item-dropdown>
-                    <b-nav-item to="/contact">Contact</b-nav-item>
+
+                    <b-nav-item :to="localePath('/contact')">{{ $t('MENU.CONTACT') }}</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
         </b-container>

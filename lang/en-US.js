@@ -1,6 +1,38 @@
 /* eslint-disable prettier/prettier */
 export default {
+    MENU: {
+        START: 'Start',
+        BUILDER: 'Character-Builder',
+        MAP: 'Map',
+        MORE: 'More',
+        MORE_WEAPONS: 'Weapons',
+        MORE_ITEMS: 'Items',
+        CONTACT: 'Contact',
+    },
     BUILDER: {
+        CARD: {
+            OCCUPATION_TITLE: 'Occupation',
+            PERK_SELECTION_TITLE: 'Perk Selection',
+
+            CHARACTER_DATA_TITLE: 'Character Data',
+            CHARACTER_DATA_ATTRIBUTES_TITLE: 'Attributes',
+            CHARACTER_DATA_ATTRIBUTES_AGILITY: 'Agility',
+            CHARACTER_DATA_ATTRIBUTES_CHARISMA: 'Charisma',
+            CHARACTER_DATA_ATTRIBUTES_ENDURANCE: 'Endurance',
+            CHARACTER_DATA_ATTRIBUTES_INTELLIGENCE: 'Intelligence',
+            CHARACTER_DATA_ATTRIBUTES_STRENGTH: 'Strength',
+            CHARACTER_DATA_SKILLS_TITLE: 'Skills',
+            CHARACTER_DATA_SKILLS_COOKING: 'Cooking',
+            CHARACTER_DATA_SKILLS_FARMING: 'Farming',
+            CHARACTER_DATA_SKILLS_MECHANIC: 'Mechanic',
+            CHARACTER_DATA_SKILLS_CRAFTING: 'Crafting',
+            CHARACTER_DATA_SKILLS_LOCKPICKING: 'Lockpicking',
+            CHARACTER_DATA_SKILLS_MEDICAL: 'Medical',
+
+            PERK_POINTS_DESCRIPTION: 'You need to have a balance of 0 or more perk points in order to finish the build.',
+            PERK_POINTS_RESET_BUTTON: 'Reset',
+            PERK_POINTS_SAVE_BUTTON: 'Save Build'
+        },
         OCCUPATION: {
             UNEMPLOYED_TITLE: 'Unemployed',
             UNEMPLOYED_DESCRIPTION: 'You were a talented but quick learner that decided against pursuing employment.',
