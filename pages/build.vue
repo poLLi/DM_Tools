@@ -262,7 +262,7 @@ import perks from '~/assets/data/perks.json';
 export default {
     data() {
         return {
-            perkPoints: 10,
+            perkPoints: 0,
             acvtivOccupation: '1',
             activePerks: [],
             activeStats: [],
@@ -313,12 +313,12 @@ export default {
                     const obj = this.perks.filter((p) => p.id === perk);
                     this.addStat(obj[0]);
                 });
-
-                this.calculatePoints();
-                this.calculateAttributes();
-                this.calculateSkills();
             });
         }
+
+        this.calculatePoints();
+        this.calculateAttributes();
+        this.calculateSkills();
     },
 
     methods: {
@@ -357,7 +357,7 @@ export default {
 
         calculatePoints() {
             // default Perkpoint value
-            this.perkPoints = 10;
+            this.perkPoints = 0;
 
             // 1st - calc active occupation
             const occupation = this.occupations.filter((o) => o.id === this.acvtivOccupation);
