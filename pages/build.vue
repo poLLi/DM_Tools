@@ -97,7 +97,7 @@
                                 show-value
                                 class="mb-2 bg-dark attribute"
                             ></b-progress>
-                            <span>Itelligence</span>
+                            <span>Intelligence</span>
                             <b-progress
                                 :value="character.attributes.intelligence"
                                 max="10"
@@ -210,7 +210,9 @@
                                 @click="togglePerk(perk)"
                             >
                                 <div class="d-flex justify-content-between">
-                                    <div class="flex-grow-1 font-weight-bold">{{ perk.title }}</div>
+                                    <div class="flex-grow-1 font-weight-bold">
+                                        {{ $t('BUILDER.PERK.' + perk.title) }}
+                                    </div>
                                     <div class="mr-3">
                                         <b-badge>{{ perk.type }}</b-badge>
                                     </div>
@@ -223,7 +225,7 @@
                                         </b-badge>
                                     </div>
                                 </div>
-                                <p class="m-0 p-1 small text-secondary">{{ perk.description }}</p>
+                                <p class="m-0 p-1 small text-secondary">{{ $t('BUILDER.PERK.' + perk.description) }}</p>
                             </b-card>
                         </div>
                     </div>
