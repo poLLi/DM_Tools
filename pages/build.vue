@@ -315,6 +315,8 @@ export default {
                 this.calculateAttributes();
                 this.calculateSkills();
             });
+        } else {
+            this.calculatePoints();
         }
     },
 
