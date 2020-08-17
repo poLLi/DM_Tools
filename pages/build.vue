@@ -27,7 +27,7 @@
                                 </b-card-title>
 
                                 <b-tooltip
-                                    v-if="!isMobile"
+                                    v-if="isDesktop"
                                     :target="occupation.id"
                                     placement="right"
                                     boundary="viewport"
@@ -287,18 +287,16 @@ export default {
                     show: 500,
                     hide: 10
                 }
-            }
+            },
+            isDesktop: false
         };
     },
 
-    computed: {
-        isMobile() {
-            // fuck this... do it later
-            return false;
-        }
-    },
-
     mounted() {
+        if (typeof window !== 'undefined') {
+            this.isDesktop = window.innerWidth > 576;
+        }
+
         if (this.$route.query.b) {
             const codec = require('json-url')('lzw');
             codec.decompress(this.$route.query.b).then((resault) => {
