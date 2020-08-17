@@ -313,12 +313,14 @@ export default {
                     const obj = this.perks.filter((p) => p.id === perk);
                     this.addStat(obj[0]);
                 });
-            });
-        }
 
-        this.calculatePoints();
-        this.calculateAttributes();
-        this.calculateSkills();
+                this.calculatePoints();
+                this.calculateAttributes();
+                this.calculateSkills();
+            });
+        } else {
+            this.calculatePoints();
+        }
     },
 
     methods: {
