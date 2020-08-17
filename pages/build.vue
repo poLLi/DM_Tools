@@ -180,6 +180,9 @@
                             <p class="small pb-1">
                                 You need to have a balance of 0 or more perk points in order to finish the build.
                             </p>
+                            <b-button variant="secondary" @click="resetBuild">
+                                <b-icon icon="gear"></b-icon> Reset
+                            </b-button>
                             <b-button v-if="perkPoints >= 0" class="float-right" variant="success" @click="saveBuild">
                                 <b-icon icon="clipboard-plus"></b-icon> Save Build
                             </b-button>
@@ -499,6 +502,17 @@ export default {
                     this.$copyText(buildUrl);
                 });
             });
+        },
+
+        resetBuild() {
+            this.acvtivOccupation = '1';
+            this.activePerks = [];
+            this.activeStats = [];
+
+            this.calculatePoints();
+            this.calculateAttributes();
+            this.calculateSkills();
+            this.compressBuild();
         }
     }
 };
