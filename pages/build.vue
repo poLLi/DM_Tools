@@ -2,10 +2,10 @@
     <b-container class="first-container mb-5">
         <b-row>
             <b-col sm="12">
-                <b-alert show variant="danger" dismissible>
+                <b-alert show variant="warning" dismissible>
                     <b-icon icon="exclamation-circle" variant="danger" font-scale="1.5" class="mr-2"></b-icon>
-                    <strong>WARNING:</strong> This Tool is still <strong>WIP!</strong> Almost everything is subject to
-                    change. <small>Current Verion: Pre-Alpha</small>
+                    <strong>WARNING:</strong>Almost everything is subject to change.
+                    <small>Current Verion: Closed-Alpha</small>
                 </b-alert>
             </b-col>
             <b-col lg="4" class="no-select mb-4">
@@ -16,13 +16,18 @@
 
                     <div class="occupationList">
                         <div v-for="occupation in occupations" :key="occupation.id">
-                            <b-card :id="occupation.id" class="occupation" @click="changeOccupation(occupation)">
+                            <b-card
+                                :id="occupation.id"
+                                :class="{ 'occupation-active': occupation.id === acvtivOccupation }"
+                                class="occupation"
+                                @click="changeOccupation(occupation)"
+                            >
                                 <b-card-title>
                                     {{ occupation.title }}
                                 </b-card-title>
 
                                 <b-tooltip
-                                    v-if="!isMobile"
+                                    v-if="isDesktop"
                                     :target="occupation.id"
                                     placement="right"
                                     boundary="viewport"
@@ -33,7 +38,7 @@
                                 </b-tooltip>
 
                                 <b-card-text>
-                                    <p class="small text-secondary m-0 pb-2">Benefit: {{ occupation.benefit }}</p>
+                                    <span class="small text-secondary m-0 pb-2">Benefit: {{ occupation.benefit }}</span>
                                     <b-badge v-if="occupation.perkType == 'neutral'" class="float-right">
                                         Perk Points: {{ occupation.perkPoints }}
                                     </b-badge>
@@ -194,6 +199,7 @@
                         <div v-for="perk in perks" :key="perk.id">
                             <b-card
                                 :id="perk.id"
+                                :class="{ 'perk-active': activePerks.includes(perk.id) }"
                                 class="perk mb-1"
                                 body-class="pt-2 pb-2 pl-3 pr-3"
                                 @click="togglePerk(perk)"
@@ -254,7 +260,7 @@ export default {
     data() {
         return {
             perkPoints: 10,
-            acvtivOccupation: 'unemployed',
+            acvtivOccupation: '1',
             activePerks: [],
             activeStats: [],
             character: {
@@ -281,45 +287,16 @@ export default {
                     show: 500,
                     hide: 10
                 }
-            }
+            },
+            isDesktop: false
         };
     },
 
-    computed: {
-        isMobile() {
-            // fuck this... do it later
-            return false;
-        }
-    },
-
-    watch: {
-        acvtivOccupation(newValue, oldValue) {
-            if (oldValue !== '') {
-                const card = document.querySelector('#' + oldValue);
-                card.classList.remove('occupation-active');
-            }
-
-            const card = document.querySelector('#' + newValue);
-            card.classList.add('occupation-active');
-        },
-        activePerks(newValue, oldValue) {
-            oldValue.forEach((perk) => {
-                const card = document.querySelector('#' + perk);
-                card.classList.remove('perk-active');
-            });
-
-            newValue.forEach((perk) => {
-                const card = document.querySelector('#' + perk);
-                card.classList.add('perk-active');
-            });
-        }
-    },
-
     mounted() {
-        const card = document.querySelector('#' + this.acvtivOccupation);
-        card.classList.add('occupation-active');
+        if (typeof window !== 'undefined') {
+            this.isDesktop = window.innerWidth > 576;
+        }
 
-        // check if query is present - load data
         if (this.$route.query.b) {
             const codec = require('json-url')('lzw');
             codec.decompress(this.$route.query.b).then((resault) => {
@@ -345,6 +322,7 @@ export default {
             this.calculatePoints();
             this.calculateAttributes();
             this.calculateSkills();
+            this.compressBuild();
         },
 
         togglePerk(target) {
@@ -358,6 +336,7 @@ export default {
             this.calculatePoints();
             this.calculateAttributes();
             this.calculateSkills();
+            this.compressBuild();
         },
 
         addStat(target) {
@@ -477,6 +456,22 @@ export default {
                             if (this.character.skills[key[0]] < 0) this.character.skills[key[0]] = 0;
                         }
                     });
+                }
+            });
+        },
+
+        compressBuild() {
+            const build = {
+                occupation: this.acvtivOccupation,
+                perks: this.activePerks
+            };
+
+            const codec = require('json-url')('lzw');
+            codec.compress(build).then((resault) => {
+                if (this.$route.path[this.$route.path.length - 1] === '/') {
+                    history.pushState({}, null, this.$route.path + '?b=' + resault);
+                } else {
+                    history.pushState({}, null, this.$route.path + '/?b=' + resault);
                 }
             });
         },

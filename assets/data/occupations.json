@@ -1,6 +1,6 @@
 [
     {
-        "id": "unemployed",
+        "id": "1",
         "title": "Unemployed",
         "description": "You were a talented but quick learner that decided against pursuing employment.",
         "benefit": "Spawn with the clothes on your back and a melee weapon.",
@@ -23,7 +23,7 @@
         "perkType": "positive"
     },
     {
-        "id": "constructionWorker",
+        "id": "2",
         "title": "Constuction Worker",
         "description": "You used to work on new housing projects all the time. This is the ideal choice if you like to build structures.",
         "benefit": "Spawn with your work outfit and a melee weapon.",
@@ -46,7 +46,7 @@
         "perkType": "neutral"
     },
     {
-        "id": "repairMan",
+        "id": "3",
         "title": "Repair Man",
         "description": "You were once a repair man with a broad variety of skills.",
         "benefit": "Spawn with casual attiere and a random melee weapon",
@@ -69,7 +69,7 @@
         "perkType": "neutral"
     },
     {
-        "id": "farmer",
+        "id": "4",
         "title": "Farmer",
         "description": "Making an honest living is never something to be ashamed of. Everybody still needs to eat.",
         "benefit": "Spawn with some basic clothes and a small backpack with survival gear.",
@@ -92,7 +92,7 @@
         "perkType": "positive"
     },
     {
-        "id": "chef",
+        "id": "5",
         "title": "Chef",
         "description": "Your´ve always liked to spend time in the kitches, ever since you were a child. Now you need to use your cooking skills to survive.",
         "benefit": "Spawn with your work outfit and a kitchen knife.",
@@ -115,7 +115,7 @@
         "perkType": "positive"
     },
     {
-        "id": "doctor",
+        "id": "6",
         "title": "Doctor",
         "description": "In theory the hippocratic oath still applies even after society has fallen apart. You once swore a duty to help those that are in need.",
         "benefit": "Spawn with your work clothes, some medical supplies and a melee weapon.",
@@ -138,7 +138,7 @@
         "perkType": "negative"
     },
     {
-        "id": "fireFighter",
+        "id": "7",
         "title": "Fire Fighter",
         "description": "You were once a firefighter, bravely battling many of the fires that sprung up during the outbreake. You´re one of the few remaining survivors from the city.",
         "benefit": "Spawn with your work outfit and a fireaxe",
@@ -161,7 +161,7 @@
         "perkType": "neutral"
     },
     {
-        "id": "pliceOfficer",
+        "id": "8",
         "title": "Police Officer",
         "description": "You were a police officer, once, enforcing the law. This is now a lawless world.",
         "benefit": "Spawn with your work outfit complete with flashlight and service pistol with a less then half empty magazine.",
@@ -184,7 +184,7 @@
         "perkType": "negative"
     },
     {
-        "id": "securityGuard",
+        "id": "9",
         "title": "Security Guard",
         "description": "You never really slept well at night, so you became a security guard at the mall. Might not be a bad thing once the power goes out for good.",
         "benefit": "Spawn with your security outfit and a melee weapon.",

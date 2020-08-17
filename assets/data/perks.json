@@ -1,6 +1,6 @@
 [
     {
-        "id": "cpr",
+        "id": "1",
         "title": "CPR Training",
         "description": "Gain the ability to bring people out of unconsciusness by performing CPR.",
         "type": "Trait",
@@ -13,7 +13,7 @@
         "perkType": "negative"
     },
     {
-        "id": "astronomoer",
+        "id": "2",
         "title": "Astronomer",
         "description": "Draws a compass on the screen at night when pressing the HUD promt key.",
         "type": "Trait",
@@ -26,7 +26,7 @@
         "perkType": "negative"
     },
     {
-        "id": "observant",
+        "id": "3",
         "title": "Observant",
         "description": "Perks are listed when looking at a player with the HUD promt active",
         "type": "Trait",
@@ -39,7 +39,7 @@
         "perkType": "negative"
     },
     {
-        "id": "herbalist",
+        "id": "4",
         "title": "Herbalist",
         "description": "Allows you to easy identify poisonous berries and mushrooms.",
         "type": "Trait",
@@ -52,7 +52,7 @@
         "perkType": "negative"
     },
     {
-        "id": "peanutAllergy",
+        "id": "5",
         "title": "Peanut Allergy",
         "description": "Triggers a servere allergic reaction when consuming foods containing peanuts. (Spawn with on epi-pen).",
         "type": "Trait",
@@ -65,7 +65,7 @@
         "perkType": "positive"
     },
     {
-        "id": "paranoid",
+        "id": "6",
         "title": "Paranoid",
         "description": "You will randomly hear gunshots that are not real.",
         "type": "Trait",
@@ -78,7 +78,7 @@
         "perkType": "positive"
     },
     {
-        "id": "universalReceiver",
+        "id": "7",
         "title": "Univeral Receiver",
         "description": "Forces the blood type to AB+ which allows you to receive blood from anyone without triggering a hemolytic reaction.",
         "type": "Trait",
@@ -91,7 +91,7 @@
         "perkType": "negative"
     },
     {
-        "id": "unversalDonor",
+        "id": "8",
         "title": "Universal Donor",
         "description": "Forces the blood type to O- which anyone can receive when in need of a transfusion.",
         "type": "Trait",
@@ -104,7 +104,7 @@
         "perkType": "negative"
     },
     {
-        "id": "jogger",
+        "id": "9",
         "title": "Jogger",
         "description": "You used to enjoy running when it was just for fun. Gain +2 Agility",
         "type": "Hobby",
@@ -122,7 +122,7 @@
         "perkType": "negative"
     },
     {
-        "id": "nerd",
+        "id": "10",
         "title": "Nerd",
         "description": "You used to play a lot of videogames in your spare time. Lose -2 Strength",
         "type": "Hobby",
@@ -140,7 +140,7 @@
         "perkType": "positive"
     },
     {
-        "id": "chessPlayer",
+        "id": "11",
         "title": "Chess Player",
         "description": "You used to play competitive chess. Gain +2 Intelligence.",
         "type": "Hobby",
@@ -158,7 +158,7 @@
         "perkType": "negative"
     },
     {
-        "id": "partyBoy",
+        "id": "12",
         "title": "Party Boy",
         "description": "You used to party... a lot. Lose -2 Intelligence.",
         "type": "Hobby",
@@ -176,7 +176,7 @@
         "perkType": "positive"
     },
     {
-        "id": "runner",
+        "id": "13",
         "title": "Runner",
         "description": "You used to enjoy running marathons. Gain +300s sprint time and +1 Agility",
         "type": "Hobby",
@@ -194,7 +194,7 @@
         "perkType": "negative"
     },
     {
-        "id": "strengthTraining",
+        "id": "14",
         "title": "Strength Training",
         "description": "Your life orients around lifting when you´re not at work. Gain +2 Strength.",
         "type": "Hobby",
@@ -212,7 +212,7 @@
         "perkType": "negative"
     },
     {
-        "id": "bartender",
+        "id": "15",
         "title": "Weekend Bartender",
         "description": "You used to be a bartender on weekends, it  gave you an insight into human behavior. Gain +2 Chraisma.",
         "type": "Hobby",
@@ -230,7 +230,7 @@
         "perkType": "negative"
     },
     {
-        "id": "wrestler",
+        "id": "16",
         "title": "Wrestler",
         "description": "You used to be a wrestler when you were younger, it made you pretty hard to bring down. Gain +2 Endurance.",
         "type": "Hobby",
@@ -248,7 +248,7 @@
         "perkType": "negative"
     },
     {
-        "id": "amateurCook",
+        "id": "17",
         "title": "Amateur Cook",
         "description": "You like to cook fancy meals at home and aren´t afraid of getting behind the stove. Gain +25 bonus to Cooking.",
         "type": "Skill",
@@ -266,7 +266,7 @@
         "perkType": "negative"
     },
     {
-        "id": "awfulCook",
+        "id": "18",
         "title": "Awful Cook",
         "description": "You´re terrible behind the stove. Reveive a -25 penalty to Cooking.",
         "type": "Skill",
@@ -284,7 +284,7 @@
         "perkType": "positive"
     },
     {
-        "id": "metalworker",
+        "id": "19",
         "title": "Metalworker",
         "description": "You´ve tinkered around with metalworking and locksmithing. Gain a +25 bonus to Lockpicking.",
         "type": "Skill",
@@ -302,7 +302,7 @@
         "perkType": "negative"
     },
     {
-        "id": "greenThumb",
+        "id": "20",
         "title": "Green Thumb",
         "description": "You enjoy gardening. Gain a +25 bonus to Farmin.",
         "type": "Skill",
@@ -320,7 +320,7 @@
         "perkType": "negative"
     },
     {
-        "id": "hobbyist",
+        "id": "21",
         "title": "Hobbyist",
         "description": "You enjoy model trains, playing with rockets and all sorts of different gadgets. Gain a +25 bonus to Crafting",
         "type": "Skill",
@@ -338,7 +338,7 @@
         "perkType": "negative"
     },
     {
-        "id": "gearhead",
+        "id": "22",
         "title": "Gearhead",
         "description": "You sepend a lot of time restoring old cars. Gain a +25 bonus to Mechanic.",
         "type": "Skill",
@@ -356,7 +356,7 @@
         "perkType": "negative"
     },
     {
-        "id": "volunteerFirefighter",
+        "id": "23",
         "title": "Volunteer Firefighter",
         "description": "You were a volunteer firefighter when you were yunger. Gain a +25 bonus to Medical.",
         "type": "Skill",
@@ -374,7 +374,7 @@
         "perkType": "negative"
     },
     {
-        "id": "bigBoned",
+        "id": "24",
         "title": "Big Boned",
         "description": "Absulute unit. More limb health and +750ml max blood.",
         "type": "Stat",
@@ -387,7 +387,7 @@
         "perkType": "negative"
     },
     {
-        "id": "osteoporosis",
+        "id": "25",
         "title": "Osteoporosis",
         "description": "You take increased limb damage.",
         "type": "Stat",
@@ -400,7 +400,7 @@
         "perkType": "positive"
     },
     {
-        "id": "brave",
+        "id": "26",
         "title": "Brave",
         "description": "Less supression when taking fire.",
         "type": "Stat",
@@ -413,7 +413,7 @@
         "perkType": "negative"
     },
     {
-        "id": "fearful",
+        "id": "27",
         "title": "Fearful",
         "description": "Take more supression when taking fire.",
         "type": "Stat",
@@ -426,7 +426,7 @@
         "perkType": "positive"
     },
     {
-        "id": "noFear",
+        "id": "28",
         "title": "No Fear",
         "description": "You´ve seen it all. You do not fear death. -80% supression from taking fire.",
         "type": "Stat",
@@ -439,7 +439,7 @@
         "perkType": "negative"
     },
     {
-        "id": "frightful",
+        "id": "29",
         "title": "Frightful",
         "description": "Additional +80% supression when being attacked.",
         "type": "Stat",
@@ -452,7 +452,7 @@
         "perkType": "positive"
     },
     {
-        "id": "fastMetabolism",
+        "id": "30",
         "title": "Fast Metabolism",
         "description": "You metabolize food 50% faster.",
         "type": "Stat",
@@ -465,7 +465,7 @@
         "perkType": "negative"
     },
     {
-        "id": "slowMetabolism",
+        "id": "31",
         "title": "Slow Metabolism",
         "description": "You metabolize food 50% more slowly.",
         "type": "Stat",
@@ -478,7 +478,7 @@
         "perkType": "positive"
     },
     {
-        "id": "ironStomach",
+        "id": "32",
         "title": "Iron Stomach",
         "description": "Get sick less often when drinking and eating.",
         "type": "Stat",
@@ -491,7 +491,7 @@
         "perkType": "negative"
     },
     {
-        "id": "weakStomach",
+        "id": "33",
         "title": "Weak Stomach",
         "description": "Get sick more often when drinking and eating.",
         "type": "Stat",
@@ -504,7 +504,7 @@
         "perkType": "positive"
     },
     {
-        "id": "silentSearch",
+        "id": "34",
         "title": "Silent Search",
         "description": "Make 50% less noise when searching a container.",
         "type": "Stat",
@@ -517,7 +517,7 @@
         "perkType": "negative"
     },
     {
-        "id": "noisySearch",
+        "id": "35",
         "title": "Noisy Search",
         "description": "Make 50% more noise when searching a container.",
         "type": "Stat",
@@ -530,7 +530,7 @@
         "perkType": "positive"
     },
     {
-        "id": "thickSkinned",
+        "id": "36",
         "title": "Thick Skinned",
         "description": "Take 15% less damage from melee attacks.",
         "type": "Stat",
@@ -543,7 +543,7 @@
         "perkType": "negative"
     },
     {
-        "id": "thinSkinned",
+        "id": "37",
         "title": "Thin Skinned",
         "description": "Take 15% more damage from melee attacks.",
         "type": "Stat",
@@ -556,7 +556,7 @@
         "perkType": "positive"
     },
     {
-        "id": "nimbleFingers",
+        "id": "38",
         "title": "Nimble Fingers",
         "description": "Search containers 50% faster.",
         "type": "Stat",
@@ -569,7 +569,7 @@
         "perkType": "negative"
     },
     {
-        "id": "sausageFingers",
+        "id": "39",
         "title": "Sausage Fingers",
         "description": "Search containers 50% more slowly.",
         "type": "Stat",
@@ -582,7 +582,7 @@
         "perkType": "positive"
     },
     {
-        "id": "heavyWeight",
+        "id": "40",
         "title": "Heavy Weight",
         "description": "You get drunk far less easily.",
         "type": "Stat",
@@ -595,7 +595,7 @@
         "perkType": "negative"
     },
     {
-        "id": "lightWeight",
+        "id": "41",
         "title": "Light Weight",
         "description": "Impact of drinking too much alcohol is amplified. Lower threshold to start feeling the effects.",
         "type": "Stat",
@@ -608,7 +608,7 @@
         "perkType": "positive"
     },
     {
-        "id": "lightStep",
+        "id": "42",
         "title": "Light Step",
         "description": "Your footsteps are 30% quieter.",
         "type": "Stat",
@@ -621,7 +621,7 @@
         "perkType": "negative"
     },
     {
-        "id": "heavyStep",
+        "id": "43",
         "title": "Heavy Step",
         "description": "Your footsteps are 30% louder.",
         "type": "Stat",
