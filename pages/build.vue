@@ -16,7 +16,12 @@
 
                     <div class="occupationList">
                         <div v-for="occupation in occupations" :key="occupation.id">
-                            <b-card :id="occupation.id" class="occupation" @click="changeOccupation(occupation)">
+                            <b-card
+                                :id="occupation.id"
+                                :class="{ 'occupation-active': occupation.id === acvtivOccupation }"
+                                class="occupation"
+                                @click="changeOccupation(occupation)"
+                            >
                                 <b-card-title>
                                     {{ occupation.title }}
                                 </b-card-title>
@@ -194,6 +199,7 @@
                         <div v-for="perk in perks" :key="perk.id">
                             <b-card
                                 :id="perk.id"
+                                :class="{ 'perk-active': activePerks.includes(perk.id) }"
                                 class="perk mb-1"
                                 body-class="pt-2 pb-2 pl-3 pr-3"
                                 @click="togglePerk(perk)"
@@ -292,34 +298,7 @@ export default {
         }
     },
 
-    watch: {
-        acvtivOccupation(newValue, oldValue) {
-            if (oldValue !== '') {
-                const card = document.querySelector('#' + oldValue);
-                card.classList.remove('occupation-active');
-            }
-
-            const card = document.querySelector('#' + newValue);
-            card.classList.add('occupation-active');
-        },
-        activePerks(newValue, oldValue) {
-            oldValue.forEach((perk) => {
-                const card = document.querySelector('#' + perk);
-                card.classList.remove('perk-active');
-            });
-
-            newValue.forEach((perk) => {
-                const card = document.querySelector('#' + perk);
-                card.classList.add('perk-active');
-            });
-        }
-    },
-
     mounted() {
-        const card = document.querySelector('#' + this.acvtivOccupation);
-        card.classList.add('occupation-active');
-
-        // check if query is present - load data
         if (this.$route.query.b) {
             const codec = require('json-url')('lzw');
             codec.decompress(this.$route.query.b).then((resault) => {
