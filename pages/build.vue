@@ -260,7 +260,7 @@ export default {
     data() {
         return {
             perkPoints: 10,
-            acvtivOccupation: 'unemployed',
+            acvtivOccupation: '1',
             activePerks: [],
             activeStats: [],
             character: {
@@ -322,6 +322,7 @@ export default {
             this.calculatePoints();
             this.calculateAttributes();
             this.calculateSkills();
+            this.compressBuild();
         },
 
         togglePerk(target) {
@@ -335,6 +336,7 @@ export default {
             this.calculatePoints();
             this.calculateAttributes();
             this.calculateSkills();
+            this.compressBuild();
         },
 
         addStat(target) {
@@ -454,6 +456,22 @@ export default {
                             if (this.character.skills[key[0]] < 0) this.character.skills[key[0]] = 0;
                         }
                     });
+                }
+            });
+        },
+
+        compressBuild() {
+            const build = {
+                occupation: this.acvtivOccupation,
+                perks: this.activePerks
+            };
+
+            const codec = require('json-url')('lzw');
+            codec.compress(build).then((resault) => {
+                if (this.$route.path[this.$route.path.length - 1] === '/') {
+                    history.pushState({}, null, this.$route.path + '?b=' + resault);
+                } else {
+                    history.pushState({}, null, this.$route.path + '/?b=' + resault);
                 }
             });
         },
