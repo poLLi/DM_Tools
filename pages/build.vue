@@ -300,6 +300,8 @@ export default {
         if (this.$route.query.b) {
             const codec = require('json-url')('lzw');
             codec.decompress(this.$route.query.b).then((resault) => {
+                if (resault.v !== 1) return;
+
                 this.activePerks = resault.perks;
                 this.acvtivOccupation = resault.occupation;
 
@@ -463,7 +465,8 @@ export default {
         compressBuild() {
             const build = {
                 occupation: this.acvtivOccupation,
-                perks: this.activePerks
+                perks: this.activePerks,
+                v: 1
             };
 
             const codec = require('json-url')('lzw');
@@ -479,7 +482,8 @@ export default {
         saveBuild() {
             const build = {
                 occupation: this.acvtivOccupation,
-                perks: this.activePerks
+                perks: this.activePerks,
+                v: 1
             };
 
             const codec = require('json-url')('lzw');
