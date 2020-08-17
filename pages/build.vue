@@ -2,10 +2,10 @@
     <b-container class="first-container mb-5">
         <b-row>
             <b-col sm="12">
-                <b-alert show variant="danger" dismissible>
+                <b-alert show variant="warning" dismissible>
                     <b-icon icon="exclamation-circle" variant="danger" font-scale="1.5" class="mr-2"></b-icon>
-                    <strong>WARNING:</strong> This Tool is still <strong>WIP!</strong> Almost everything is subject to
-                    change. <small>Current Verion: Pre-Alpha</small>
+                    <strong>WARNING:</strong>Almost everything is subject to change.
+                    <small>Current Verion: Closed-Alpha</small>
                 </b-alert>
             </b-col>
             <b-col lg="4" class="no-select mb-4">
@@ -38,7 +38,7 @@
                                 </b-tooltip>
 
                                 <b-card-text>
-                                    <p class="small text-secondary m-0 pb-2">Benefit: {{ occupation.benefit }}</p>
+                                    <span class="small text-secondary m-0 pb-2">Benefit: {{ occupation.benefit }}</span>
                                     <b-badge v-if="occupation.perkType == 'neutral'" class="float-right">
                                         Perk Points: {{ occupation.perkPoints }}
                                     </b-badge>
