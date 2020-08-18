@@ -20,18 +20,33 @@
 
                     <b-nav-item-dropdown :text="$t('MENU.MORE')" right>
                         <b-dropdown-header> > Database</b-dropdown-header>
-                        <b-dropdown-divider></b-dropdown-divider>
                         <b-dropdown-item :to="localePath('/info/weapons')" disabled>
                             {{ $t('MENU.MORE_WEAPONS') }}
                         </b-dropdown-item>
                         <b-dropdown-item :to="localePath('/info/items')" disabled>
                             {{ $t('MENU.MORE_ITEMS') }}
                         </b-dropdown-item>
-                        <b-dropdown-divider></b-dropdown-divider>
-                        <b-dropdown-item :to="localePath('/changelog')">Changelog</b-dropdown-item>
                     </b-nav-item-dropdown>
 
                     <b-nav-item :to="localePath('/contact')">{{ $t('MENU.CONTACT') }}</b-nav-item>
+
+                    <b-dropdown variant="link" toggle-class="text-decoration-none" no-caret right>
+                        <template v-slot:button-content>
+                            <b-icon icon="tools"></b-icon>
+                            <span class="sr-only">Options</span>
+                        </template>
+                        <b-dropdown-header>{{ $t('MENU.OPTIONS_LANG_TITLE') }}</b-dropdown-header>
+                        <b-dropdown-item
+                            v-for="locale in availableLocales"
+                            :key="locale.code"
+                            :to="switchLocalePath(locale.code)"
+                        >
+                            {{ locale.name }}
+                        </b-dropdown-item>
+                        <b-dropdown-divider></b-dropdown-divider>
+                        <b-dropdown-header>{{ $t('MENU.OPTIONS_EXTRA_TITLE') }}</b-dropdown-header>
+                        <b-dropdown-item :to="localePath('/changelog')">Changelog</b-dropdown-item>
+                    </b-dropdown>
                 </b-navbar-nav>
             </b-collapse>
         </b-container>
@@ -40,7 +55,12 @@
 
 <script>
 export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    computed: {
+        availableLocales() {
+            return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale);
+        }
+    }
 };
 </script>
 

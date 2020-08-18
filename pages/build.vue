@@ -198,7 +198,7 @@
             <b-col lg="4" class="no-select mb-4">
                 <b-card class="shadow">
                     <b-card-title class="text-center p-2 title-rounded">
-                        Perk Selection
+                        {{ $t('BUILDER.CARD.PERK_SELECTION_TITLE') }}
                     </b-card-title>
                     <div class="perkList">
                         <div v-for="perk in perks" :key="perk.id">
@@ -479,9 +479,13 @@ export default {
             const codec = require('json-url')('lzw');
             codec.compress(build).then((resault) => {
                 if (this.$route.path[this.$route.path.length - 1] === '/') {
-                    history.pushState({}, null, this.$route.path + '?b=' + resault);
+                    this.$router.push({
+                        query: { b: resault }
+                    });
                 } else {
-                    history.pushState({}, null, this.$route.path + '/?b=' + resault);
+                    this.$router.push({
+                        query: { b: resault }
+                    });
                 }
             });
         },
@@ -495,7 +499,7 @@ export default {
 
             const codec = require('json-url')('lzw');
             codec.compress(build).then((resault) => {
-                const buildUrl = `https://dm.just-look.net/build/?b=${resault}`;
+                const buildUrl = `https://dm.just-look.net/build?b=${resault}`;
                 this.$swal({
                     icon: 'success',
                     title: '<i>SAVED!</i>',

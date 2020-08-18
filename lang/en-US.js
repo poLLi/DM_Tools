@@ -8,7 +8,9 @@ export default {
         MORE: 'More',
         MORE_WEAPONS: 'Weapons',
         MORE_ITEMS: 'Items',
-        CONTACT: 'Contact'
+        CONTACT: 'Contact',
+        OPTIONS_LANG_TITLE: '> Change Language',
+        OPTIONS_EXTRA_TITLE: '> Extras'
     },
 
     // PAGE: START
