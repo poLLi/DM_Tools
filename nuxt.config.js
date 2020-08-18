@@ -32,6 +32,11 @@ export default {
             { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
             { rel: 'icon', type: 'image/png', href: '/favicon/android-icon-192x192.png', sizes: '192x192' },
             { rel: 'apple-touch-icon', href: '/favicon/apple-icon-180x180.png', sizes: '180x180' }
+        ],
+        script: [
+            {
+                src: '/just-analytics.js'
+            }
         ]
     },
     loading: false,
