@@ -3,7 +3,7 @@ export default {
     // Navigation
     MENU: {
         START: 'Start',
-        BUILDER: 'Character-Builder',
+        BUILDER: 'Charakter-Builder',
         MAP: 'Map',
         MORE: 'Mehr',
         MORE_WEAPONS: 'Waffen',
