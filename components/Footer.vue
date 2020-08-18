@@ -21,9 +21,12 @@
                         <a href="https://discord.gg/YA7YmeA" target="_blank" rel="noopener noreferrer">
                             <b-icon icon="chat-right-dots"></b-icon>
                         </a>
-                        | <nuxt-link to="/imprint" class="text-muted font-weight-light">Imprint</nuxt-link> |
-                        <nuxt-link to="/privacy" class="text-muted font-weight-light">Privacy</nuxt-link> |
-                        <nuxt-link to="/contact" class="text-muted font-weight-light">Contact</nuxt-link>
+                        |
+                        <nuxt-link :to="localePath('/imprint')" class="text-muted font-weight-light">Imprint</nuxt-link>
+                        |
+                        <nuxt-link :to="localePath('/privacy')" class="text-muted font-weight-light">Privacy</nuxt-link>
+                        |
+                        <nuxt-link :to="localePath('/contact')" class="text-muted font-weight-light">Contact</nuxt-link>
                         <br />
                         Copyright © 2020 Just-Look Network
                     </p>

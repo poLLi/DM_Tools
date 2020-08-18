@@ -1,9 +1,9 @@
 [
     {
         "id": "1",
-        "title": "Unemployed",
-        "description": "You were a talented but quick learner that decided against pursuing employment.",
-        "benefit": "Spawn with the clothes on your back and a melee weapon.",
+        "title": "UNEMPLOYED_TITLE",
+        "description": "UNEMPLOYED_DESCRIPTION",
+        "benefit": "UNEMPLOYED_BENEFIT",
         "attributes": {
             "agility": 4,
             "charisma": 4,
@@ -24,9 +24,9 @@
     },
     {
         "id": "2",
-        "title": "Constuction Worker",
-        "description": "You used to work on new housing projects all the time. This is the ideal choice if you like to build structures.",
-        "benefit": "Spawn with your work outfit and a melee weapon.",
+        "title": "CONSTRUCTION_WORKER_TITLE",
+        "description": "CONSTRUCTION_WORKER_DESCRIPTION",
+        "benefit": "CONSTRUCTION_WORKER_BENEFIT",
         "attributes": {
             "agility": 3,
             "charisma": 4,
@@ -47,9 +47,9 @@
     },
     {
         "id": "3",
-        "title": "Repair Man",
-        "description": "You were once a repair man with a broad variety of skills.",
-        "benefit": "Spawn with casual attiere and a random melee weapon",
+        "title": "REPAIR_MAN_TITLE",
+        "description": "REPAIR_MAN_DESCRIPTION",
+        "benefit": "REPAIR_MAN_BENEFIT",
         "attributes": {
             "agility": 4,
             "charisma": 5,
@@ -70,9 +70,9 @@
     },
     {
         "id": "4",
-        "title": "Farmer",
-        "description": "Making an honest living is never something to be ashamed of. Everybody still needs to eat.",
-        "benefit": "Spawn with some basic clothes and a small backpack with survival gear.",
+        "title": "FARMER_TITLE",
+        "description": "FARMER_DESCRIPTION",
+        "benefit": "FARMER_BENEFIT",
         "attributes": {
             "agility": 6,
             "charisma": 6,
@@ -93,9 +93,9 @@
     },
     {
         "id": "5",
-        "title": "Chef",
-        "description": "Your´ve always liked to spend time in the kitches, ever since you were a child. Now you need to use your cooking skills to survive.",
-        "benefit": "Spawn with your work outfit and a kitchen knife.",
+        "title": "CHEF_TITLE",
+        "description": "CHEF_DESCRIPTION",
+        "benefit": "CHEF_BENEFIT",
         "attributes": {
             "agility": 7,
             "charisma": 7,
@@ -116,9 +116,9 @@
     },
     {
         "id": "6",
-        "title": "Doctor",
-        "description": "In theory the hippocratic oath still applies even after society has fallen apart. You once swore a duty to help those that are in need.",
-        "benefit": "Spawn with your work clothes, some medical supplies and a melee weapon.",
+        "title": "DOCTOR_TITLE",
+        "description": "DOCTOR_DESCRIPTION",
+        "benefit": "DOCTOR_BENEFIT",
         "attributes": {
             "agility": 7,
             "charisma": 7,
@@ -139,9 +139,9 @@
     },
     {
         "id": "7",
-        "title": "Fire Fighter",
-        "description": "You were once a firefighter, bravely battling many of the fires that sprung up during the outbreake. You´re one of the few remaining survivors from the city.",
-        "benefit": "Spawn with your work outfit and a fireaxe",
+        "title": "FIRE_FIGHTER_TITLE",
+        "description": "FIRE_FIGHTER_DESCRIPTION",
+        "benefit": "FIRE_FIGHTER_BENEFIT",
         "attributes": {
             "agility": 6,
             "charisma": 7,
@@ -162,9 +162,9 @@
     },
     {
         "id": "8",
-        "title": "Police Officer",
-        "description": "You were a police officer, once, enforcing the law. This is now a lawless world.",
-        "benefit": "Spawn with your work outfit complete with flashlight and service pistol with a less then half empty magazine.",
+        "title": "POLICE_OFFICER_TITLE",
+        "description": "POLICE_OFFICER_DESCRIPTION",
+        "benefit": "POLICE_OFFICER_BENEFIT",
         "attributes": {
             "agility": 8,
             "charisma": 2,
@@ -185,9 +185,9 @@
     },
     {
         "id": "9",
-        "title": "Security Guard",
-        "description": "You never really slept well at night, so you became a security guard at the mall. Might not be a bad thing once the power goes out for good.",
-        "benefit": "Spawn with your security outfit and a melee weapon.",
+        "title": "SECURITY_GUARD_TITLE",
+        "description": "SECURITY_GUARD_DESCRIPTION",
+        "benefit": "SECURITY_GUARD_BENEFIT",
         "attributes": {
             "agility": 7,
             "charisma": 4,

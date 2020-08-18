@@ -64,8 +64,27 @@ export default {
         'bootstrap-vue/nuxt',
         // Doc: https://axios.nuxtjs.org/usage
         // '@nuxtjs/axios'
-        'vue-sweetalert2/nuxt'
+        'vue-sweetalert2/nuxt',
+        'nuxt-i18n'
     ],
+    i18n: {
+        locales: [
+            {
+                name: 'English',
+                code: 'en',
+                file: 'en-US.js'
+            },
+            {
+                name: 'German',
+                code: 'de',
+                file: 'de-DE.js'
+            }
+        ],
+        lazy: true,
+        langDir: 'lang/',
+        defaultLocale: 'en',
+        detectBrowserLanguage: false
+    },
     /*
      ** BootstrapVue Settings
      */
