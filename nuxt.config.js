@@ -35,7 +35,7 @@ export default {
         ],
         script: [
             {
-                src: '/just-analytics.js'
+                src: 'https://cdn.just-analytics.com/just-analytics.js'
             }
         ]
     },
