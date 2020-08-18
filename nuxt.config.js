@@ -83,6 +83,11 @@ export default {
                 name: 'German',
                 code: 'de',
                 file: 'de-DE.js'
+            },
+            {
+                name: 'Turkish',
+                code: 'tr',
+                file: 'tr-TR.js'
             }
         ],
         lazy: true,
