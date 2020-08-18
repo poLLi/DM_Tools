@@ -2,221 +2,221 @@
 export default {
     // Navigation
     MENU: {
-        START: 'Start',
-        BUILDER: 'Character-Builder',
-        MAP: 'Map',
-        MORE: 'More',
-        MORE_WEAPONS: 'Weapons',
-        MORE_ITEMS: 'Items',
-        CONTACT: 'Contact',
-        OPTIONS_LANG_TITLE: '> Change Language',
-        OPTIONS_EXTRA_TITLE: '> Extras'
+        START: 'Başlat',
+        BUILDER: 'Karakter Oluşturucu',
+        MAP: 'Harita',
+        MORE: 'Daha Fazla',
+        MORE_WEAPONS: 'Silahlar',
+        MORE_ITEMS: 'Eşyalar',
+        CONTACT: 'İletişim',
+        OPTIONS_LANG_TITLE: '> Dili Değiştir',
+        OPTIONS_EXTRA_TITLE: '> Ekstralar'
     },
 
     // PAGE: START
     START: {
-        HEADLINE_TITLE: 'Community Web Tools',
-        HEADLINE_DESCRIPTION: 'Everything you need to survive the Zombie-Apocalypse!'
+        HEADLINE_TITLE: 'Topluluk Web Aracları ',
+        HEADLINE_DESCRIPTION: 'Zombi Kıyametinde hayatta kalmak için ihtiyacınız olan her şey!'
     },
 
     // PAGE: CHARACTER-BUILDER
     BUILDER: {
         CARD: {
-            OCCUPATION_TITLE: 'Occupation',
-            PERK_SELECTION_TITLE: 'Perk Selection',
+            OCCUPATION_TITLE: 'Meslek',
+            PERK_SELECTION_TITLE: 'Avantaj Seçimi',
 
-            CHARACTER_DATA_TITLE: 'Character Data',
-            CHARACTER_DATA_ATTRIBUTES_TITLE: 'Attributes',
-            CHARACTER_DATA_ATTRIBUTES_AGILITY: 'Agility',
-            CHARACTER_DATA_ATTRIBUTES_CHARISMA: 'Charisma',
-            CHARACTER_DATA_ATTRIBUTES_ENDURANCE: 'Endurance',
-            CHARACTER_DATA_ATTRIBUTES_INTELLIGENCE: 'Intelligence',
-            CHARACTER_DATA_ATTRIBUTES_STRENGTH: 'Strength',
-            CHARACTER_DATA_SKILLS_TITLE: 'Skills',
-            CHARACTER_DATA_SKILLS_COOKING: 'Cooking',
-            CHARACTER_DATA_SKILLS_FARMING: 'Farming',
-            CHARACTER_DATA_SKILLS_MECHANIC: 'Mechanic',
-            CHARACTER_DATA_SKILLS_CRAFTING: 'Crafting',
-            CHARACTER_DATA_SKILLS_LOCKPICKING: 'Lockpicking',
-            CHARACTER_DATA_SKILLS_MEDICAL: 'Medical',
+            CHARACTER_DATA_TITLE: 'Karakter Verileri',
+            CHARACTER_DATA_ATTRIBUTES_TITLE: 'Nitelikler',
+            CHARACTER_DATA_ATTRIBUTES_AGILITY: 'Çeviklik',
+            CHARACTER_DATA_ATTRIBUTES_CHARISMA: 'Karizma',
+            CHARACTER_DATA_ATTRIBUTES_ENDURANCE: 'Dayanıklılık',
+            CHARACTER_DATA_ATTRIBUTES_INTELLIGENCE: 'Zeka',
+            CHARACTER_DATA_ATTRIBUTES_STRENGTH: 'Kuvvet',
+            CHARACTER_DATA_SKILLS_TITLE: 'Yetenekler',
+            CHARACTER_DATA_SKILLS_COOKING: 'Aşçılık',
+            CHARACTER_DATA_SKILLS_FARMING: 'Çifçilik',
+            CHARACTER_DATA_SKILLS_MECHANIC: 'Tamircilik',
+            CHARACTER_DATA_SKILLS_CRAFTING: 'Üretim',
+            CHARACTER_DATA_SKILLS_LOCKPICKING: 'Kilit Kırma',
+            CHARACTER_DATA_SKILLS_MEDICAL: 'Tıbbi',
 
-            PERK_POINTS_DESCRIPTION: 'You need to have a balance of 0 or more perk points in order to finish the build.',
-            PERK_POINTS_RESET_BUTTON: 'Reset',
-            PERK_POINTS_SAVE_BUTTON: 'Save Build',
-            PERK_POINTS_SAVE_TEXT: 'Your Character Build url is ready.',
-            PERK_POINTS_COPY_CLIPBOARD: 'Copy to Clipboard',
+            PERK_POINTS_DESCRIPTION: 'Karakter tasarımınızı bitirmek için 0 veya daha fazla puana sahip olmalısınız.',
+            PERK_POINTS_RESET_BUTTON: 'Sıfırla',
+            PERK_POINTS_SAVE_BUTTON: 'Tasarımı Kaydet',
+            PERK_POINTS_SAVE_TEXT: 'Karakter tasarımının URL\'si hazır.',
+            PERK_POINTS_COPY_CLIPBOARD: 'Panoya kopyala',
 
-            EXTENDED_STATS_BUTTON_OPEN: 'Open Extended Statistics',
-            EXTENDED_STATS_BUTTON_CLOSE: 'Close Extended Statistics',
-            EXTENDED_STATS_BUTTON_WIP: '(Work in Progress)'
+            EXTENDED_STATS_BUTTON_OPEN: 'Genişletilmiş İstatistikleri Aç',
+            EXTENDED_STATS_BUTTON_CLOSE: 'Genişletilmiş İstatistikleri Kapa',
+            EXTENDED_STATS_BUTTON_WIP: '(Yapım Aşamasında)'
         },
         OCCUPATION: {
-            UNEMPLOYED_TITLE: 'Unemployed',
-            UNEMPLOYED_DESCRIPTION: 'You were a talented but quick learner that decided against pursuing employment.',
-            UNEMPLOYED_BENEFIT: 'Spawn with the clothes on your back and a melee weapon.',
+            UNEMPLOYED_TITLE: 'İşsiz',
+            UNEMPLOYED_DESCRIPTION: 'Yetenekli, hızlı öğrenen biriydin ve iş peşinde koşan biriydin.',
+            UNEMPLOYED_BENEFIT: 'Sırtınızdaki kıyafetlerle ve yakın dövüş silahıyla doğarsınız.',
 
-            CONSTRUCTION_WORKER_TITLE: 'Construction Worker',
-            CONSTRUCTION_WORKER_DESCRIPTION: 'You used to work on new housing projects all the time. This is the ideal choice if you like to build structures.',
-            CONSTRUCTION_WORKER_BENEFIT: 'Spawn with your work outfit and a melee weapon.',
+            CONSTRUCTION_WORKER_TITLE: 'İnşaat İşçisi',
+            CONSTRUCTION_WORKER_DESCRIPTION: 'Sürekli yeni konut projelerinde çalışırdın. Yapı inşa etmeyi seviyorsan bu ideal seçimdir.',
+            CONSTRUCTION_WORKER_BENEFIT: 'İş kıyafetin ve yakın dövüş silahıyla doğ.',
 
-            REPAIR_MAN_TITLE: 'Repair Man',
-            REPAIR_MAN_DESCRIPTION: 'You were once a repair man with a broad variety of skills.',
-            REPAIR_MAN_BENEFIT: 'Spawn with casual attire and a random melee weapon',
+            REPAIR_MAN_TITLE: 'Tamirci',
+            REPAIR_MAN_DESCRIPTION: 'Bir zamanlar çok çeşitli becerilere sahip bir tamirciydin.',
+            REPAIR_MAN_BENEFIT: 'Gündelik kıyafetler ve rastgele bir yakın dövüş silahı ile doğarsın',
 
-            FARMER_TITLE: 'Farmer',
-            FARMER_DESCRIPTION: 'Making an honest living is never something to be ashamed of. Everybody still needs to eat.',
-            FARMER_BENEFIT: 'Spawn with some basic clothes and a small backpack with survival gear.',
+            FARMER_TITLE: 'Çiftçi',
+            FARMER_DESCRIPTION: 'Dürüst bir yaşam sağlamak asla utanılacak bir şey değildir. Hala herkesin yemeye ihtiyacı var.',
+            FARMER_BENEFIT: 'Bazı temel kıyafetler ve hayatta kalma teçhizatı olan küçük bir sırt çantasıyla doğarsın.',
 
-            CHEF_TITLE: 'Chef',
-            CHEF_DESCRIPTION: 'Your´ve always liked to spend time in the kitchen, ever since you were a child. Now you need to use your cooking skills to survive.',
-            CHEF_BENEFIT: 'Spawn with your work outfit and a kitchen knife.',
+            CHEF_TITLE: 'Şef',
+            CHEF_DESCRIPTION: 'Çocukluğundan beri mutfakta vakit geçirmeyi hep sevmişsindir. Şimdi hayatta kalmak için pişirme becerilerini kullanman gerekiyor.',
+            CHEF_BENEFIT: 'İş kıyafeti ve bir mutfak bıçağıyla doğarsın.',
 
-            DOCTOR_TITLE: 'Doctor',
-            DOCTOR_DESCRIPTION: 'In theory the hippocratic oath still applies even after society has fallen apart. You once swore a duty to help those that are in need.',
-            DOCTOR_BENEFIT: 'Spawn with your work clothes, some medical supplies and a melee weapon.',
+            DOCTOR_TITLE: 'Doktor',
+            DOCTOR_DESCRIPTION: 'Teoride, hipokrat yemini, toplum dağıldıktan sonra bile geçerlidir. İhtiyacı olanlara yardım etmek için bir görev yemin etmiştin.',
+            DOCTOR_BENEFIT: 'İş kıyafetlerinizle, bazı tıbbi malzemelerinizle ve bir yakın dövüş silahıyla doğarsın.',
 
-            FIRE_FIGHTER_TITLE: 'Fire Fighter',
-            FIRE_FIGHTER_DESCRIPTION: 'You were once a firefighter, bravely battling many of the fires that sprung up during the outbreak. You´re one of the few remaining survivors from the city.',
-            FIRE_FIGHTER_BENEFIT: 'Spawn with your work outfit and a fireaxe',
+            FIRE_FIGHTER_TITLE: 'İtfayeci',
+            FIRE_FIGHTER_DESCRIPTION: 'Bir zamanlar bir itfaiyeciydin ve salgın sırasında çıkan yangınların çoğuyla cesurca savaştın. Şehirden kurtulan birkaç kişiden birisin.',
+            FIRE_FIGHTER_BENEFIT: 'İş kıyafeti ve yangın baltasıyla doğarsın.',
 
-            POLICE_OFFICER_TITLE: 'Police Officer',
-            POLICE_OFFICER_DESCRIPTION: 'You were a police officer, once, enforcing the law. This is now a lawless world.',
-            POLICE_OFFICER_BENEFIT: 'Spawn with your work outfit complete with flashlight and service pistol with a less then half empty magazine.',
+            POLICE_OFFICER_TITLE: 'Polis Memuru',
+            POLICE_OFFICER_DESCRIPTION: 'Bir zamanlar yasayı uygulayan bir polistin. Bu artık kanunsuz bir dünyadasın',
+            POLICE_OFFICER_BENEFIT: 'El feneri ve beylik tabancanı tamamlayan iş kıyafeti ile yarısından daha az mermisi olan bir şarjörle doğunarsın.',
 
-            SECURITY_GUARD_TITLE: 'Security Guard',
-            SECURITY_GUARD_DESCRIPTION: 'You never really slept well at night, so you became a security guard at the mall. Might not be a bad thing once the power goes out for good.',
-            SECURITY_GUARD_BENEFIT: 'Spawn with your security outfit and a melee weapon.'
+            SECURITY_GUARD_TITLE: 'Güvenlik Görevlisi',
+            SECURITY_GUARD_DESCRIPTION: 'Geceleri hiç iyi uyumamışsın, bu yüzden alışveriş merkezinde güvenlik görevlisi oldun. Güç iyiye gittiğinde kötü bir şey olmayaz.',
+            SECURITY_GUARD_BENEFIT: 'Güvenlik görevlisi üniformasıyla ve yakın dövüş silahıyla doğarsın.'
         },
 
         PERK: {
-            CPR_TRAINING_TITLE: 'CPR Training',
-            CPR_TRAINING_DESCRIPTION: 'Gain the ability to bring people out of unconciousness by performing CPR.',
+            CPR_TRAINING_TITLE: 'İlkyardım Eğitimi',
+            CPR_TRAINING_DESCRIPTION: 'İlk yardım  uygulayarak insanları bilinçsizlikten çıkarma becerisi kazanın.',
             
-            ASTRONOMER_TITLE: 'Astronomer',
-            ASTRONOMER_DESCRIPTION: 'Draws a compass on the screen at night when pressing the HUD prompt key.',
+            ASTRONOMER_TITLE: 'Astronom',
+            ASTRONOMER_DESCRIPTION: 'HUD komut istemi tuşuna basıldığında gece ekranda bir pusula çizer.',
             
-            OBSERVANT_TITLE: 'Observant',
-            OBSERVANT_DESCRIPTION: 'Perks are listed when looking at a player with the HUD prompt active',
+            OBSERVANT_TITLE: 'İtaatkâr',
+            OBSERVANT_DESCRIPTION: 'HUD komut istemi aktif olan bir oyuncuya bakıldığında avantajlar listelenir.',
             
-            HERBALIST_TITLE: 'Herbalist',
-            HERBALIST_DESCRIPTION: 'Allows you to easily identify poisonous berries and mushrooms.',
+            HERBALIST_TITLE: 'Bitki Uzmanı',
+            HERBALIST_DESCRIPTION: 'Zehirli meyveleri ve mantarları kolayca tanımlamanıza izin verir.',
             
-            PEANUT_ALLERGY_TITLE: 'Peanut Allergy',
-            PEANUT_ALLERGY_DESCRIPTION: 'Triggers a severe allergic reaction when consuming foods containing peanuts. (Spawn with one epi-pen).',
+            PEANUT_ALLERGY_TITLE: 'Yer Fıstığı Alerjisi',
+            PEANUT_ALLERGY_DESCRIPTION: 'Yer fıstığı içeren yiyecekler tüketildiğinde şiddetli bir alerjik reaksiyonu tetikler. (Epinephrine ile doğar).',
             
-            PARANOID_TITLE: 'Paranoid',
-            PARANOID_DESCRIPTION: 'You will randomly hear gunshots that are not real.',
+            PARANOID_TITLE: 'Paranoyak',
+            PARANOID_DESCRIPTION: 'Gerçek olmayan silah seslerini rastgele duyacaksınız.',
             
-            UNIVERSAL_RECEIVER_TITLE: 'Universal Receiver',
-            UNIVERSAL_RECEIVER_DESCRIPTION: 'Forces the blood type to AB+ which allows you to receive blood from anyone without triggering a hemolytic reaction.',
+            UNIVERSAL_RECEIVER_TITLE: 'Genel Alıcı',
+            UNIVERSAL_RECEIVER_DESCRIPTION: 'Kan grubunu, hemolitik reaksiyonu tetiklemeden herkesten kan almanıza izin veren AB + \'ya zorlar.',
             
-            UNIVERSAL_DONOR_TITLE: 'Universal Donor',
-            UNIVERSAL_DONOR_DESCRIPTION: 'Forces the blood type to O- which anyone can receive when in need of a transfusion.',
+            UNIVERSAL_DONOR_TITLE: 'Genel Verici',
+            UNIVERSAL_DONOR_DESCRIPTION: 'Kan grubunu, kan nakline ihtiyaç duyduğunda herkesin alabileceği O- değerine zorlar.',
             
-            JOGGER_TITLE: 'Jogger',
-            JOGGER_DESCRIPTION: 'You used to enjoy running when it was just for fun. Gain +2 Agility',
+            JOGGER_TITLE: 'Yürüyüşçü',
+            JOGGER_DESCRIPTION: 'Sadece eğlenmek için koşmaktan zevk alırdın. +2 çeviklik kazanırsın',
        
-            NERD_TITLE: 'Nerd',
-            NERD_DESCRIPTION: 'You used to play a lot of videogames in your spare time. Lose -2 Strength',
+            NERD_TITLE: 'İnek',
+            NERD_DESCRIPTION: 'Boş zamanlarında çok sayıda video oyunu oynardın. -2 güç kaybedersin.',
             
-            CHESS_PLAYER_TITLE: 'Chess Player',
-            CHESS_PLAYER_DESCRIPTION: 'You used to play competitive chess. Gain +2 Intelligence.',
+            CHESS_PLAYER_TITLE: 'Satranç Oyuncusu',
+            CHESS_PLAYER_DESCRIPTION: 'Rekabetçi satranç oynardın. +2 zeka kazanırsın.',
             
-            PARTY_BOY_TITLE: 'Party Boy',
-            PARTY_BOY_DESCRIPTION: 'You used to party... a lot. Lose -2 Intelligence.',
+            PARTY_BOY_TITLE: 'Parti Manyağı',
+            PARTY_BOY_DESCRIPTION: 'Çok sık parti yapardın. -2 zeka kaybedersin.',
             
-            RUNNER_TITLE: 'Runner',
-            RUNNER_DESCRIPTION: 'You used to enjoy running marathons. Gain +300s sprint time and +1 Agility',
+            RUNNER_TITLE: 'Koşucu',
+            RUNNER_DESCRIPTION: 'Maraton koşmaktan zevk aldın. + 300s hızlı koşma süresi ve +1 çeviklik kazanırsın.',
             
-            STRENGTH_TRAINING_TITLE: 'Strength Training',
-            STRENGTH_TRAINING_DESCRIPTION: 'Your life orients around lifting when you´re not at work. Gain +2 Strength.',
+            STRENGTH_TRAINING_TITLE: 'Kas Geliştirici',
+            STRENGTH_TRAINING_DESCRIPTION: 'Hayat amacınız işte değilken ağırlık kaldırma üzerine odaklıdır.+2 güç kazanırsın.',
             
-            WEEKEND_BARTENDER_TITLE: 'Weekend Bartender',
-            WEEKEND_BARTENDER_DESCRIPTION: 'You used to be a bartender on weekends, it  gave you an insight into human behavior. Gain +2 Chraisma.',
+            WEEKEND_BARTENDER_TITLE: 'Haftasonu Barmeni',
+            WEEKEND_BARTENDER_DESCRIPTION: 'Hafta sonları bir barmendin, bu sana insan davranışları hakkında bir fikir verdi. +2 karizma kazanırsın.',
             
-            WRESTLER_TITLE: 'Wrestler',
-            WRESTLER_DESCRIPTION: 'You used to be a wrestler when you were younger, it made you pretty hard to bring down. Gain +2 Endurance.',
+            WRESTLER_TITLE: 'Güreşçi',
+            WRESTLER_DESCRIPTION: 'Gençken bir güreşçiydin, bu senin aşağı indirilmeni oldukça zorlaştırdı. +2 dayanıklılık kazanın.',
             
-            AMATEUR_COOK_TITLE: 'Amateur Cook',
-            AMATEUR_COOK_DESCRIPTION: 'You like to cook fancy meals at home and aren´t afraid of getting behind the stove. Gain +25 bonus to Cooking.',
+            AMATEUR_COOK_TITLE: 'Amatör Aşçı',
+            AMATEUR_COOK_DESCRIPTION: 'Evde güzel yemekler pişirmeyi seviyorsunuz ve ocağın başına geçmekten korkmuyorsunuz. Yemek pişirme yeteneğin 25 artar.',
             
-            AWFUL_COOK_TITLE: 'Awful Cook',
-            AWFUL_COOK_DESCRIPTION: 'You´re terrible behind the stove. Receive a -25 penalty to Cooking.',
+            AWFUL_COOK_TITLE: 'Rezalet Aşçı',
+            AWFUL_COOK_DESCRIPTION: 'Ocakta berbatsın. Yemek pişirme yeteneğin 25 azalır.',
             
-            METALWORKER_TITLE: 'Metalworker',
-            METALWORKER_DESCRIPTION: 'You´ve tinkered around with metalworking and locksmithing. Gain a +25 bonus to Lockpicking.',
+            METALWORKER_TITLE: 'Metal İşleme',
+            METALWORKER_DESCRIPTION: 'Metal işleme ve çilingirle uğraştınız. Kilit açma yeteneğin 25 artar.',
             
-            GREEN_THUMB_TITLE: 'Green Thumb',
-            GREEN_THUMB_DESCRIPTION: 'You enjoy gardening. Gain a +25 bonus to Farming.',
+            GREEN_THUMB_TITLE: 'Çiçek Yetiştirme ',
+            GREEN_THUMB_DESCRIPTION: 'Bahçeyle uğraşmaktan hoşlanıyorsun. Çiftçilik yeteneğin 25 artar.',
             
-            HOBBYIST_TITLE: 'Hobbyist',
-            HOBBYIST_DESCRIPTION: 'You enjoy model trains, playing with rockets and all sorts of different gadgets. Gain a +25 bonus to Crafting',
+            HOBBYIST_TITLE: 'Hobici',
+            HOBBYIST_DESCRIPTION: 'Model trenlerle, roketlerle ve her türden farklı aletlerle oynamaktan keyif alıyorsun. Üretme yeteneğin 25 artar.',
             
-            GEARHEAD_TITLE: 'Gearhead',
-            GEARHEAD_DESCRIPTION: 'You spend a lot of time restoring old cars. Gain a +25 bonus to Mechanic.',
+            GEARHEAD_TITLE: 'Araç Düşkünü',
+            GEARHEAD_DESCRIPTION: 'Eski arabaları restore etmek için çok zaman harcıyorsun. Tamirci yeteneğin 25 artar.',
             
-            VOLUNTEER_FIRE_FIGHTER_TITLE: 'Volunteer Firefighter',
-            VOLUNTEER_FIRE_FIGHTER_DESCRIPTION: 'You were a volunteer firefighter when you were younger. Gain a +25 bonus to Medical.',
+            VOLUNTEER_FIRE_FIGHTER_TITLE: 'Gönüllü İtfayeci',
+            VOLUNTEER_FIRE_FIGHTER_DESCRIPTION: 'Gençken gönüllü bir itfaiyeciydin. Tıbbi yeteneğin 25 artar.',
             
-            BIG_BONED_TITLE: 'Big Boned',
-            BIG_BONED_DESCRIPTION: 'Absulute unit. More limb health and +750ml max blood.',
+            BIG_BONED_TITLE: 'Çam Yarması',
+            BIG_BONED_DESCRIPTION: 'Çam yarması. Daha fazla uzuv canı ve +750 ml maksimum kan.',
             
-            OSTEOPOROSIS_TITLE: 'Osteoporosis',
-            OSTEOPOROSIS_DESCRIPTION: 'You take increased limb damage.',
+            OSTEOPOROSIS_TITLE: 'Kemik Erimesi',
+            OSTEOPOROSIS_DESCRIPTION: 'Arttırılmış uzuv hasarı alırsın.',
             
-            BRAVE_TITLE: 'Brave',
-            BRAVE_DESCRIPTION: 'Less supression when taking fire.',
+            BRAVE_TITLE: 'Cesur',
+            BRAVE_DESCRIPTION: 'Ateş altındayken daha az telaşlanırsın.',
             
-            FEARFUL_TITLE: 'Fearful',
-            FEARFUL_DESCRIPTION: 'Take more supression when taking fire.',
+            FEARFUL_TITLE: 'Tırsak',
+            FEARFUL_DESCRIPTION: 'Ateş altındayken daha fazla telaşlanırsın.',
             
-            NO_FEAR_TITLE: 'No Fear',
-            NO_FEAR_DESCRIPTION: 'You´ve seen it all. You do not fear death. -80% supression from taking fire.',
+            NO_FEAR_TITLE: 'Korkusuz',
+            NO_FEAR_DESCRIPTION: 'Ateş altındayken 80% daha az baskı altında olursun.',
             
-            FRIGHTFUL_TITLE: 'Frightful',
-            FRIGHTFUL_DESCRIPTION: 'Additional +80% supression when being attacked.',
+            FRIGHTFUL_TITLE: 'Korkak',
+            FRIGHTFUL_DESCRIPTION: 'Ateş altındayken 80% daha fazla baskı altında olursun.',
             
-            FAST_METABOLISM_TITLE: 'Fast Metabolism',
-            FAST_METABOLISM_DESCRIPTION: 'You metabolize food 50% faster.',
+            FAST_METABOLISM_TITLE: 'Hızlı Metabolizma',
+            FAST_METABOLISM_DESCRIPTION: 'Yiyecekleri 50% daha hızlı sindirir.',
             
-            SLOW_METABOLISM_TITLE: 'Slow Metabolism',
-            SLOW_METABOLISM_DESCRIPTION: 'You metabolize food 50% more slowly.',
+            SLOW_METABOLISM_TITLE: 'Yavaş Metabolizma',
+            SLOW_METABOLISM_DESCRIPTION: 'Yiyecekleri 50% daha yavaş sindirir.',
             
-            IRON_STOMACH_TITLE: 'Iron Stomach',
-            IRON_STOMACH_DESCRIPTION: 'Get sick less often when drinking and eating.',
+            IRON_STOMACH_TITLE: 'Sağlam Mide',
+            IRON_STOMACH_DESCRIPTION: 'İçerken ve yerken daha az hastalık kapmak',
             
-            WEAK_STOMACH_TITLE: 'Weak Stomach',
-            WEAK_STOMACH_DESCRIPTION: 'Get sick more often when drinking and eating.',
+            WEAK_STOMACH_TITLE: 'Hassas Mide',
+            WEAK_STOMACH_DESCRIPTION: 'İçerken ve yerken daha fazla hastalık kapmak.',
             
-            SILENT_SEARCH_TITLE: 'Silent Search',
-            SILENT_SEARCH_DESCRIPTION: 'Make 50% less noise when searching a container.',
+            SILENT_SEARCH_TITLE: 'Sessiz Arama',
+            SILENT_SEARCH_DESCRIPTION: 'Bir konteyner ararken %50 daha az gürültü yapmak.',
             
-            NOISY_SEARCH_TITLE: 'Noisy Search',
-            NOISY_SEARCH_DESCRIPTION: 'Make 50% more noise when searching a container.',
+            NOISY_SEARCH_TITLE: 'Gürültülü Arama',
+            NOISY_SEARCH_DESCRIPTION: 'Bir konteyner ararken %50 daha fazla gürültü yapmak.',
             
-            THICK_SKINNED_TITLE: 'Thick Skinned',
-            THICK_SKINNED_DESCRIPTION: 'Take 15% less damage from melee attacks.',
+            THICK_SKINNED_TITLE: 'Kalın Derili',
+            THICK_SKINNED_DESCRIPTION: 'Yakın dövüş saldırılarından %15 daha az hasar almak.',
             
-            THIN_SKINNED_TITLE: 'Thin Skinned',
-            THIN_SKINNED_DESCRIPTION: 'Take 15% more damage from melee attacks.',
+            THIN_SKINNED_TITLE: 'İnce Derili',
+            THIN_SKINNED_DESCRIPTION: 'Yakın dövüş saldırılarından %15 daha fazla hasar almak.',
             
-            NIMBLE_FINGERS_TITLE: 'Nimble Fingers',
-            NIMBLE_FINGERS_DESCRIPTION: 'Search containers 50% faster.',
+            NIMBLE_FINGERS_TITLE: 'Çevik Parmaklar',
+            NIMBLE_FINGERS_DESCRIPTION: 'Arama hızı 50% daha hızlı.',
             
-            SAUSAGE_FINGERS_TITLE: 'Sausage Fingers',
-            SAUSAGE_FINGERS_DESCRIPTION: 'Search containers 50% more slowly.',
+            SAUSAGE_FINGERS_TITLE: 'Tombik Parmaklar',
+            SAUSAGE_FINGERS_DESCRIPTION: 'Arama hızı 50% daha yavaş.',
             
-            HEAVY_WEIGHT_TITLE: 'Heavy Weight',
-            HEAVY_WEIGHT_DESCRIPTION: 'You get drunk far less easily.',
+            HEAVY_WEIGHT_TITLE: 'Alkole Dirençli',
+            HEAVY_WEIGHT_DESCRIPTION: 'Çok daha az sarhoş olmak.',
             
-            LIGHT_WEIGHT_TITLE: 'Light Weight',
-            LIGHT_WEIGHT_DESCRIPTION: 'Impact of drinking too much alcohol is amplified. Lower threshold to start feeling the effects.',
+            LIGHT_WEIGHT_TITLE: 'Alkole Dirençsiz',
+            LIGHT_WEIGHT_DESCRIPTION: 'Çok fazla alkol içmenin etkisi arttırılmıştır. Etkilerin başladığı düşük alkol direnci.',
             
-            LIGTH_STEP_TITLE: 'Light Step',
-            LIGTH_STEP_DESCRIPTION: 'Your footsteps are 30% quieter.',
+            LIGTH_STEP_TITLE: 'Sessiz Adım',
+            LIGTH_STEP_DESCRIPTION: 'Ayak sesleri %30 daha sessiz.',
             
-            HEAVY_STEP_TITLE: 'Heavy Step',
-            HEAVY_STEP_DESCRIPTION: 'Your footsteps are 30% louder.'            
+            HEAVY_STEP_TITLE: 'Gürültülü Adım',
+            HEAVY_STEP_DESCRIPTION: 'Ayak sesleri %30 daha yüksek.'            
         }
     }
 };
