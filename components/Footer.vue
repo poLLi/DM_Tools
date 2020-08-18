@@ -4,6 +4,15 @@
             <b-row class="d-flex">
                 <b-col class="align-self-end">
                     <p class="text-muted font-weight-light small">
+                        <a
+                            href="https://www.survivalservers.com/services/game_servers/dead_matter/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Dead Matter Server Hosting
+                        </a>
+                    </p>
+                    <p class="text-muted font-weight-light small">
                         Dead Matter and the Dead Matter Logo are Trademarks of
                         <a href="https://qisoftware.ca/" target="_blank" rel="noopener noreferrer">
                             Quantum Integrity Software Inc.
