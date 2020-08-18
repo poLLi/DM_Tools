@@ -237,14 +237,14 @@
                 <b-card class="shadow no-select">
                     <b-button v-b-toggle:extendedStats block variant="outline-secondary">
                         <span class="h5 when-open">
-                            Close Extended Statistics
+                            {{ $t('BUILDER.CARD.EXTENDED_STATS_BUTTON_CLOSE') }}
                         </span>
                         <span class="h5 when-closed">
-                            Open Extended Statistics
+                            {{ $t('BUILDER.CARD.EXTENDED_STATS_BUTTON_OPEN') }}
                         </span>
                         <br />
                         <small class="font-weight-light">
-                            (Still Work in Progress!)
+                            {{ $t('BUILDER.CARD.EXTENDED_STATS_BUTTON_WIP') }}
                         </small>
                     </b-button>
 
@@ -503,8 +503,8 @@ export default {
                 this.$swal({
                     icon: 'success',
                     title: '<i>SAVED!</i>',
-                    html: 'Your Character Build url is ready.',
-                    confirmButtonText: `Copy to Clipboard`,
+                    html: this.$t('BUILDER.CARD.PERK_POINTS_SAVE_TEXT'),
+                    confirmButtonText: this.$t('BUILDER.CARD.PERK_POINTS_COPY_CLIPBOARD'),
                     focusConfirm: false
                 }).then((res) => {
                     this.$copyText(buildUrl);

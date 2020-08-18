@@ -42,7 +42,13 @@ export default {
 
             PERK_POINTS_DESCRIPTION: 'Sie müssen ein Wert von 0 oder mehr Perk Punkten haben um den Build fertig zu stellen.',
             PERK_POINTS_RESET_BUTTON: 'Zurücksetzten',
-            PERK_POINTS_SAVE_BUTTON: 'Build Speichern'
+            PERK_POINTS_SAVE_BUTTON: 'Build Speichern',
+            PERK_POINTS_SAVE_TEXT: 'Dein Charakter Build ist fertig.',
+            PERK_POINTS_COPY_CLIPBOARD: 'In zwischenablage kopieren',
+
+            EXTENDED_STATS_BUTTON_OPEN: 'Öffne Erweiterte Statistiken',
+            EXTENDED_STATS_BUTTON_CLOSE: 'Schließe Erweiterte Statistiken',
+            EXTENDED_STATS_BUTTON_WIP: '(Work in Progress)'
         },
         OCCUPATION: {
             UNEMPLOYED_TITLE: 'Arbeitslos',

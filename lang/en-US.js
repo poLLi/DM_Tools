@@ -42,7 +42,13 @@ export default {
 
             PERK_POINTS_DESCRIPTION: 'You need to have a balance of 0 or more perk points in order to finish the build.',
             PERK_POINTS_RESET_BUTTON: 'Reset',
-            PERK_POINTS_SAVE_BUTTON: 'Save Build'
+            PERK_POINTS_SAVE_BUTTON: 'Save Build',
+            PERK_POINTS_SAVE_TEXT: 'Your Character Build url is ready.',
+            PERK_POINTS_COPY_CLIPBOARD: 'Copy to Clipboard',
+
+            EXTENDED_STATS_BUTTON_OPEN: 'Open Extended Statistics',
+            EXTENDED_STATS_BUTTON_CLOSE: 'Close Extended Statistics',
+            EXTENDED_STATS_BUTTON_WIP: '(Work in Progress)'
         },
         OCCUPATION: {
             UNEMPLOYED_TITLE: 'Unemployed',
