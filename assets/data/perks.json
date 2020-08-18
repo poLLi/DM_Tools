@@ -1,8 +1,8 @@
 [
     {
         "id": "1",
-        "title": "CPR Training",
-        "description": "Gain the ability to bring people out of unconsciusness by performing CPR.",
+        "title": "CPR_TRAINING_TITLE",
+        "description": "CPR_TRAINING_DESCRIPTION",
         "type": "Trait",
         "effect": {
             "attribut": [],
@@ -14,8 +14,8 @@
     },
     {
         "id": "2",
-        "title": "Astronomer",
-        "description": "Draws a compass on the screen at night when pressing the HUD promt key.",
+        "title": "ASTRONOMER_TITLE",
+        "description": "ASTRONOMER_DESCRIPTION",
         "type": "Trait",
         "effect": {
             "attribut": [],
@@ -27,8 +27,8 @@
     },
     {
         "id": "3",
-        "title": "Observant",
-        "description": "Perks are listed when looking at a player with the HUD promt active",
+        "title": "OBSERVANT_TITLE",
+        "description": "OBSERVANT_DESCRIPTION",
         "type": "Trait",
         "effect": {
             "attribut": [],
@@ -40,8 +40,8 @@
     },
     {
         "id": "4",
-        "title": "Herbalist",
-        "description": "Allows you to easy identify poisonous berries and mushrooms.",
+        "title": "HERBALIST_TITLE",
+        "description": "HERBALIST_DESCRIPTION",
         "type": "Trait",
         "effect": {
             "attribut": [],
@@ -53,8 +53,8 @@
     },
     {
         "id": "5",
-        "title": "Peanut Allergy",
-        "description": "Triggers a servere allergic reaction when consuming foods containing peanuts. (Spawn with on epi-pen).",
+        "title": "PEANUT_ALLERGY_TITLE",
+        "description": "PEANUT_ALLERGY_DESCRIPTION",
         "type": "Trait",
         "effect": {
             "attribut": [],
@@ -66,8 +66,8 @@
     },
     {
         "id": "6",
-        "title": "Paranoid",
-        "description": "You will randomly hear gunshots that are not real.",
+        "title": "PARANOID_TITLE",
+        "description": "PARANOID_DESCRIPTION",
         "type": "Trait",
         "effect": {
             "attribut": [],
@@ -79,8 +79,8 @@
     },
     {
         "id": "7",
-        "title": "Univeral Receiver",
-        "description": "Forces the blood type to AB+ which allows you to receive blood from anyone without triggering a hemolytic reaction.",
+        "title": "UNIVERSAL_RECEIVER_TITLE",
+        "description": "UNIVERSAL_RECEIVER_DESCRIPTION",
         "type": "Trait",
         "effect": {
             "attribut": [],
@@ -92,8 +92,8 @@
     },
     {
         "id": "8",
-        "title": "Universal Donor",
-        "description": "Forces the blood type to O- which anyone can receive when in need of a transfusion.",
+        "title": "UNIVERSAL_DONOR_TITLE",
+        "description": "UNIVERSAL_DONOR_DESCRIPTION",
         "type": "Trait",
         "effect": {
             "attribut": [],
@@ -105,8 +105,8 @@
     },
     {
         "id": "9",
-        "title": "Jogger",
-        "description": "You used to enjoy running when it was just for fun. Gain +2 Agility",
+        "title": "JOGGER_TITLE",
+        "description": "JOGGER_DESCRIPTION",
         "type": "Hobby",
         "effect": {
             "attribut": [
@@ -123,8 +123,8 @@
     },
     {
         "id": "10",
-        "title": "Nerd",
-        "description": "You used to play a lot of videogames in your spare time. Lose -2 Strength",
+        "title": "NERD_TITLE",
+        "description": "NERD_DESCRIPTION",
         "type": "Hobby",
         "effect": {
             "attribut": [
@@ -141,8 +141,8 @@
     },
     {
         "id": "11",
-        "title": "Chess Player",
-        "description": "You used to play competitive chess. Gain +2 Intelligence.",
+        "title": "CHESS_PLAYER_TITLE",
+        "description": "CHESS_PLAYER_DESCRIPTION",
         "type": "Hobby",
         "effect": {
             "attribut": [
@@ -159,8 +159,8 @@
     },
     {
         "id": "12",
-        "title": "Party Boy",
-        "description": "You used to party... a lot. Lose -2 Intelligence.",
+        "title": "PARTY_BOY_TITLE",
+        "description": "PARTY_BOY_DESCRIPTION",
         "type": "Hobby",
         "effect": {
             "attribut": [
@@ -177,8 +177,8 @@
     },
     {
         "id": "13",
-        "title": "Runner",
-        "description": "You used to enjoy running marathons. Gain +300s sprint time and +1 Agility",
+        "title": "RUNNER_TITLE",
+        "description": "RUNNER_DESCRIPTION",
         "type": "Hobby",
         "effect": {
             "attribut": [
@@ -195,8 +195,8 @@
     },
     {
         "id": "14",
-        "title": "Strength Training",
-        "description": "Your life orients around lifting when you´re not at work. Gain +2 Strength.",
+        "title": "STRENGTH_TRAINING_TITLE",
+        "description": "STRENGTH_TRAINING_DESCRIPTION",
         "type": "Hobby",
         "effect": {
             "attribut": [
@@ -213,8 +213,8 @@
     },
     {
         "id": "15",
-        "title": "Weekend Bartender",
-        "description": "You used to be a bartender on weekends, it  gave you an insight into human behavior. Gain +2 Chraisma.",
+        "title": "WEEKEND_BARTENDER_TITLE",
+        "description": "WEEKEND_BARTENDER_DESCRIPTION",
         "type": "Hobby",
         "effect": {
             "attribut": [
@@ -231,8 +231,8 @@
     },
     {
         "id": "16",
-        "title": "Wrestler",
-        "description": "You used to be a wrestler when you were younger, it made you pretty hard to bring down. Gain +2 Endurance.",
+        "title": "WRESTLER_TITLE",
+        "description": "WRESTLER_DESCRIPTION",
         "type": "Hobby",
         "effect": {
             "attribut": [
@@ -249,8 +249,8 @@
     },
     {
         "id": "17",
-        "title": "Amateur Cook",
-        "description": "You like to cook fancy meals at home and aren´t afraid of getting behind the stove. Gain +25 bonus to Cooking.",
+        "title": "AMATEUR_COOK_TITLE",
+        "description": "AMATEUR_COOK_DESCRIPTION",
         "type": "Skill",
         "effect": {
             "attribut": [],
@@ -267,8 +267,8 @@
     },
     {
         "id": "18",
-        "title": "Awful Cook",
-        "description": "You´re terrible behind the stove. Reveive a -25 penalty to Cooking.",
+        "title": "AWFUL_COOK_TITLE",
+        "description": "AWFUL_COOK_DESCRIPTION",
         "type": "Skill",
         "effect": {
             "attribut": [],
@@ -285,8 +285,8 @@
     },
     {
         "id": "19",
-        "title": "Metalworker",
-        "description": "You´ve tinkered around with metalworking and locksmithing. Gain a +25 bonus to Lockpicking.",
+        "title": "METALWORKER_TITLE",
+        "description": "METALWORKER_DESCRIPTION",
         "type": "Skill",
         "effect": {
             "attribut": [],
@@ -303,8 +303,8 @@
     },
     {
         "id": "20",
-        "title": "Green Thumb",
-        "description": "You enjoy gardening. Gain a +25 bonus to Farmin.",
+        "title": "GREEN_THUMB_TITLE",
+        "description": "GREEN_THUMB_DESCRIPTION",
         "type": "Skill",
         "effect": {
             "attribut": [],
@@ -321,8 +321,8 @@
     },
     {
         "id": "21",
-        "title": "Hobbyist",
-        "description": "You enjoy model trains, playing with rockets and all sorts of different gadgets. Gain a +25 bonus to Crafting",
+        "title": "HOBBYIST_TITLE",
+        "description": "HOBBYIST_DESCRIPTION",
         "type": "Skill",
         "effect": {
             "attribut": [],
@@ -339,8 +339,8 @@
     },
     {
         "id": "22",
-        "title": "Gearhead",
-        "description": "You sepend a lot of time restoring old cars. Gain a +25 bonus to Mechanic.",
+        "title": "GEARHEAD_TITLE",
+        "description": "GEARHEAD_DESCRIPTION",
         "type": "Skill",
         "effect": {
             "attribut": [],
@@ -357,8 +357,8 @@
     },
     {
         "id": "23",
-        "title": "Volunteer Firefighter",
-        "description": "You were a volunteer firefighter when you were yunger. Gain a +25 bonus to Medical.",
+        "title": "VOLUNTEER_FIRE_FIGHTER_TITLE",
+        "description": "VOLUNTEER_FIRE_FIGHTER_DESCRIPTION",
         "type": "Skill",
         "effect": {
             "attribut": [],
@@ -375,8 +375,8 @@
     },
     {
         "id": "24",
-        "title": "Big Boned",
-        "description": "Absulute unit. More limb health and +750ml max blood.",
+        "title": "BIG_BONED_TITLE",
+        "description": "BIG_BONED_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -388,8 +388,8 @@
     },
     {
         "id": "25",
-        "title": "Osteoporosis",
-        "description": "You take increased limb damage.",
+        "title": "OSTEOPOROSIS_TITLE",
+        "description": "OSTEOPOROSIS_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -401,8 +401,8 @@
     },
     {
         "id": "26",
-        "title": "Brave",
-        "description": "Less supression when taking fire.",
+        "title": "BRAVE_TITLE",
+        "description": "BRAVE_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -414,8 +414,8 @@
     },
     {
         "id": "27",
-        "title": "Fearful",
-        "description": "Take more supression when taking fire.",
+        "title": "FEARFUL_TITLE",
+        "description": "FEARFUL_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -427,8 +427,8 @@
     },
     {
         "id": "28",
-        "title": "No Fear",
-        "description": "You´ve seen it all. You do not fear death. -80% supression from taking fire.",
+        "title": "NO_FEAR_TITLE",
+        "description": "NO_FEAR_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -440,8 +440,8 @@
     },
     {
         "id": "29",
-        "title": "Frightful",
-        "description": "Additional +80% supression when being attacked.",
+        "title": "FRIGHTFUL_TITLE",
+        "description": "FRIGHTFUL_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -453,8 +453,8 @@
     },
     {
         "id": "30",
-        "title": "Fast Metabolism",
-        "description": "You metabolize food 50% faster.",
+        "title": "FAST_METABOLISM_TITLE",
+        "description": "FAST_METABOLISM_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -466,8 +466,8 @@
     },
     {
         "id": "31",
-        "title": "Slow Metabolism",
-        "description": "You metabolize food 50% more slowly.",
+        "title": "SLOW_METABOLISM_TITLE",
+        "description": "SLOW_METABOLISM_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -479,8 +479,8 @@
     },
     {
         "id": "32",
-        "title": "Iron Stomach",
-        "description": "Get sick less often when drinking and eating.",
+        "title": "IRON_STOMACH_TITLE",
+        "description": "IRON_STOMACH_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -492,8 +492,8 @@
     },
     {
         "id": "33",
-        "title": "Weak Stomach",
-        "description": "Get sick more often when drinking and eating.",
+        "title": "WEAK_STOMACH_TITLE",
+        "description": "WEAK_STOMACH_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -505,8 +505,8 @@
     },
     {
         "id": "34",
-        "title": "Silent Search",
-        "description": "Make 50% less noise when searching a container.",
+        "title": "SILENT_SEARCH_TITLE",
+        "description": "SILENT_SEARCH_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -518,8 +518,8 @@
     },
     {
         "id": "35",
-        "title": "Noisy Search",
-        "description": "Make 50% more noise when searching a container.",
+        "title": "NOISY_SEARCH_TITLE",
+        "description": "NOISY_SEARCH_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -531,8 +531,8 @@
     },
     {
         "id": "36",
-        "title": "Thick Skinned",
-        "description": "Take 15% less damage from melee attacks.",
+        "title": "THICK_SKINNED_TITLE",
+        "description": "THICK_SKINNED_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -544,8 +544,8 @@
     },
     {
         "id": "37",
-        "title": "Thin Skinned",
-        "description": "Take 15% more damage from melee attacks.",
+        "title": "THIN_SKINNED_TITLE",
+        "description": "THIN_SKINNED_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -557,8 +557,8 @@
     },
     {
         "id": "38",
-        "title": "Nimble Fingers",
-        "description": "Search containers 50% faster.",
+        "title": "NIMBLE_FINGERS_TITLE",
+        "description": "NIMBLE_FINGERS_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -570,8 +570,8 @@
     },
     {
         "id": "39",
-        "title": "Sausage Fingers",
-        "description": "Search containers 50% more slowly.",
+        "title": "SAUSAGE_FINGERS_TITLE",
+        "description": "SAUSAGE_FINGERS_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -583,8 +583,8 @@
     },
     {
         "id": "40",
-        "title": "Heavy Weight",
-        "description": "You get drunk far less easily.",
+        "title": "HEAVY_WEIGHT_TITLE",
+        "description": "HEAVY_WEIGHT_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -596,8 +596,8 @@
     },
     {
         "id": "41",
-        "title": "Light Weight",
-        "description": "Impact of drinking too much alcohol is amplified. Lower threshold to start feeling the effects.",
+        "title": "LIGHT_WEIGHT_TITLE",
+        "description": "LIGHT_WEIGHT_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -609,8 +609,8 @@
     },
     {
         "id": "42",
-        "title": "Light Step",
-        "description": "Your footsteps are 30% quieter.",
+        "title": "LIGTH_STEP_TITLE",
+        "description": "LIGTH_STEP_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],
@@ -622,8 +622,8 @@
     },
     {
         "id": "43",
-        "title": "Heavy Step",
-        "description": "Your footsteps are 30% louder.",
+        "title": "HEAVY_STEP_TITLE",
+        "description": "HEAVY_STEP_DESCRIPTION",
         "type": "Stat",
         "effect": {
             "attribut": [],

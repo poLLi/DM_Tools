@@ -1,6 +1,6 @@
 {
     "name": "dm_tools",
-    "version": "1.0.2",
+    "version": "1.2.0",
     "private": true,
     "author": "PoLLi",
     "scripts": {
@@ -24,6 +24,7 @@
         "bootstrap-vue": "^2.15.0",
         "json-url": "^2.6.0",
         "nuxt": "^2.14.0",
+        "nuxt-i18n": "^6.13.9",
         "nuxt-start": "^2.14.3",
         "vue-clipboard2": "^0.3.1",
         "vue-sweetalert2": "^3.0.6"

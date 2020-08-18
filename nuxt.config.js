@@ -32,6 +32,11 @@ export default {
             { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
             { rel: 'icon', type: 'image/png', href: '/favicon/android-icon-192x192.png', sizes: '192x192' },
             { rel: 'apple-touch-icon', href: '/favicon/apple-icon-180x180.png', sizes: '180x180' }
+        ],
+        script: [
+            {
+                src: '/just-analytics.js'
+            }
         ]
     },
     loading: false,
@@ -64,8 +69,27 @@ export default {
         'bootstrap-vue/nuxt',
         // Doc: https://axios.nuxtjs.org/usage
         // '@nuxtjs/axios'
-        'vue-sweetalert2/nuxt'
+        'vue-sweetalert2/nuxt',
+        'nuxt-i18n'
     ],
+    i18n: {
+        locales: [
+            {
+                name: 'English',
+                code: 'en',
+                file: 'en-US.js'
+            },
+            {
+                name: 'German',
+                code: 'de',
+                file: 'de-DE.js'
+            }
+        ],
+        lazy: true,
+        langDir: 'lang/',
+        defaultLocale: 'en',
+        detectBrowserLanguage: false
+    },
     /*
      ** BootstrapVue Settings
      */

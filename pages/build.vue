@@ -4,14 +4,14 @@
             <b-col sm="12">
                 <b-alert show variant="warning" dismissible>
                     <b-icon icon="exclamation-circle" variant="danger" font-scale="1.5" class="mr-2"></b-icon>
-                    <strong>WARNING:</strong>Almost everything is subject to change.
+                    <strong>WARNING:</strong> Almost everything is subject to change.
                     <small>Current Verion: Closed-Alpha</small>
                 </b-alert>
             </b-col>
             <b-col lg="4" class="no-select mb-4">
                 <b-card class="shadow">
                     <b-card-title class="text-center p-2 title-rounded">
-                        Occupation
+                        {{ $t('BUILDER.CARD.OCCUPATION_TITLE') }}
                     </b-card-title>
 
                     <div class="occupationList">
@@ -23,7 +23,7 @@
                                 @click="changeOccupation(occupation)"
                             >
                                 <b-card-title>
-                                    {{ occupation.title }}
+                                    {{ $t('BUILDER.OCCUPATION.' + occupation.title) }}
                                 </b-card-title>
 
                                 <b-tooltip
@@ -34,11 +34,13 @@
                                     noninteractive
                                     :delay="tooltip.delay"
                                 >
-                                    <p class="m-0 p-1">{{ occupation.description }}</p>
+                                    <p class="m-0 p-1">{{ $t('BUILDER.OCCUPATION.' + occupation.description) }}</p>
                                 </b-tooltip>
 
                                 <b-card-text>
-                                    <span class="small text-secondary m-0 pb-2">Benefit: {{ occupation.benefit }}</span>
+                                    <span class="small text-secondary m-0 pb-2">
+                                        Benefit: {{ $t('BUILDER.OCCUPATION.' + occupation.benefit) }}
+                                    </span>
                                     <b-badge v-if="occupation.perkType == 'neutral'" class="float-right">
                                         Perk Points: {{ occupation.perkPoints }}
                                     </b-badge>
@@ -67,11 +69,11 @@
                     <b-col>
                         <b-card class="shadow">
                             <b-card-title class="text-center p-2 title-rounded">
-                                Character Data
+                                {{ $t('BUILDER.CARD.CHARACTER_DATA_TITLE') }}
                             </b-card-title>
 
-                            <h3 class="section">Attributes</h3>
-                            <span>Agility</span>
+                            <h3 class="section">{{ $t('BUILDER.CARD.CHARACTER_DATA_ATTRIBUTES_TITLE') }}</h3>
+                            <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_ATTRIBUTES_AGILITY') }}</span>
                             <b-progress
                                 :value="character.attributes.agility"
                                 max="10"
@@ -79,7 +81,7 @@
                                 show-value
                                 class="mb-2 bg-dark attribute"
                             ></b-progress>
-                            <span>Charisma</span>
+                            <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_ATTRIBUTES_CHARISMA') }}</span>
                             <b-progress
                                 :value="character.attributes.charisma"
                                 max="10"
@@ -87,7 +89,7 @@
                                 show-value
                                 class="mb-2 bg-dark attribute"
                             ></b-progress>
-                            <span>Endurance</span>
+                            <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_ATTRIBUTES_ENDURANCE') }}</span>
                             <b-progress
                                 :value="character.attributes.endurance"
                                 max="10"
@@ -95,7 +97,7 @@
                                 show-value
                                 class="mb-2 bg-dark attribute"
                             ></b-progress>
-                            <span>Itelligence</span>
+                            <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_ATTRIBUTES_INTELLIGENCE') }}</span>
                             <b-progress
                                 :value="character.attributes.intelligence"
                                 max="10"
@@ -103,7 +105,7 @@
                                 show-value
                                 class="mb-2 bg-dark attribute"
                             ></b-progress>
-                            <span>Strength</span>
+                            <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_ATTRIBUTES_STRENGTH') }}</span>
                             <b-progress
                                 :value="character.attributes.strength"
                                 max="10"
@@ -113,10 +115,10 @@
                             ></b-progress>
 
                             <hr />
-                            <h3 class="section">Skills</h3>
+                            <h3 class="section">{{ $t('BUILDER.CARD.CHARACTER_DATA_SKILLS_TITLE') }}</h3>
                             <div class="d-flex justify-content-between">
                                 <div class="flex-fill p-1">
-                                    <span>Cooking</span>
+                                    <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_SKILLS_COOKING') }}</span>
                                     <b-progress
                                         :value="character.skills.cooking"
                                         max="100"
@@ -124,7 +126,7 @@
                                         show-value
                                         class="mb-2 bg-dark attribute"
                                     ></b-progress>
-                                    <span>Farming</span>
+                                    <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_SKILLS_FARMING') }}</span>
                                     <b-progress
                                         :value="character.skills.farming"
                                         max="100"
@@ -132,7 +134,7 @@
                                         show-value
                                         class="mb-2 bg-dark attribute"
                                     ></b-progress>
-                                    <span>Mechanic</span>
+                                    <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_SKILLS_MECHANIC') }}</span>
                                     <b-progress
                                         :value="character.skills.mechanic"
                                         max="100"
@@ -142,7 +144,7 @@
                                     ></b-progress>
                                 </div>
                                 <div class="flex-fill p-1">
-                                    <span>Crafting</span>
+                                    <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_SKILLS_CRAFTING') }}</span>
                                     <b-progress
                                         :value="character.skills.crafting"
                                         max="100"
@@ -150,7 +152,7 @@
                                         show-value
                                         class="mb-2 bg-dark attribute"
                                     ></b-progress>
-                                    <span>Lockpicking</span>
+                                    <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_SKILLS_LOCKPICKING') }}</span>
                                     <b-progress
                                         :value="character.skills.lockpicking"
                                         max="100"
@@ -158,7 +160,7 @@
                                         show-value
                                         class="mb-2 bg-dark attribute"
                                     ></b-progress>
-                                    <span>Medical</span>
+                                    <span>{{ $t('BUILDER.CARD.CHARACTER_DATA_SKILLS_MEDICAL') }}</span>
                                     <b-progress
                                         :value="character.skills.medical"
                                         max="100"
@@ -178,13 +180,16 @@
                                 Perk Points: {{ perkPoints }}
                             </b-card-title>
                             <p class="small pb-1">
-                                You need to have a balance of 0 or more perk points in order to finish the build.
+                                {{ $t('BUILDER.CARD.PERK_POINTS_DESCRIPTION') }}
                             </p>
+                            <b-button variant="secondary" @click="resetBuild">
+                                <b-icon icon="gear"></b-icon> {{ $t('BUILDER.CARD.PERK_POINTS_RESET_BUTTON') }}
+                            </b-button>
                             <b-button v-if="perkPoints >= 0" class="float-right" variant="success" @click="saveBuild">
-                                <b-icon icon="clipboard-plus"></b-icon> Save Build
+                                <b-icon icon="clipboard-plus"></b-icon> {{ $t('BUILDER.CARD.PERK_POINTS_SAVE_BUTTON') }}
                             </b-button>
                             <b-button v-if="perkPoints < 0" class="float-right" variant="primary" disabled>
-                                Save Build
+                                <b-icon icon="clipboard-plus"></b-icon> {{ $t('BUILDER.CARD.PERK_POINTS_SAVE_BUTTON') }}
                             </b-button>
                         </b-card>
                     </b-col>
@@ -193,7 +198,7 @@
             <b-col lg="4" class="no-select mb-4">
                 <b-card class="shadow">
                     <b-card-title class="text-center p-2 title-rounded">
-                        Perk Selection
+                        {{ $t('BUILDER.CARD.PERK_SELECTION_TITLE') }}
                     </b-card-title>
                     <div class="perkList">
                         <div v-for="perk in perks" :key="perk.id">
@@ -205,7 +210,9 @@
                                 @click="togglePerk(perk)"
                             >
                                 <div class="d-flex justify-content-between">
-                                    <div class="flex-grow-1 font-weight-bold">{{ perk.title }}</div>
+                                    <div class="flex-grow-1 font-weight-bold">
+                                        {{ $t('BUILDER.PERK.' + perk.title) }}
+                                    </div>
                                     <div class="mr-3">
                                         <b-badge>{{ perk.type }}</b-badge>
                                     </div>
@@ -218,7 +225,7 @@
                                         </b-badge>
                                     </div>
                                 </div>
-                                <p class="m-0 p-1 small text-secondary">{{ perk.description }}</p>
+                                <p class="m-0 p-1 small text-secondary">{{ $t('BUILDER.PERK.' + perk.description) }}</p>
                             </b-card>
                         </div>
                     </div>
@@ -230,14 +237,14 @@
                 <b-card class="shadow no-select">
                     <b-button v-b-toggle:extendedStats block variant="outline-secondary">
                         <span class="h5 when-open">
-                            Close Extended Statistics
+                            {{ $t('BUILDER.CARD.EXTENDED_STATS_BUTTON_CLOSE') }}
                         </span>
                         <span class="h5 when-closed">
-                            Open Extended Statistics
+                            {{ $t('BUILDER.CARD.EXTENDED_STATS_BUTTON_OPEN') }}
                         </span>
                         <br />
                         <small class="font-weight-light">
-                            (Still Work in Progress!)
+                            {{ $t('BUILDER.CARD.EXTENDED_STATS_BUTTON_WIP') }}
                         </small>
                     </b-button>
 
@@ -474,9 +481,13 @@ export default {
             const codec = require('json-url')('lzw');
             codec.compress(build).then((resault) => {
                 if (this.$route.path[this.$route.path.length - 1] === '/') {
-                    history.pushState({}, null, this.$route.path + '?b=' + resault);
+                    this.$router.push({
+                        query: { b: resault }
+                    });
                 } else {
-                    history.pushState({}, null, this.$route.path + '/?b=' + resault);
+                    this.$router.push({
+                        query: { b: resault }
+                    });
                 }
             });
         },
@@ -490,17 +501,28 @@ export default {
 
             const codec = require('json-url')('lzw');
             codec.compress(build).then((resault) => {
-                const buildUrl = `https://dm.just-look.net/build/?b=${resault}`;
+                const buildUrl = `https://dm.just-look.net/build?b=${resault}`;
                 this.$swal({
                     icon: 'success',
                     title: '<i>SAVED!</i>',
-                    html: 'Your Character Build url is ready.',
-                    confirmButtonText: `Copy to Clipboard`,
+                    html: this.$t('BUILDER.CARD.PERK_POINTS_SAVE_TEXT'),
+                    confirmButtonText: this.$t('BUILDER.CARD.PERK_POINTS_COPY_CLIPBOARD'),
                     focusConfirm: false
                 }).then((res) => {
                     this.$copyText(buildUrl);
                 });
             });
+        },
+
+        resetBuild() {
+            this.acvtivOccupation = '1';
+            this.activePerks = [];
+            this.activeStats = [];
+
+            this.calculatePoints();
+            this.calculateAttributes();
+            this.calculateSkills();
+            this.compressBuild();
         }
     }
 };

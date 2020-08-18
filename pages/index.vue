@@ -9,12 +9,12 @@
                             alt="Dead Matter Tools"
                             class="mainhead-logo img-fluid"
                         />
-                        <h2 class="text-uppercase text-white font-weight-medium">Community Web Tools</h2>
+                        <h2 class="text-uppercase text-white font-weight-medium">{{ $t('START.HEADLINE_TITLE') }}</h2>
                         <p class="text-primary">( unofficial )</p>
                         <hr class="my-4" />
                     </b-col>
                     <b-col lg="8" class="text-white mb-5">
-                        <p>Everything you need to survive the Zombie-Apocalypse!</p>
+                        <p>{{ $t('START.HEADLINE_DESCRIPTION') }}</p>
                     </b-col>
                     <b-col lg="12 mt-5">
                         <p class="font-weight-light text-secondary">
