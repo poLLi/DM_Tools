@@ -8,6 +8,9 @@ export default {
         MORE: 'More',
         MORE_WEAPONS: 'Weapons',
         MORE_ITEMS: 'Items',
+        MORE_VEHICLES: 'Vehicles',
+        MORE_FACTIONS: 'Factions',
+        MORE_CREATURES: 'Creatures',
         CONTACT: 'Contact',
         OPTIONS_LANG_TITLE: '> Change Language',
         OPTIONS_EXTRA_TITLE: '> Extras'

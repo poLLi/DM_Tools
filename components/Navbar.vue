@@ -16,15 +16,24 @@
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item :to="localePath('/')" exact>{{ $t('MENU.START') }}</b-nav-item>
                     <b-nav-item :to="localePath('/build')">{{ $t('MENU.BUILDER') }}</b-nav-item>
-                    <b-nav-item :to="localePath('/map')" disabled>Map</b-nav-item>
+                    <b-nav-item :to="localePath('/map')">Map</b-nav-item>
 
                     <b-nav-item-dropdown :text="$t('MENU.MORE')" right>
                         <b-dropdown-header> > Database</b-dropdown-header>
-                        <b-dropdown-item :to="localePath('/info/weapons')" disabled>
+                        <b-dropdown-item :to="localePath('/data/weapons')">
                             {{ $t('MENU.MORE_WEAPONS') }}
                         </b-dropdown-item>
-                        <b-dropdown-item :to="localePath('/info/items')" disabled>
+                        <b-dropdown-item :to="localePath('/data/items')">
                             {{ $t('MENU.MORE_ITEMS') }}
+                        </b-dropdown-item>
+                        <b-dropdown-item :to="localePath('/data/vehicles')">
+                            {{ $t('MENU.MORE_VEHICLES') }}
+                        </b-dropdown-item>
+                        <b-dropdown-item :to="localePath('/data/factions')">
+                            {{ $t('MENU.MORE_FACTIONS') }}
+                        </b-dropdown-item>
+                        <b-dropdown-item :to="localePath('/data/creatures')">
+                            {{ $t('MENU.MORE_CREATURES') }}
                         </b-dropdown-item>
                     </b-nav-item-dropdown>
 

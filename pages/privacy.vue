@@ -296,9 +296,4 @@
 export default {};
 </script>
 
-<style lang="scss" scoped>
-.full-height {
-    min-height: 90vh;
-    padding-top: 10vh;
-}
-</style>
+<style lang="scss" scoped></style>

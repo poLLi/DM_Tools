@@ -104,11 +104,6 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.full-height {
-    min-height: 90vh;
-    padding-top: 10vh;
-}
-
 .info {
     margin-top: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
