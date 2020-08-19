@@ -2,10 +2,24 @@
     <b-container class="first-container mb-5">
         <b-row>
             <b-col sm="12">
-                <b-alert show variant="warning" dismissible>
+                <b-alert
+                    :show="alert.dismissSecs"
+                    dismissible
+                    fade
+                    variant="warning"
+                    @dismissed="alert.dismissCountDown = 0"
+                    @dismiss-count-down="countDownChanged"
+                >
                     <b-icon icon="exclamation-circle" variant="danger" font-scale="1.5" class="mr-2"></b-icon>
                     <strong>WARNING:</strong> Almost everything is subject to change.
                     <small>Current Verion: Closed-Alpha</small>
+                    <b-progress
+                        variant="warning"
+                        :max="alert.dismissSecs"
+                        :value="alert.dismissCountDown"
+                        height="4px"
+                        class="mt-2 ml-4"
+                    ></b-progress>
                 </b-alert>
             </b-col>
             <b-col lg="4" class="no-select mb-4">
@@ -295,6 +309,10 @@ export default {
                     hide: 10
                 }
             },
+            alert: {
+                dismissSecs: 8,
+                dismissCountDown: 8
+            },
             isDesktop: false
         };
     },
@@ -523,6 +541,10 @@ export default {
             this.calculateAttributes();
             this.calculateSkills();
             this.compressBuild();
+        },
+
+        countDownChanged(dismissCountDown) {
+            this.alert.dismissCountDown = dismissCountDown;
         }
     }
 };
