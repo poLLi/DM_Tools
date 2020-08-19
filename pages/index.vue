@@ -29,14 +29,14 @@
                         >
                             Community Discord
                         </a>
-                        <!-- <a
+                        <a
                             class="btn btn-secondary"
-                            href="https://github.com/poLLi/DM_Tools/issues"
+                            href="https://github.com/poLLi/DM_Tools_Localization"
                             target="_blank"
-                            rel="noopener noreferrer"
+                            rel="noopener"
                         >
-                            Github Issue´s
-                        </a> -->
+                            Github
+                        </a>
                     </b-col>
                 </b-row>
             </b-container>
