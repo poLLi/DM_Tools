@@ -8,6 +8,9 @@ export default {
         MORE: 'Daha Fazla',
         MORE_WEAPONS: 'Silahlar',
         MORE_ITEMS: 'Eşyalar',
+        MORE_VEHICLES: 'Vehicles',
+        MORE_FACTIONS: 'Factions',
+        MORE_CREATURES: 'Creatures',
         CONTACT: 'İletişim',
         OPTIONS_LANG_TITLE: '> Dili Değiştir',
         OPTIONS_EXTRA_TITLE: '> Ekstralar'

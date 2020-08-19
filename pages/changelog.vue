@@ -7,6 +7,31 @@
             </div>
 
             <div class="info">
+                <h2 class="title text-monospace">Version 1.2.1</h2>
+                <div class="pl-4">
+                    <p class="text-primary h5">🐛 Bug-Fixes</p>
+                    <ul>
+                        <li>Fixed Navbar Brand link to redirect with active locale</li>
+                    </ul>
+                    <p class="text-primary h5">✏️ Improvements</p>
+                    <ul>
+                        <li>Added Turkish localization (wip)</li>
+                        <li>Changed Build Config to extract CSS Chunks (client will only load in what it needs)</li>
+                        <li>Did a bunch of SEO improvements</li>
+                        <li>Alert on Character-Builder will dismiss itself after short amount of time</li>
+                    </ul>
+                    <p class="text-primary h5">✨ Features</p>
+                    <ul>
+                        <li>Added Map Page</li>
+                        <li>Added Database/Items Page</li>
+                        <li>Added Database/Weapons Page</li>
+                        <li>Added Database/Vehicles Page</li>
+                        <li>Added Database/Factions Page</li>
+                        <li>Added Database/Creatures Page</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info">
                 <h2 class="title text-monospace">Version 1.2.0</h2>
                 <div class="pl-4">
                     <p class="text-muted">
@@ -104,11 +129,6 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.full-height {
-    min-height: 90vh;
-    padding-top: 10vh;
-}
-
 .info {
     margin-top: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
