@@ -7,7 +7,7 @@
                         <a
                             href="https://www.survivalservers.com/services/game_servers/dead_matter/"
                             target="_blank"
-                            rel="noopener noreferrer"
+                            rel="noopener"
                         >
                             Dead Matter Server Hosting
                         </a>
