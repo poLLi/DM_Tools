@@ -1,7 +1,7 @@
 <template>
     <b-navbar id="mainNav" toggleable="lg" fixed="top" type="dark" variant="dark">
         <b-container>
-            <b-navbar-brand to="/">
+            <b-navbar-brand :to="localePath('/')">
                 <img
                     src="~/assets/images/jl_logo.png"
                     alt="Just-Look Network Logo"
