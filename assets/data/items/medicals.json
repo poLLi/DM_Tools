@@ -1,0 +1,14 @@
+[
+    {
+        "id": "Item_Medical_EPI_PEN",
+        "name": "MEDICAL.EPI_PEN_NAME",
+        "description": "MEDICAL.EPI_PEN_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_CONSUMABLE", "ITEM_CONSUMABLE", "ITEM_CONSUMABLE"],
+        "details": {
+            "size": "1x3",
+            "weight": "0.05kg",
+            "rarity": "COMMON"
+        }
+    }
+]

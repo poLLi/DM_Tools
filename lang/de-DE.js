@@ -6,6 +6,7 @@ export default {
         BUILDER: 'Charakter-Builder',
         MAP: 'Karte',
         MORE: 'Mehr',
+        MORE_DATABASE: '> Database',
         MORE_WEAPONS: 'Waffen',
         MORE_ITEMS: 'Gegenstände',
         MORE_VEHICLES: 'Fahrzeuge',
@@ -13,7 +14,8 @@ export default {
         MORE_CREATURES: 'Kreaturen',
         CONTACT: 'Kontakt',
         OPTIONS_LANG_TITLE: '> Sprache ändern',
-        OPTIONS_EXTRA_TITLE: '> Extras'
+        OPTIONS_EXTRA_TITLE: '> Extras',
+        OPTIONS_CHANGELOG: 'Changelog'
     },
 
     // PAGE: START
@@ -220,6 +222,121 @@ export default {
             
             HEAVY_STEP_TITLE: 'Schwere Füße',
             HEAVY_STEP_DESCRIPTION: 'Du machst 30% mehr geräuche beim bewegen.'            
+        }
+    },
+
+
+    // ---------------------------
+    // DATABASE
+    DATA: {
+        CARD: {
+            NAME: 'Name',
+            DESCRIPTION: 'Description',
+            TAGS: 'Tags',
+            STATS: 'Stats',
+            DATABASE: 'Database',
+
+            DATABASE_DESCRIPTION_ITEMS: 'Lists of every Item Dead Matter has to offer',
+            DATABASE_DESCRIPTION_WEAPONS: 'Lists of every Weapons Dead Matter has to offer',
+            DATABASE_DESCRIPTION_VEHICLES: 'Lists of every Vehicles Dead Matter has to offer',
+            DATABASE_DESCRIPTION_FACTIONS: 'Lists of every Factions Dead Matter has to offer',
+            DATABASE_DESCRIPTION_CREATURES: 'Lists of every Creatures Dead Matter has to offer'
+        },
+
+        RARITY: {
+            RARE: 'Rare',
+            UNCOMMON: 'Uncommon',
+            COMMON: 'Common',
+        },
+
+        CATEGORY: {
+            TITLE: 'Category',
+
+            // ---------------------------
+            WEAPON: 'Weapon',
+            WEAPON_RANGED: 'Ranged Weapon',
+            WEAPON_MEELE: 'Meele Weapon',
+            WEAPON_THROWABLE: 'Throwable',
+            ATTACHMENT: 'Attachment',
+
+            WEAPONS: 'Weapons',
+            WEAPONS_RANGED: 'Ranged Weapons',
+            WEAPONS_MELEE: 'Melee Weapons',
+            WEAPONS_TRHOWABLES: 'Throwables',
+            WEAPONS_ATTACHMENTS: 'Attachments',
+
+            // ---------------------------
+            EQUIPMENT: 'Equipment',
+            EQUIPMENT_CLOTHING: 'Clothing',
+            EQUIPMENT_BACKPACK: 'Backpack',
+            EQUIPMENT_LOWER_BODY: 'Lower Body',
+            EQUIPMENT_UPPER_BODY: 'Upper Body',
+            EQUIPMENT_VEST: 'Vest',
+            EQUIPMENT_SHOE: 'Shoe',
+            EQUIPMENT_HAT: 'Hat',
+
+            EQUIPMENT_CLOTHINGS: 'Clothings',
+            EQUIPMENT_BACKPACKS: 'Backpacks',
+            EQUIPMENT_VESTS: 'Vests',
+            EQUIPMENT_SHOES: 'Shoes',
+            EQUIPMENT_HATS: 'Hats',
+
+            // ---------------------------
+            ITEM: 'Item',
+            ITEM_CONSUMABLE: 'Consumable',
+            ITEM_MATERIAL: 'Material',
+            ITEM_MEDICAL: 'Medical',
+            ITEM_FOOD: 'Food',
+            ITEM_MISC: 'Miscellaneous',
+
+            ITEMS: 'Items',
+            ITEMS_CONSUMABLES: 'Consumables',
+            ITEMS_MATERIALS: 'Materials',
+            ITEMS_MEDICALS: 'Medicals',
+
+            // ---------------------------
+            VEHICLE: 'Vehicle',
+            VEHICLE_LAND: 'Land',
+            VEHICLE_AIR: 'Air',
+            VEHICLE_SEA: 'Sea',
+
+            VEHICLES: 'Vehicles',
+            VEHICLES_LAND: 'Land Vehicles',
+            VEHICLES_AIR: 'Air Vehicles',
+            VEHICLES_SEA: 'Sea Vehicles',
+
+            // ---------------------------
+            CREATURE: 'Creature',
+            CREATURE_ZOMBIE: 'Zombie',
+            CREATURE_ANIMAL: 'Animal',
+
+            CREATURES: 'Creatures',
+            CREATURES_ZOMBIES: 'Zombies',
+            CREATURES_ANIMALS: 'Animals',
+
+            // ---------------------------
+            FACTION: 'Faction',
+            FACTION_TRADER: 'Trader',
+            FACTION_BANDIT: 'Bandit',
+
+            FACTIONS: 'Factions',
+            FACTIONS_TRADS: 'Traders',
+            FACTIONS_BANDITS: 'Bandits',
+        },
+
+        ITEM: {
+            CONSUMABLE: {
+                SODA_BLACKTEA_NAME: 'Black Tea',
+                SODA_BLACKTEA_DESCRIPTION: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, sequi!',
+            },
+            MATERIAL: {
+                WOOD_PLANK_NAME: 'Wood Plank',
+                WOOD_PLANK_DESCRIPTION: 'AAALorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, sequi!',
+            },
+            MEDICAL: {
+                EPI_PEN_NAME: 'Epi-Pen',
+                EPI_PEN_DESCRIPTION: 'BBBLorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, sequi!',
+            }
         }
     }
 };
