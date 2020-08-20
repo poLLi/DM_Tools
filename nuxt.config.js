@@ -119,6 +119,12 @@ export default {
                 code: 'tr',
                 iso: 'tr-TR',
                 file: 'tr-TR.js'
+            },
+            {
+                name: '简体中文',
+                code: 'zh',
+                iso: 'zh-CN',
+                file: 'zh-CN.js'
             }
         ],
         lazy: true,
