@@ -3,7 +3,7 @@
         <b-container>
             <b-row class="d-flex">
                 <b-col class="align-self-end">
-                    <p class="text-muted font-weight-light small">
+                    <p class="text-muted font-weight-light small p-0 mb-2">
                         <a
                             href="https://www.survivalservers.com/services/game_servers/dead_matter/"
                             target="_blank"
@@ -26,6 +26,21 @@
                     </p>
                 </b-col>
                 <b-col class="align-self-end">
+                    <p class="text-right text-muted small p-0 m-0">Our Official Server Partner</p>
+                    <p class="text-right p-0 mb-3">
+                        <a
+                            href="https://www.survivalservers.com/?trckaff=93783&trckit=DMTools"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <img
+                                src="~/assets/images/survival_servers.png"
+                                alt="Just-Look Network Logo"
+                                class="d-inlineblock align-top nav-logo"
+                                style="height: 36px;"
+                            />
+                        </a>
+                    </p>
                     <p class="text-muted font-weight-light text-right">
                         <a href="https://discord.gg/YA7YmeA" target="_blank" rel="noopener noreferrer">
                             <b-icon icon="chat-right-dots"></b-icon>
