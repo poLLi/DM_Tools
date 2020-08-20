@@ -16,7 +16,7 @@
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item :to="localePath('/')" exact>{{ $t('MENU.START') }}</b-nav-item>
                     <b-nav-item :to="localePath('/build')">{{ $t('MENU.BUILDER') }}</b-nav-item>
-                    <b-nav-item :to="localePath('/map')">Map</b-nav-item>
+                    <b-nav-item :to="localePath('/map')">{{ $t('MENU.MAP') }}</b-nav-item>
 
                     <b-nav-item-dropdown :text="$t('MENU.MORE')" right>
                         <b-dropdown-header> > Database</b-dropdown-header>

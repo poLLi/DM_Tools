@@ -4,7 +4,7 @@ export default {
     MENU: {
         START: 'Start',
         BUILDER: 'Charakter-Builder',
-        MAP: 'Map',
+        MAP: 'Karte',
         MORE: 'Mehr',
         MORE_WEAPONS: 'Waffen',
         MORE_ITEMS: 'Gegenstände',
