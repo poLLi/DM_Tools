@@ -1,1 +1,13 @@
-[{}]
+[
+    {
+        "name": "",
+        "description": "",
+        "image": "",
+        "category": "",
+        "details": {
+            "size": "",
+            "weight": "",
+            "rarity": ""
+        }
+    }
+]
