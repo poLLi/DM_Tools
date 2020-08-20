@@ -1,0 +1,26 @@
+[
+    {
+        "id": "Equip_Hat_Beanie",
+        "name": "HAT.BEANIE_NAME",
+        "description": "HAT.BEANIE_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_HAT"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Equip_Hat_Boonie",
+        "name": "HAT.BOONIE_NAME",
+        "description": "HAT.BOONIE_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_HAT"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    }
+]

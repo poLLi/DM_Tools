@@ -1,0 +1,14 @@
+[
+    {
+        "id": "Equip_Shoe_RC_Boots",
+        "name": "SHOE.RC_BOOTS_NAME",
+        "description": "SHOE.RC_BOOTS_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_SHOE"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    }
+]

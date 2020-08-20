@@ -2,8 +2,8 @@
     <section class="full-height">
         <b-container>
             <div class="mb-5">
-                <h2 class="title text-primary">{{ $t('DATA.CARD.DATABASE') }}: {{ $t('DATA.CATEGORY.ITEMS') }}</h2>
-                <p class="desc pl-4">{{ $t('DATA.CARD.DATABASE_DESCRIPTION_ITEMS') }}</p>
+                <h2 class="title text-primary">{{ $t('DATA.CARD.DATABASE') }}: {{ $t('DATA.CATEGORY.EQUIPMENT') }}</h2>
+                <p class="desc pl-4">{{ $t('DATA.CARD.DATABASE_DESCRIPTION_EQUIPMENT') }}</p>
             </div>
 
             <b-card v-for="item in items" :key="item.name" class="data-category mb-4">
@@ -20,11 +20,11 @@
                             <div class="data-main">
                                 <div class="data-title-head font-weight-light mt-3">{{ $t('DATA.CARD.NAME') }}:</div>
                                 <p class="data-title-text text-primary font-weight-bold mb-2">
-                                    {{ $t('DATA.ITEM.' + data.name) }}
+                                    {{ $t('DATA.EQUIPMENT.' + data.name) }}
                                 </p>
                                 <div class="data-title-head font-weight-light">{{ $t('DATA.CARD.DESCRIPTION') }}:</div>
                                 <p class="text-muted small mb-2">
-                                    {{ $t('DATA.ITEM.' + data.description) }}
+                                    {{ $t('DATA.EQUIPMENT.' + data.description) }}
                                 </p>
                                 <div class="data-title-head font-weight-light mt-3">
                                     {{ $t('DATA.CATEGORY.TITLE') }}:
@@ -51,21 +51,23 @@
 </template>
 
 <script>
-import consumables from '~/assets/data/items/consumables.json';
-import materials from '~/assets/data/items/materials.json';
-import medicals from '~/assets/data/items/medicals.json';
-import containers from '~/assets/data/items/containers.json';
-import misc from '~/assets/data/items/miscellaneous.json';
+import upperBody from '~/assets/data/equipment/upper_body.json';
+import lowerBody from '~/assets/data/equipment/lower_body.json';
+import vests from '~/assets/data/equipment/vests.json';
+import shoes from '~/assets/data/equipment/shoes.json';
+import hats from '~/assets/data/equipment/hats.json';
+import backpacks from '~/assets/data/equipment/backpacks.json';
 
 export default {
     data() {
         return {
             items: [
-                { name: 'ITEMS_CONSUMABLES', data: consumables },
-                { name: 'ITEMS_MATERIALS', data: materials },
-                { name: 'ITEMS_MEDICALS', data: medicals },
-                { name: 'ITEMS_CONTAINERS', data: containers },
-                { name: 'ITEM_MISC', data: misc }
+                { name: 'EQUIPMENT_UPPER_BODY', data: upperBody },
+                { name: 'EQUIPMENT_LOWER_BODY', data: lowerBody },
+                { name: 'EQUIPMENT_VESTS', data: vests },
+                { name: 'EQUIPMENT_BACKPACKS', data: backpacks },
+                { name: 'EQUIPMENT_SHOES', data: shoes },
+                { name: 'EQUIPMENT_HATS', data: hats }
             ]
         };
     }

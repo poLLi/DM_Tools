@@ -1,0 +1,62 @@
+[
+    {
+        "id": "Item_Container_Ammo_Box_Small",
+        "name": "CONTAINER.AMMO_BOX_SMALL_NAME",
+        "description": "CONTAINER.AMMO_BOX_SMALL_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONTAINER"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Container_Ammo_Box_Big",
+        "name": "CONTAINER.AMMO_BOX_BIG_NAME",
+        "description": "CONTAINER.AMMO_BOX_BIG_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONTAINER"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Container_Gas_Canister",
+        "name": "CONTAINER.GAS_CANISTER_NAME",
+        "description": "CONTAINER.GAS_CANISTER_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONTAINER"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Container_Plastic_Bucket",
+        "name": "CONTAINER.PLASTIC_BUCKET_NAME",
+        "description": "CONTAINER.PLASTIC_BUCKET_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONTAINER"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Container_Propane_Gas_Bottle",
+        "name": "CONTAINER.PROPANE_GAS_BOTTLE_NAME",
+        "description": "CONTAINER.PROPANE_GAS_BOTTLE_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONTAINER"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "Equip_Upper_Hoodie",
+        "name": "UPPER_BODY.HOODIE_NAME",
+        "description": "UPPER_BODY.HOODIE_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_UPPER_BODY"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Equip_Upper_T_Shirt",
+        "name": "UPPER_BODY.T_SHIRT_NAME",
+        "description": "UPPER_BODY.T_SHIRT_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_UPPER_BODY"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Equip_Upper_FF_Top",
+        "name": "UPPER_BODY.FF_TOP_NAME",
+        "description": "UPPER_BODY.FF_TOP_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_UPPER_BODY"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    }
+]

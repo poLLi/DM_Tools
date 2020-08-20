@@ -4,7 +4,7 @@
         "name": "CONSUMABLE.SODA_BLACKTEA_NAME",
         "description": "CONSUMABLE.SODA_BLACKTEA_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE", "ITEM_CONSUMABLE", "ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "1x2",
             "weight": "0.45kg",
@@ -13,10 +13,10 @@
     },
     {
         "id": "Item_SodaCavitea",
-        "name": "Cavitea",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_CAVITEA_NAME",
+        "description": "CONSUMABLE.SODA_CAVITEA_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -25,10 +25,10 @@
     },
     {
         "id": "Item_SodaCitreo",
-        "name": "Citreo Soda",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_CITREO_NAME",
+        "description": "CONSUMABLE.SODA_CITREO_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -37,10 +37,10 @@
     },
     {
         "id": "Item_SoadColdaCola",
-        "name": "Colda Cola Soda",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_COLDACOLA_NAME",
+        "description": "CONSUMABLE.SODA_COLDACOLA_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -49,10 +49,10 @@
     },
     {
         "id": "Item_SodaCream",
-        "name": "Pop! Soda",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_CREAM_NAME",
+        "description": "CONSUMABLE.SODA_CREAM_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -61,10 +61,10 @@
     },
     {
         "id": "Item_SodaDocPrepper",
-        "name": "Doc Prepper Soda",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_DOC_PREPPER_NAME",
+        "description": "CONSUMABLE.SODA_DOC_PREPPER_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -73,10 +73,10 @@
     },
     {
         "id": "Item_SodaDotDew",
-        "name": "Gamer Juice Soda",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_DOT_DEW_NAME",
+        "description": "CONSUMABLE.SODA_DOT_DEW_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -85,10 +85,10 @@
     },
     {
         "id": "Item_SodaDrLeper",
-        "name": "Dr Leper Soda",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_DR_LEPER_NAME",
+        "description": "CONSUMABLE.SODA_DR_LEPER_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -97,10 +97,10 @@
     },
     {
         "id": "Item_SodaNeueCola",
-        "name": "Neue-Cola Soda",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_NEUE_COLA_NAME",
+        "description": "CONSUMABLE.SODA_NEUE_COLA_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -109,10 +109,10 @@
     },
     {
         "id": "Item_SodaSlush",
-        "name": "Slush Soda",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_SLUSH_NAME",
+        "description": "CONSUMABLE.SODA_SLUSH_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -121,10 +121,10 @@
     },
     {
         "id": "Item_SodaSmite",
-        "name": "Citreo Soda",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_SMITE_NAME",
+        "description": "CONSUMABLE.SODA_SMITE_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -133,10 +133,10 @@
     },
     {
         "id": "Item_SodaTeethPoison",
-        "name": "Teeth Poison Soda",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_TEETH_POISON_NAME",
+        "description": "CONSUMABLE.SODA_TEETH_POISON_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",
@@ -145,10 +145,10 @@
     },
     {
         "id": "Item_SodaWaterRomani",
-        "name": "WOAH H20 Water",
-        "description": "na",
+        "name": "CONSUMABLE.SODA_WATER_ROMANI_NAME",
+        "description": "CONSUMABLE.SODA_WATER_ROMANI_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE"],
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
             "size": "na",
             "weight": "na",

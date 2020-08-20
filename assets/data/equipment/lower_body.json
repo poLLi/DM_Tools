@@ -1,0 +1,26 @@
+[
+    {
+        "id": "Equip_Lower_FF_Pants",
+        "name": "LOWER_BODY.FF_PANTS_NAME",
+        "description": "LOWER_BODY.FF_PANTS_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_LOWER_BODY"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Equip_Lower_Jeans",
+        "name": "LOWER_BODY.JEANS_NAME",
+        "description": "LOWER_BODY.JEANS_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_LOWER_BODY"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    }
+]

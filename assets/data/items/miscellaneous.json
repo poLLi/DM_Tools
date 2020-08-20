@@ -1,0 +1,194 @@
+[
+    {
+        "id": "Item_Misc_Binoculars",
+        "name": "MISC.BINOCULARS_NAME",
+        "description": "MISC.BINOCULARS_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Car_Key",
+        "name": "MISC.CAR_KEY_NAME",
+        "description": "MISC.CAR_KEY_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Chest_Mounted_Flashlight",
+        "name": "MISC.CHEST_MOUNTED_FLASHLIGHT_NAME",
+        "description": "MISC.CHEST_MOUNTED_FLASHLIGHT_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Flashlight",
+        "name": "MISC.FLASHLIGHT_NAME",
+        "description": "MISC.FLASHLIGHT_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Duct_Tape",
+        "name": "MISC.DUCT_TAPE_NAME",
+        "description": "MISC.DUCT_TAPE_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Gas_Line",
+        "name": "MISC.GAS_LINE_NAME",
+        "description": "MISC.GAS_LINE_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Foxnav_400",
+        "name": "MISC.FOXNAV_400_NAME",
+        "description": "MISC.FOXNAV_400_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Gps_Navigator",
+        "name": "MISC.GPS_NAVIGATOR_NAME",
+        "description": "MISC.GPS_NAVIGATOR_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Head_Mounted_Flashlight",
+        "name": "MISC.HEAD_MOUNTED_FLASHLIGHT_NAME",
+        "description": "MISC.HEAD_MOUNTED_FLASHLIGHT_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Keyring",
+        "name": "MISC.KEYRING_NAME",
+        "description": "MISC.KEYRING_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Lighter",
+        "name": "MISC.LIGHTER_NAME",
+        "description": "MISC.LIGHTER_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Radio",
+        "name": "MISC.RADIO_NAME",
+        "description": "MISC.RADIO_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Radio_r490",
+        "name": "MISC.RADIO_R490_NAME",
+        "description": "MISC.RADIO_R490_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Rangemaster_1000",
+        "name": "MISC.RANGEMASTER_1000_NAME",
+        "description": "MISC.RANGEMASTER_1000_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Spotlight_Flashlight",
+        "name": "MISC.SPOTLIGHT_FLASHLIGHT_NAME",
+        "description": "MISC.SPOTLIGHT_FLASHLIGHT_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Weather_Receiver",
+        "name": "MISC.WEATHER_RECEIVER_NAME",
+        "description": "MISC.WEATHER_RECEIVER_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    }
+]

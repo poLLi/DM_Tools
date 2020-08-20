@@ -1,10 +1,10 @@
 [
     {
-        "id": "Item_MaterialWoodPlank",
+        "id": "Item_Material_WoodPlank",
         "name": "MATERIAL.WOOD_PLANK_NAME",
         "description": "MATERIAL.WOOD_PLANK_DESCRIPTION",
         "image": "",
-        "category": ["ITEM_CONSUMABLE", "ITEM_CONSUMABLE"],
+        "category": ["ITEM_MATERIAL"],
         "details": {
             "size": "5x2",
             "weight": "1.45kg",

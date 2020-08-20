@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 export default {
-    // Navigation
+    // ---------------------------
+    // NAVIGATION
     MENU: {
         START: 'Başlat',
         BUILDER: 'Karakter Oluşturucu',
@@ -12,18 +13,21 @@ export default {
         MORE_VEHICLES: 'Vehicles',
         MORE_FACTIONS: 'Factions',
         MORE_CREATURES: 'Creatures',
+        MORE_EQUIPMENT: 'Equipment',
         CONTACT: 'İletişim',
         OPTIONS_LANG_TITLE: '> Dili Değiştir',
         OPTIONS_EXTRA_TITLE: '> Ekstralar',
         OPTIONS_CHANGELOG: 'Changelog'
     },
 
+    // ---------------------------
     // PAGE: START
     START: {
         HEADLINE_TITLE: 'Topluluk Web Aracları ',
         HEADLINE_DESCRIPTION: 'Zombi Kıyametinde hayatta kalmak için ihtiyacınız olan her şey!'
     },
 
+    // ---------------------------
     // PAGE: CHARACTER-BUILDER
     BUILDER: {
         CARD: {
@@ -225,7 +229,6 @@ export default {
         }
     },
 
-
     // ---------------------------
     // DATABASE
     DATA: {
@@ -240,7 +243,8 @@ export default {
             DATABASE_DESCRIPTION_WEAPONS: 'Lists of every Weapons Dead Matter has to offer',
             DATABASE_DESCRIPTION_VEHICLES: 'Lists of every Vehicles Dead Matter has to offer',
             DATABASE_DESCRIPTION_FACTIONS: 'Lists of every Factions Dead Matter has to offer',
-            DATABASE_DESCRIPTION_CREATURES: 'Lists of every Creatures Dead Matter has to offer'
+            DATABASE_DESCRIPTION_CREATURES: 'Lists of every Creatures Dead Matter has to offer',
+            DATABASE_DESCRIPTION_EQUIPMENT: 'Lists of every Equipment Dead Matter has to offer'
         },
 
         RARITY: {
@@ -258,7 +262,6 @@ export default {
             WEAPON_MEELE: 'Meele Weapon',
             WEAPON_THROWABLE: 'Throwable',
             ATTACHMENT: 'Attachment',
-
             WEAPONS: 'Weapons',
             WEAPONS_RANGED: 'Ranged Weapons',
             WEAPONS_MELEE: 'Melee Weapons',
@@ -267,6 +270,7 @@ export default {
 
             // ---------------------------
             EQUIPMENT: 'Equipment',
+            EQUIPMENT_GEAR: 'Gear',
             EQUIPMENT_CLOTHING: 'Clothing',
             EQUIPMENT_BACKPACK: 'Backpack',
             EQUIPMENT_LOWER_BODY: 'Lower Body',
@@ -274,7 +278,6 @@ export default {
             EQUIPMENT_VEST: 'Vest',
             EQUIPMENT_SHOE: 'Shoe',
             EQUIPMENT_HAT: 'Hat',
-
             EQUIPMENT_CLOTHINGS: 'Clothings',
             EQUIPMENT_BACKPACKS: 'Backpacks',
             EQUIPMENT_VESTS: 'Vests',
@@ -285,21 +288,22 @@ export default {
             ITEM: 'Item',
             ITEM_CONSUMABLE: 'Consumable',
             ITEM_MATERIAL: 'Material',
+            ITEM_CONTAINER: 'Container',
             ITEM_MEDICAL: 'Medical',
             ITEM_FOOD: 'Food',
+            ITEM_DRINK: 'Drink',
             ITEM_MISC: 'Miscellaneous',
-
             ITEMS: 'Items',
             ITEMS_CONSUMABLES: 'Consumables',
             ITEMS_MATERIALS: 'Materials',
             ITEMS_MEDICALS: 'Medicals',
+            ITEMS_CONTAINERS: 'Containers',
 
             // ---------------------------
             VEHICLE: 'Vehicle',
             VEHICLE_LAND: 'Land',
             VEHICLE_AIR: 'Air',
             VEHICLE_SEA: 'Sea',
-
             VEHICLES: 'Vehicles',
             VEHICLES_LAND: 'Land Vehicles',
             VEHICLES_AIR: 'Air Vehicles',
@@ -309,7 +313,6 @@ export default {
             CREATURE: 'Creature',
             CREATURE_ZOMBIE: 'Zombie',
             CREATURE_ANIMAL: 'Animal',
-
             CREATURES: 'Creatures',
             CREATURES_ZOMBIES: 'Zombies',
             CREATURES_ANIMALS: 'Animals',
@@ -318,7 +321,6 @@ export default {
             FACTION: 'Faction',
             FACTION_TRADER: 'Trader',
             FACTION_BANDIT: 'Bandit',
-
             FACTIONS: 'Factions',
             FACTIONS_TRADS: 'Traders',
             FACTIONS_BANDITS: 'Bandits',
@@ -327,15 +329,176 @@ export default {
         ITEM: {
             CONSUMABLE: {
                 SODA_BLACKTEA_NAME: 'Black Tea',
-                SODA_BLACKTEA_DESCRIPTION: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, sequi!',
+                SODA_BLACKTEA_DESCRIPTION: 'na',
+
+                SODA_CAVITEA_NAME: 'Cavitea',
+                SODA_CAVITEA_DESCRIPTION: 'na',
+
+                SODA_CITREO_NAME: 'Citreo Soda',
+                SODA_CITREO_DESCRIPTION: 'na',
+
+                SODA_COLDACOLA_NAME: 'Colda Cola Soda',
+                SODA_COLDACOLA_DESCRIPTION: 'na',
+
+                SODA_CREAM_NAME: 'Pop! Soda',
+                SODA_CREAM_DESCRIPTION: 'na',
+
+                SODA_DOC_PREPPER_NAME: 'Doc Prepper Soda',
+                SODA_DOC_PREPPER_DESCRIPTION: 'na',
+
+                SODA_DOT_DEW_NAME: 'Gamer Juice Soda',
+                SODA_DOT_DEW_DESCRIPTION: 'na',
+
+                SODA_DR_LEPER_NAME: 'Dr Leper Soda',
+                SODA_DR_LEPER_DESCRIPTION: 'na',
+
+                SODA_NEUE_COLA_NAME: 'Neue-Cola Soda',
+                SODA_NEUE_COLA_DESCRIPTION: 'na',
+
+                SODA_SLUSH_NAME: 'Slush Soda',
+                SODA_SLUSH_DESCRIPTION: 'na',
+
+                SODA_SMITE_NAME: 'Citreo Soda',
+                SODA_SMITE_DESCRIPTION: 'na',
+
+                SODA_TEETH_POISON_NAME: 'Teeth Poison Soda',
+                SODA_TEETH_POISON_DESCRIPTION: 'na',
+
+                SODA_WATER_ROMANI_NAME: 'WOAH H20 Water',
+                SODA_WATER_ROMANI_DESCRIPTION: 'na'
             },
             MATERIAL: {
                 WOOD_PLANK_NAME: 'Wood Plank',
-                WOOD_PLANK_DESCRIPTION: 'AAALorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, sequi!',
+                WOOD_PLANK_DESCRIPTION: 'na'
             },
             MEDICAL: {
-                EPI_PEN_NAME: 'Epi-Pen',
-                EPI_PEN_DESCRIPTION: 'BBBLorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, sequi!',
+                BANDAGE_ROLL_NAME: 'Bandage Roll',
+                BANDAGE_ROLL_DESCRIPTION: 'na',
+
+                BLOOD_TYPE_TESTING_KIT_NAME: 'Blood Type Testing Kit',
+                BLOOD_TYPE_TESTING_KIT_DESCRIPTION: 'na',
+
+                EMERGENCY_HEATING_PAD_NAME: 'Emergency Heating Pad',
+                EMERGENCY_HEATING_PAD_DESCRIPTION: 'na',
+
+                EMERGENCY_TRAUMA_BANDAGE_NAME: 'Emergency Trauma Bandage',
+                EMERGENCY_TRAUMA_BANDAGE_DESCRIPTION: 'na',
+
+                EPINEPHRINE_AUTOINJECTOR_NAME: 'Epinephrine Autoinjector',
+                EPINEPHRINE_AUTOINJECTOR_DESCRIPTION: 'na',
+
+                MORPHINE_AUTOINJECTOR_NAME: 'Morphine Autoinjector',
+                MORPHINE_AUTOINJECTOR_DESCRIPTION: 'na',
+
+                FIRST_AID_KTI_NAME: 'First Aid Kit',
+                FIRST_AID_KTI_DESCRIPTION: 'na'
+            },
+            CONTAINER: {
+                AMMO_BOX_SMALL_NAME: 'Ammo Box (Small)',
+                AMMO_BOX_SMALL_DESCRIPTION: 'na',
+
+                AMMO_BOX_BIG_NAME: 'Ammo Box (Big)',
+                AMMO_BOX_BIG_DESCRIPTION: 'na',
+
+                GAS_CANISTER_NAME: 'Gas Canister',
+                GAS_CANISTER_DESCRIPTION: 'na',
+
+                PLASTIC_BUCKET_NAME: 'Plastic Bucket',
+                PLASTIC_BUCKET_DESCRIPTION: 'na',
+
+                PROPANE_GAS_BOTTLE_NAME: 'Propane Gas Bottle',
+                PROPANE_GAS_BOTTLE_DESCRIPTION: 'na'
+            },
+            MISC: {
+                BINOCULARS_NAME: 'Binoculars',
+                BINOCULARS_DESCRIPTION: 'na',
+
+                CAR_KEY_NAME: 'Car Key',
+                CAR_KEY_DESCRIPTION: 'na',
+
+                CHEST_MOUNTED_FLASHLIGHT_NAME: 'Chest Mounted Flashlight',
+                CHEST_MOUNTED_FLASHLIGHT_DESCRIPTION: 'na',
+
+                FLASHLIGHT_NAME: 'Flashlight',
+                FLASHLIGHT_DESCRIPTION: 'na',
+
+                DUCT_TAPE_NAME: 'Duct Tape',
+                DUCT_TAPE_DESCRIPTION: 'na',
+
+                GAS_LINE_NAME: 'Gas Line',
+                GAS_LINE_DESCRIPTION: 'na',
+
+                FOXNAV_400_NAME: 'Foxnav 400',
+                FOXNAV_400_DESCRIPTION: 'na',
+
+                GPS_NAVIGATOR_NAME: 'GPS Navigator',
+                GPS_NAVIGATOR_DESCRIPTION: 'na',
+
+                HEAD_MOUNTED_FLASHLIGHT_NAME: 'Head Mounted Flashlight',
+                HEAD_MOUNTED_FLASHLIGHT_DESCRIPTION: 'na',
+
+                KEYRING_NAME: 'Keyring',
+                KEYRING_DESCRIPTION: 'na',
+
+                LIGHTER_NAME: 'Lighter',
+                LIGHTER_DESCRIPTION: 'na',
+
+                RADIO_NAME: 'Radio',
+                RADIO_DESCRIPTION: 'na',
+
+                RADIO_R490_NAME: 'Radio R490',
+                RADIO_R490_DESCRIPTION: 'na',
+
+                RANGEMASTER_1000_NAME: 'Rangemaster 1000',
+                RANGEMASTER_1000_DESCRIPTION: 'na',
+
+                SPOTLIGHT_FLASHLIGHT_NAME: 'Spotlight Flashlight',
+                SPOTLIGHT_FLASHLIGHT_DESCRIPTION: 'na',
+
+                WEATHER_RECEIVER_NAME: 'Weather Receiver',
+                WEATHER_RECEIVER_DESCRIPTION: 'na'
+            }
+        },
+
+        EQUIPMENT: {
+            UPPER_BODY: {
+                HOODIE_NAME: 'Hoodie',
+                HOODIE_DESCRIPTION: 'na',
+
+                T_SHIRT_NAME: 'T-Shirt',
+                T_SHIRT_DESCRIPTION: 'na',
+
+                FF_TOP_NAME: 'F.F. Top',
+                FF_TOP_DESCRIPTION: 'na'
+            },
+            LOWER_BODY: {
+                FF_PANTS_NAME: 'F.F. Pants',
+                FF_PANTS_DESCRIPTION: 'na',
+
+                JEANS_NAME: 'Jeans',
+                JEANS_DESCRIPTION: 'na',
+            },
+            VEST: {
+                POLICE_VEST_NAME: 'Police Vest',
+                POLICE_VEST_DESCRIPTION: 'na'
+            },
+            BACKPACK: {
+                HIKING_BAG_NAME: 'Hiking Bag',
+                HIKING_BAG_DESCRIPTION: 'na',
+
+                SCHOOLBAG_NAME: 'Schoolbag',
+                SCHOOLBAG_DESCRIPTION: 'na'
+            },
+            SHOE: {
+                RC_BOOTS_NAME: 'RC Boots',
+                RC_BOOTS_DESCRIPTION: 'na',
+            },
+            HAT: {
+                BEANIE_NAME: 'Beanie',
+                BEANIE_DESCRIPTION: 'na',
+
+                BOONIE_NAME: 'Boonie',
+                BOONIE_DESCRIPTION: 'na'
             }
         }
     }

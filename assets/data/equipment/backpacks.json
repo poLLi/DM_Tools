@@ -1,0 +1,26 @@
+[
+    {
+        "id": "Equip_Backpack_Hiking_Bag",
+        "name": "BACKPACK.HIKING_BAG_NAME",
+        "description": "BACKPACK.HIKING_BAG_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_BACKPACK"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Equip_Backpack_Schoolbag",
+        "name": "BACKPACK.SCHOOLBAG_NAME",
+        "description": "BACKPACK.SCHOOLBAG_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_BACKPACK"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    }
+]
