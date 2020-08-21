@@ -56,6 +56,7 @@ import lowerBody from '~/assets/data/equipment/lower_body.json';
 import vests from '~/assets/data/equipment/vests.json';
 import shoes from '~/assets/data/equipment/shoes.json';
 import hats from '~/assets/data/equipment/hats.json';
+import gloves from '~/assets/data/equipment/gloves.json';
 import backpacks from '~/assets/data/equipment/backpacks.json';
 
 export default {
@@ -67,7 +68,8 @@ export default {
                 { name: 'EQUIPMENT_VESTS', data: vests },
                 { name: 'EQUIPMENT_BACKPACKS', data: backpacks },
                 { name: 'EQUIPMENT_SHOES', data: shoes },
-                { name: 'EQUIPMENT_HATS', data: hats }
+                { name: 'EQUIPMENT_HATS', data: hats },
+                { name: 'EQUIPMENT_GLOVES', data: gloves }
             ]
         };
     }

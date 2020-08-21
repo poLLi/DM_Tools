@@ -18,8 +18,32 @@
         "image": "",
         "category": ["EQUIPMENT", "EQUIPMENT_LOWER_BODY"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "4x6",
+            "weight": "0.25kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Equip_Lower_Pants",
+        "name": "LOWER_BODY.PANTS_NAME",
+        "description": "LOWER_BODY.PANTS_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_LOWER_BODY"],
+        "details": {
+            "size": "4x6",
+            "weight": "0.25kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Equip_Lower_Doctor_Pants",
+        "name": "LOWER_BODY.DOCTOR_PANTS_NAME",
+        "description": "LOWER_BODY.DOCTOR_PANTS_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_LOWER_BODY"],
+        "details": {
+            "size": "4x6",
+            "weight": "0.25kg",
             "rarity": "COMMON"
         }
     }

@@ -4,10 +4,10 @@
         "name": "BACKPACK.HIKING_BAG_NAME",
         "description": "BACKPACK.HIKING_BAG_DESCRIPTION",
         "image": "",
-        "category": ["EQUIPMENT", "EQUIPMENT_BACKPACK"],
+        "category": ["EQUIPMENT_CLOTHING", "EQUIPMENT_BACKPACK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "7x13",
+            "weight": "0.25kg",
             "rarity": "COMMON"
         }
     },
@@ -16,10 +16,22 @@
         "name": "BACKPACK.SCHOOLBAG_NAME",
         "description": "BACKPACK.SCHOOLBAG_DESCRIPTION",
         "image": "",
-        "category": ["EQUIPMENT", "EQUIPMENT_BACKPACK"],
+        "category": ["EQUIPMENT_CLOTHING", "EQUIPMENT_BACKPACK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "8x8",
+            "weight": "0.25kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Equip_Backpack_Blue_Schoolbag",
+        "name": "BACKPACK.BLUE_SCHOOLBAG_NAME",
+        "description": "BACKPACK.BLUE_SCHOOLBAG_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_CLOTHING", "EQUIPMENT_BACKPACK"],
+        "details": {
+            "size": "8x8",
+            "weight": "0.25kg",
             "rarity": "COMMON"
         }
     }

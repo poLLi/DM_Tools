@@ -4,10 +4,10 @@
         "name": "HAT.BEANIE_NAME",
         "description": "HAT.BEANIE_DESCRIPTION",
         "image": "",
-        "category": ["EQUIPMENT", "EQUIPMENT_HAT"],
+        "category": ["EQUIPMENT_CLOTHING", "EQUIPMENT_HAT"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x2",
+            "weight": "0.25kg",
             "rarity": "COMMON"
         }
     },
@@ -16,10 +16,22 @@
         "name": "HAT.BOONIE_NAME",
         "description": "HAT.BOONIE_DESCRIPTION",
         "image": "",
-        "category": ["EQUIPMENT", "EQUIPMENT_HAT"],
+        "category": ["EQUIPMENT_CLOTHING", "EQUIPMENT_HAT"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x2",
+            "weight": "0.25kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Equip_Hat_Police",
+        "name": "HAT.POLICE_NAME",
+        "description": "HAT.POLICE_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_CLOTHING", "EQUIPMENT_HAT"],
+        "details": {
+            "size": "3x3",
+            "weight": "0.25kg",
             "rarity": "COMMON"
         }
     }

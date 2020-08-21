@@ -190,5 +190,113 @@
             "weight": "na",
             "rarity": "COMMON"
         }
+    },
+    {
+        "id": "Item_Misc_Broken_Phone",
+        "name": "MISC.BROKEN_PHONE_NAME",
+        "description": "MISC.BROKEN_PHONE_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "2x4",
+            "weight": "0.75kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Watch",
+        "name": "MISC.WATCH_NAME",
+        "description": "MISC.WATCH_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT_GEAR", "ITEM_MISC"],
+        "details": {
+            "size": "2x2",
+            "weight": "0.25kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Creadit_Card",
+        "name": "MISC.CREDIT_CARD_NAME",
+        "description": "MISC.CREDIT_CARD_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "2x1",
+            "weight": "0.01kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Lockpick",
+        "name": "MISC.LOCKPICK_NAME",
+        "description": "MISC.LOCKPICK_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_MISC"],
+        "details": {
+            "size": "2x1",
+            "weight": "0.01kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Sticky_Notes",
+        "name": "MISC.STICKY_NOTES_NAME",
+        "description": "MISC.STICKY_NOTES_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "2x2",
+            "weight": "0.01kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Pencil",
+        "name": "MISC.PENCIL_NAME",
+        "description": "MISC.PENCIL_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "3x1",
+            "weight": "0.01kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Claw_Hammer",
+        "name": "MISC.CLAW_HAMMER_NAME",
+        "description": "MISC.CLAW_HAMMER_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "2x5",
+            "weight": "5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Leaves",
+        "name": "MISC.LEAVES_NAME",
+        "description": "MISC.LEAVES_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "2x2",
+            "weight": "0.01kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Misc_Stick",
+        "name": "MISC.STICK_NAME",
+        "description": "MISC.STICK_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MISC"],
+        "details": {
+            "size": "5x2",
+            "weight": "0.01kg",
+            "rarity": "COMMON"
+        }
     }
 ]

@@ -10,5 +10,17 @@
             "weight": "na",
             "rarity": "COMMON"
         }
+    },
+    {
+        "id": "Equip_Shoe_Doctor",
+        "name": "SHOE.DOCTOR_SHOE_NAME",
+        "description": "SHOE.DOCTOR_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_SHOE"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
     }
 ]

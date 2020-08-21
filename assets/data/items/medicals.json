@@ -82,5 +82,17 @@
             "weight": "na",
             "rarity": "COMMON"
         }
+    },
+    {
+        "id": "Item_Medical_Emergency_Bandage",
+        "name": "MEDICAL.EMERGENCY_BANDAGE_NAME",
+        "description": "MEDICAL.EMERGENCY_BANDAGE_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_MEDICAL"],
+        "details": {
+            "size": "2x2",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
     }
 ]

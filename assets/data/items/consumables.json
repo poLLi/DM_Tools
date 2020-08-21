@@ -6,8 +6,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "1x2",
-            "weight": "0.45kg",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -18,8 +18,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -30,8 +30,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -42,8 +42,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -54,8 +54,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -66,8 +66,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -78,8 +78,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x4",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -90,8 +90,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -102,8 +102,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -114,8 +114,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -126,8 +126,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -138,8 +138,8 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
             "rarity": "COMMON"
         }
     },
@@ -150,8 +150,68 @@
         "image": "",
         "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
         "details": {
-            "size": "na",
-            "weight": "na",
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Food_Saltine_Crackers",
+        "name": "CONSUMABLE.SALTINE_CRACKER_NAME",
+        "description": "CONSUMABLE.SALTINE_CRACKER_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_FOOD"],
+        "details": {
+            "size": "5x3",
+            "weight": "1kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Food_High_Protein_Oatmeal",
+        "name": "CONSUMABLE.HIGH_PROTEIN_OATMEAL_NAME",
+        "description": "CONSUMABLE.HIGH_PROTEIN_OATMEAL_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_FOOD"],
+        "details": {
+            "size": "3x4",
+            "weight": "1.2kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Food_Papa_Spaghettis",
+        "name": "CONSUMABLE.PAPAS_SPAGHETTIS_NAME",
+        "description": "CONSUMABLE.PAPAS_SPAGHETTIS_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_FOOD"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Food_Canned_Mushrooms",
+        "name": "CONSUMABLE.CANNED_MUSHROOMS_NAME",
+        "description": "CONSUMABLE.CANNED_MUSHROOMS_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_FOOD"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Food_Bottle_Of_Ketchup",
+        "name": "CONSUMABLE.BOTTLE_OF_KETCHUP_NAME",
+        "description": "CONSUMABLE.BOTTLE_OF_KETCHUP_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_FOOD"],
+        "details": {
+            "size": "2x4",
+            "weight": "2kg",
             "rarity": "COMMON"
         }
     }

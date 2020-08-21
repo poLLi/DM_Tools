@@ -1,13 +1,37 @@
 [
     {
-        "id": "Item_Material_WoodPlank",
+        "id": "Item_Material_Wood_Plank",
         "name": "MATERIAL.WOOD_PLANK_NAME",
         "description": "MATERIAL.WOOD_PLANK_DESCRIPTION",
         "image": "",
         "category": ["ITEM_MATERIAL"],
         "details": {
-            "size": "5x2",
-            "weight": "1.45kg",
+            "size": "8x3",
+            "weight": "5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Material_Box_Of_Nails",
+        "name": "MATERIAL.BOX_OF_NAILS_NAME",
+        "description": "MATERIAL.BOX_OF_NAILS_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MATERIAL"],
+        "details": {
+            "size": "3x2",
+            "weight": "0.25kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Material_Nail",
+        "name": "MATERIAL.NAIL_NAME",
+        "description": "MATERIAL.NAIL_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_MATERIAL"],
+        "details": {
+            "size": "2x1",
+            "weight": "0.01kg",
             "rarity": "COMMON"
         }
     }

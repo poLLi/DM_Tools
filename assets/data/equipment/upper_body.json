@@ -34,5 +34,17 @@
             "weight": "na",
             "rarity": "COMMON"
         }
+    },
+    {
+        "id": "Equip_Upper_Doctor_Jacket",
+        "name": "UPPER_BODY.DOCTOR_JACKET_NAME",
+        "description": "UPPER_BODY.DOCTOR_JACKET_DESCRIPTION",
+        "image": "",
+        "category": ["EQUIPMENT", "EQUIPMENT_UPPER_BODY"],
+        "details": {
+            "size": "6x8",
+            "weight": "0.25kg",
+            "rarity": "COMMON"
+        }
     }
 ]

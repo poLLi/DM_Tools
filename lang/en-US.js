@@ -259,11 +259,23 @@ export default {
             // ---------------------------
             WEAPON: 'Weapon',
             WEAPON_RANGED: 'Ranged Weapon',
+            WEAPON_RANGED_HANDGUN: 'Handgun',
+            WEAPON_RANGED_SMG: 'Submachine Gun',
+            WEAPON_RANGED_RIFLE: 'Rifle',
+            WEAPON_RANGED_SHOTGUN: 'Shotgun',
+            WEAPON_RANGED_LMG: 'Light Machine Gun',
+            WEAPON_RANGED_SNIPER: 'Snper Rifle',
             WEAPON_MEELE: 'Meele Weapon',
             WEAPON_THROWABLE: 'Throwable',
             ATTACHMENT: 'Attachment',
             WEAPONS: 'Weapons',
             WEAPONS_RANGED: 'Ranged Weapons',
+            WEAPONS_RANGED_HANDGUN: 'Handguns',
+            WEAPONS_RANGED_SMG: 'Submachine Guns',
+            WEAPONS_RANGED_RIFLES: 'Rifles',
+            WEAPONS_RANGED_SHOTGUNS: 'Shotguns',
+            WEAPONS_RANGED_LMG: 'Light Machine Guns',
+            WEAPONS_RANGED_SNIPER: 'Snper Rifles',
             WEAPONS_MELEE: 'Melee Weapons',
             WEAPONS_TRHOWABLES: 'Throwables',
             WEAPONS_ATTACHMENTS: 'Attachments',
@@ -278,11 +290,13 @@ export default {
             EQUIPMENT_VEST: 'Vest',
             EQUIPMENT_SHOE: 'Shoe',
             EQUIPMENT_HAT: 'Hat',
+            EQUIPMENT_GLOVE: 'Glove',
             EQUIPMENT_CLOTHINGS: 'Clothings',
             EQUIPMENT_BACKPACKS: 'Backpacks',
             EQUIPMENT_VESTS: 'Vests',
             EQUIPMENT_SHOES: 'Shoes',
             EQUIPMENT_HATS: 'Hats',
+            EQUIPMENT_GLOVES: 'Gloves',
 
             // ---------------------------
             ITEM: 'Item',
@@ -365,11 +379,32 @@ export default {
                 SODA_TEETH_POISON_DESCRIPTION: 'na',
 
                 SODA_WATER_ROMANI_NAME: 'WOAH H20 Water',
-                SODA_WATER_ROMANI_DESCRIPTION: 'na'
+                SODA_WATER_ROMANI_DESCRIPTION: 'na',
+
+                SALTINE_CRACKER_NAME: 'Saltine Cracker',
+                SALTINE_CRACKER_DESCRIPTION: 'A box of plain old saltine crackers.',
+
+                HIGH_PROTEIN_OATMEAL_NAME: 'High Protein Oatmeal',
+                HIGH_PROTEIN_OATMEAL_DESCRIPTION: 'A box of Colony Jack´s high protein oatmeal.',
+
+                PAPAS_SPAGHETTIS_NAME: 'Papa Spaghetti´s Real Bad Spaghetti',
+                PAPAS_SPAGHETTIS_DESCRIPTION: 'A can of Papa´s spaghetti. Im gonna feed you some real bad...',
+
+                CANNED_MUSHROOMS_NAME: 'Canned Mushrooms',
+                CANNED_MUSHROOMS_DESCRIPTION: 'A can of mushrooms. They are a but slimy.',
+
+                BOTTLE_OF_KETCHUP_NAME: 'Bottle of Ketchup',
+                BOTTLE_OF_KETCHUP_DESCRIPTION: 'A big bottle of tomato ketchup.'
             },
             MATERIAL: {
-                WOOD_PLANK_NAME: 'Wood Plank',
-                WOOD_PLANK_DESCRIPTION: 'na'
+                WOOD_PLANK_NAME: 'Wooden Plank',
+                WOOD_PLANK_DESCRIPTION: 'A solid wooden plank. can be used for base fortifications or crafting a basic splint.',
+
+                BOX_OF_NAILS_NAME: 'Box of Nails',
+                BOX_OF_NAILS_DESCRIPTION: 'None of them appear to be nine inches. Unpack this  box to use the nails  for crafting or base fortifications.',
+
+                NAIL_NAME: 'Nail',
+                NAIL_DESCRIPTION: 'An once inch Nail. Can be used for crafting and base fortifications.'
             },
             MEDICAL: {
                 BANDAGE_ROLL_NAME: 'Bandage Roll',
@@ -391,7 +426,10 @@ export default {
                 MORPHINE_AUTOINJECTOR_DESCRIPTION: 'na',
 
                 FIRST_AID_KTI_NAME: 'First Aid Kit',
-                FIRST_AID_KTI_DESCRIPTION: 'na'
+                FIRST_AID_KTI_DESCRIPTION: 'na',
+
+                EMERGENCY_BANDAGE_NAME: 'Emergency Bandage',
+                EMERGENCY_BANDAGE_DESCRIPTION: 'Apply to dress wounds and stop bleeding.'
             },
             CONTAINER: {
                 AMMO_BOX_SMALL_NAME: 'Ammo Box (Small)',
@@ -456,7 +494,84 @@ export default {
                 SPOTLIGHT_FLASHLIGHT_DESCRIPTION: 'na',
 
                 WEATHER_RECEIVER_NAME: 'Weather Receiver',
-                WEATHER_RECEIVER_DESCRIPTION: 'na'
+                WEATHER_RECEIVER_DESCRIPTION: 'na',
+
+                BROKEN_PHONE_NAME: 'Broken Phone',
+                BROKEN_PHONE_DESCRIPTION: 'A Broken Phone. Who knows what used to be on there.',
+
+                WATCH_NAME: 'Watch',
+                WATCH_DESCRIPTION: 'Tells you the time. At least, it used to.',
+
+                CREDIT_CARD_NAME: 'Credit Card',
+                CREDIT_CARD_DESCRIPTION: 'An old credit card.',
+
+                LOCKPICK_NAME: 'Lockpick',
+                LOCKPICK_DESCRIPTION: 'A simple lockpick. Can be used to break into locked containers or doors.',
+
+                STICKY_NOTES_NAME: 'Sticky Notes',
+                STICKY_NOTES_DESCRIPTION: 'A fresh pad of sticky notes.',
+
+                PENCIL_NAME: 'Pencil',
+                PENCIL_DESCRIPTION: 'A Pencil.',
+
+                CLAW_HAMMER_NAME: 'Claw Hammer',
+                CLAW_HAMMER_DESCRIPTION: 'A regular hammer. Might be useful for crafting and base foritification.',
+
+                LEAVES_NAME: 'Leaves',
+                LEAVES_DESCRIPTION: 'na',
+
+                STICK_NAME: 'Stick',
+                STICK_DESCRIPTION: 'Sticks and Stones my break your bones. Can be used for creathing and base fortifications.'
+            }
+        },
+
+        WEAPON: {
+            RANGED: {
+                HANDGUN: {
+                    E_92_NAME: 'E-92',
+                    E_92_DESCRIPTION: 'na',
+
+                    MAKAROV_PM_NAME: 'Makarov PM',
+                    MAKAROV_PM_DESCRIPTION: 'na',
+
+                    EDER_17_NAME: 'Eder-17',
+                    EDER_17_DESCRIPTION: 'The trusty sidearm of police forces around the globe, the Eder boasts reliability, accuracy, and of course, lots of rounds per magazine.'
+                },
+
+                SMG: {
+                    TEST_WEAPON_NAME: 'asdasd',
+                    TEST_WEAPON_DESCRIPTION: 'asd'
+                },
+
+                RIFLE: {
+                    TEST_WEAPON_NAME: 'asdasd',
+                    TEST_WEAPON_DESCRIPTION: 'asd'
+                },
+
+                SHOTGUN: {
+                    TEST_WEAPON_NAME: 'asdasd',
+                    TEST_WEAPON_DESCRIPTION: 'asd'
+                },
+
+                LMG: {
+                    TEST_WEAPON_NAME: 'asdasd',
+                    TEST_WEAPON_DESCRIPTION: 'asd'
+                },
+
+                SNIPER: {
+                    TEST_WEAPON_NAME: 'asdasd',
+                    TEST_WEAPON_DESCRIPTION: 'asd'
+                },
+            },
+
+            MELEE: {
+                TEST_WEAPON_NAME: 'asdasd',
+                TEST_WEAPON_DESCRIPTION: 'asd'
+            },
+
+            THROWABLE: {
+                TEST_WEAPON_NAME: 'asdasd',
+                TEST_WEAPON_DESCRIPTION: 'asd'
             }
         },
 
@@ -469,36 +584,70 @@ export default {
                 T_SHIRT_DESCRIPTION: 'na',
 
                 FF_TOP_NAME: 'F.F. Top',
-                FF_TOP_DESCRIPTION: 'na'
+                FF_TOP_DESCRIPTION: 'na',
+
+                DOCTOR_JACKET_NAME: 'Doctor Jacket',
+                DOCTOR_JACKET_DESCRIPTION: 'na'
             },
+
             LOWER_BODY: {
                 FF_PANTS_NAME: 'F.F. Pants',
                 FF_PANTS_DESCRIPTION: 'na',
 
                 JEANS_NAME: 'Jeans',
                 JEANS_DESCRIPTION: 'na',
+
+                PANTS_NAME: 'Pants',
+                PANTS_DESCRIPTION: 'na',
+
+                DOCTOR_PANTS_NAME: 'Doctor Pants',
+                DOCTOR_PANTS_DESCRIPTION: 'na'
             },
+
             VEST: {
                 POLICE_VEST_NAME: 'Police Vest',
                 POLICE_VEST_DESCRIPTION: 'na'
             },
+
             BACKPACK: {
                 HIKING_BAG_NAME: 'Hiking Bag',
                 HIKING_BAG_DESCRIPTION: 'na',
 
                 SCHOOLBAG_NAME: 'Schoolbag',
-                SCHOOLBAG_DESCRIPTION: 'na'
+                SCHOOLBAG_DESCRIPTION: 'na',
+
+                BLUE_SCHOOLBAG_NAME: 'Blue Schoolbag',
+                BLUE_SCHOOLBAG_DESCRIPTION: 'na'
             },
+
             SHOE: {
                 RC_BOOTS_NAME: 'RC Boots',
                 RC_BOOTS_DESCRIPTION: 'na',
+
+                DOCTOR_SHOE_NAME: 'Doctor Shoes',
+                DOCTOR_DESCRIPTION: 'na'
             },
+
             HAT: {
                 BEANIE_NAME: 'Beanie',
                 BEANIE_DESCRIPTION: 'na',
 
                 BOONIE_NAME: 'Boonie',
-                BOONIE_DESCRIPTION: 'na'
+                BOONIE_DESCRIPTION: 'na',
+
+                POLICE_NAME: 'Police Hat',
+                POLICE_DESCRIPTION: 'PUT YOUR HANDS UP!'
+            },
+
+            GLOVE: {
+                THICK_GLOVES_NAME: 'Thick Gloves',
+                THICK_GLOVES_DESCRIPTION: 'na',
+
+                OPERATOR_GLOVES_NAME: 'Operator Gloves',
+                OPERATOR_GLOVES_DESCRIPTION: 'na',
+
+                LEATHER_GLOVES_NAME: 'Leather Gloves',
+                LEATHER_GLOVES_DESCRIPTION: 'na'
             }
         },
 
