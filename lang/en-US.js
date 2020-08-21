@@ -500,6 +500,104 @@ export default {
                 BOONIE_NAME: 'Boonie',
                 BOONIE_DESCRIPTION: 'na'
             }
+        },
+
+        VEHICLE: {
+            LAND: {
+                AMBULANCE_NAME: 'Ambulance',
+                AMBULANCE_DESCRIPTION: 'na',
+
+                CHEVROLET_CHEVY_VAN_CLASSIC_NAME: 'Chevrolet Chevy Van Classic',
+                CHEVROLET_CHEVY_VAN_CLASSIC_DESCRIPTION: 'na',
+
+                CHEVROLET_CHEVELLE_NAME: 'Chevrolet Chevelle',
+                CHEVROLET_CHEVELLE_DESCRIPTION: 'na',
+
+                DUNE_BUGGY_NAME: 'Dune Buggy',
+                DUNE_BUGGY_DESCRIPTION: 'na',
+
+                FIRE_TRUCK_NAME: 'Fire Truck',
+                FIRE_TRUCK_DESCRIPTION: 'na',
+
+                FORD_CROWN_VICTORIA_NAME: 'Ford Crown Victoria',
+                FORD_CROWN_VICTORIA_DESCRIPTION: 'na',
+
+                FORD_F150_NAME: 'Ford F-150',
+                FORD_F150_DESCRIPTION: 'na',
+
+                FORD_F650_NAME: 'Ford F-650',
+                FORD_F650_DESCRIPTION: 'na',
+
+                FORD_TAURUS_NAME: 'Ford Taurus',
+                FORD_TAURUS_DESCRIPTION: 'na',
+
+                FORD_TAURUS_POLICE_NAME: 'Ford Taurus (Police)',
+                FORD_TAURUS_POLICE_DESCRIPTION: 'na',
+
+                GO_KART_NAME: 'Go-Kart',
+                GO_KART_DESCRIPTION: 'na',
+
+                LAWN_MOWER_NAME: 'Lawn Mower',
+                LAWN_MOWER_DESCRIPTION: 'na',
+
+                MAIL_TRUCK_NAME: 'Mail Truck',
+                MAIL_TRUCK_DESCRIPTION: 'na',
+
+                OLDSMOBILE_TORONADO_NAME: 'Oldsmobile Toronado',
+                OLDSMOBILE_TORONADO_DESCRIPTION: 'na',
+
+                ORLANA_SUV_NAME: 'Orlana SUV',
+                ORLANA_SUV_DESCRIPTION: 'na',
+
+                BROADCAST_VAN_NAME: 'Broadcast Van',
+                BROADCAST_VAN_DESCRIPTION: 'na',
+
+                QUAD_BIKE_NAME: 'Quad Bike',
+                QUAD_BIKE_DESCRIPTION: 'na',
+
+                SCHOOL_BUS_NAME: 'School Bus',
+                SCHOOL_BUS_DESCRIPTION: 'na',
+
+                SEDAN_NAME: 'Sedan',
+                SEDAN_DESCRIPTION: 'na',
+
+                TRAILER_TRUCK_NAME: 'Trailer Truck',
+                TRAILER_TRUCK_DESCRIPTION: 'na',
+
+                WATER_TRUCK_NAME: 'Water Truck',
+                WATER_TRUCK_DESCRIPTION: 'na',
+
+                BACKHOE_LOADER_NAME: 'Backhoe Loader',
+                BACKHOE_LOADER_DESCRIPTION: 'na',
+
+                BACKHOE_LOADER_INDUSTRIAL_NAME: 'Backhoe Loader (Industrial)',
+                BACKHOE_LOADER_INDUSTRIAL_DESCRIPTION: 'na',
+
+                DIRT_BIKE_NAME: 'Dirt Bike',
+                DIRT_BIKE_DESCRIPTION: 'na',
+
+                MOTORCYCLE_NAME: 'Motorcycle',
+                MOTORCYCLE_DESCRIPTION: 'na',
+
+                BICYCLE_NAME: 'Dirt Bike',
+                BICYCLE_DESCRIPTION: 'na'
+            },
+
+            AIR: {
+                HELICOPTER_CIV_NAME: 'Helicopter (Civilian)',
+                HELICOPTER_CIV_DESCRIPTION: 'na',
+
+                SIKORSKY_UH_60_NAME: 'Sikorsky UH-60 Black Hawk',
+                SIKORSKY_UH_60_DESCRIPTION: 'na',
+
+                CROP_DUSTER_NAME: 'Crop Duster Plane',
+                CROP_DUSTER_DESCRIPTION: 'na'
+            },
+
+            SEA: {
+                MOTORBOAT_NAME: 'Motorboat',
+                MOTORBOAT_DESCRIPTION: 'na'
+            }
         }
     }
 };

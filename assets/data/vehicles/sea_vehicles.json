@@ -1,0 +1,14 @@
+[
+    {
+        "id": "Vehicle_SEA_Motorboat",
+        "name": "SEA.MOTORBOAT_NAME",
+        "description": "SEA.MOTORBOAT_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_SEA"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    }
+]

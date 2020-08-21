@@ -1,0 +1,38 @@
+[
+    {
+        "id": "Vehicle_AIR_Helicopter_Civ",
+        "name": "AIR.HELICOPTER_CIV_NAME",
+        "description": "AIR.HELICOPTER_CIV_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_AIR"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_AIR_Sikorsky_UH_60",
+        "name": "AIR.SIKORSKY_UH_60_NAME",
+        "description": "AIR.SIKORSKY_UH_60_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_AIR"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_AIR_Crop_Duster",
+        "name": "AIR.CROP_DUSTER_NAME",
+        "description": "AIR.CROP_DUSTER_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_AIR"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    }
+]
