@@ -115,6 +115,12 @@ export default {
                 file: 'de-DE.js'
             },
             {
+                name: 'French',
+                code: 'fr',
+                iso: 'fr-FR',
+                file: 'fr-FR.js'
+            },
+            {
                 name: 'Turkish',
                 code: 'tr',
                 iso: 'tr-TR',
