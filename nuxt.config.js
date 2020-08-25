@@ -37,7 +37,7 @@ export default {
             // Twitter Meta Tags
             { name: 'twitter:card', content: 'summary' },
             { name: 'twitter:site', content: '@JL_PoLLi' },
-            { name: 'twitter:image', content: 'https://dm.just-look.net/dm_tools.png' },
+            { name: 'twitter:image', content: 'https://deadmatter.tools/dm_tools.png' },
             { name: 'twitter:title', content: 'Dead Matter Tools — JLN' },
             {
                 name: 'twitter:description',
@@ -48,8 +48,8 @@ export default {
             // Open Graph Meta Tags
             { property: 'og:title', content: 'Dead Matter Tools — JLN' },
             { property: 'og:type', content: 'website' },
-            { property: 'og:url', content: 'https://dm.just-look.net' },
-            { property: 'og:image', content: 'https://dm.just-look.net/dm_tools.png' },
+            { property: 'og:url', content: 'https://deadmatter.tools' },
+            { property: 'og:image', content: 'https://deadmatter.tools/dm_tools.png' },
             {
                 property: 'og:description',
                 content:
