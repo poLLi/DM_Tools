@@ -1,0 +1,314 @@
+[
+    {
+        "id": "Vehicle_Land_Ambulance",
+        "name": "LAND.AMBULANCE_NAME",
+        "description": "LAND.AMBULANCE_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Chevrolet_Chevy_Van_Classic",
+        "name": "LAND.CHEVROLET_CHEVY_VAN_CLASSIC_NAME",
+        "description": "LAND.CHEVROLET_CHEVY_VAN_CLASSIC_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Chevrolet_Chevelle",
+        "name": "LAND.CHEVROLET_CHEVELLE_NAME",
+        "description": "LAND.CHEVROLET_CHEVELLE_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Dune_Buggy",
+        "name": "LAND.DUNE_BUGGY_NAME",
+        "description": "LAND.DUNE_BUGGY_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Fire_Truck",
+        "name": "LAND.FIRE_TRUCK_NAME",
+        "description": "LAND.FIRE_TRUCK_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Ford_Crown_Victoria",
+        "name": "LAND.FORD_CROWN_VICTORIA_NAME",
+        "description": "LAND.FORD_CROWN_VICTORIA_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Ford_F150",
+        "name": "LAND.FORD_F150_NAME",
+        "description": "LAND.FORD_F150_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Ford_F650",
+        "name": "LAND.FORD_F650_NAME",
+        "description": "LAND.FORD_F650_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Ford_Taurus",
+        "name": "LAND.FORD_TAURUS_NAME",
+        "description": "LAND.FORD_TAURUS_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Ford_Taurus_Police",
+        "name": "LAND.FORD_TAURUS_POLICE_NAME",
+        "description": "LAND.FORD_TAURUS_POLICE_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_GoKart",
+        "name": "LAND.GO_KART_NAME",
+        "description": "LAND.GO_KART_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Lawn_Mower",
+        "name": "LAND.LAWN_MOWER_NAME",
+        "description": "LAND.LAWN_MOWER_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Mail_Truck",
+        "name": "LAND.MAIL_TRUCK_NAME",
+        "description": "LAND.MAIL_TRUCK_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Oldsmobile_Toronado",
+        "name": "LAND.OLDSMOBILE_TORONADO_NAME",
+        "description": "LAND.OLDSMOBILE_TORONADO_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Orlana_Suv",
+        "name": "LAND.ORLANA_SUV_NAME",
+        "description": "LAND.ORLANA_SUV_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Broadcast_Van",
+        "name": "LAND.BROADCAST_VAN_NAME",
+        "description": "LAND.BROADCAST_VAN_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Quad_Bike",
+        "name": "LAND.QUAD_BIKE_NAME",
+        "description": "LAND.QUAD_BIKE_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_School_Bus",
+        "name": "LAND.SCHOOL_BUS_NAME",
+        "description": "LAND.SCHOOL_BUS_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Sedan",
+        "name": "LAND.SEDAN_NAME",
+        "description": "LAND.SEDAN_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Trailer_Truck",
+        "name": "LAND.TRAILER_TRUCK_NAME",
+        "description": "LAND.TRAILER_TRUCK_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Water_Truck",
+        "name": "LAND.WATER_TRUCK_NAME",
+        "description": "LAND.WATER_TRUCK_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Backhole_Loader",
+        "name": "LAND.BACKHOE_LOADER_NAME",
+        "description": "LAND.BACKHOE_LOADER_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Backhole_Loader_Industrial",
+        "name": "LAND.BACKHOE_LOADER_INDUSTRIAL_NAME",
+        "description": "LAND.BACKHOE_LOADER_INDUSTRIAL_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Dirt_Bike",
+        "name": "LAND.DIRT_BIKE_NAME",
+        "description": "LAND.DIRT_BIKE_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Motorcycle",
+        "name": "LAND.MOTORCYCLE_NAME",
+        "description": "LAND.MOTORCYCLE_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Vehicle_Land_Bicycle",
+        "name": "LAND.BICYCLE_NAME",
+        "description": "LAND.BICYCLE_DESCRIPTION",
+        "image": "",
+        "category": ["VEHICLE", "VEHICLE_LAND"],
+        "details": {
+            "trunk": "na",
+            "speed": "na",
+            "rarity": "COMMON"
+        }
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "id": "Item_Medical_Bandage_Roll",
+        "name": "MEDICAL.BANDAGE_ROLL_NAME",
+        "description": "MEDICAL.BANDAGE_ROLL_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_MEDICAL"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Medical_Blood_Type_Testing_Kit",
+        "name": "MEDICAL.BLOOD_TYPE_TESTING_KIT_NAME",
+        "description": "MEDICAL.BLOOD_TYPE_TESTING_KIT_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_MEDICAL"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Medical_Emergency_Heating_Pad",
+        "name": "MEDICAL.EMERGENCY_HEATING_PAD_NAME",
+        "description": "MEDICAL.EMERGENCY_HEATING_PAD_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_MEDICAL"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Medical_Emergency_Trauma_Bandage",
+        "name": "MEDICAL.EMERGENCY_TRAUMA_BANDAGE_NAME",
+        "description": "MEDICAL.EMERGENCY_TRAUMA_BANDAGE_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_MEDICAL"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Medical_Epinephrine_Autoinjector",
+        "name": "MEDICAL.EPINEPHRINE_AUTOINJECTOR_NAME",
+        "description": "MEDICAL.EPINEPHRINE_AUTOINJECTOR_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_MEDICAL"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Medical_Morphine_Autoinjector",
+        "name": "MEDICAL.MORPHINE_AUTOINJECTOR_NAME",
+        "description": "MEDICAL.MORPHINE_AUTOINJECTOR_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_MEDICAL"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Medical_First_Aid_Kit",
+        "name": "MEDICAL.FIRST_AID_KTI_NAME",
+        "description": "MEDICAL.FIRST_AID_KTI_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_MEDICAL"],
+        "details": {
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Medical_Emergency_Bandage",
+        "name": "MEDICAL.EMERGENCY_BANDAGE_NAME",
+        "description": "MEDICAL.EMERGENCY_BANDAGE_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_MEDICAL"],
+        "details": {
+            "size": "2x2",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    }
+]

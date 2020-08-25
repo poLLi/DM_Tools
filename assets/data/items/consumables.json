@@ -1,0 +1,218 @@
+[
+    {
+        "id": "Item_SodaBlackTea",
+        "name": "CONSUMABLE.SODA_BLACKTEA_NAME",
+        "description": "CONSUMABLE.SODA_BLACKTEA_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaCavitea",
+        "name": "CONSUMABLE.SODA_CAVITEA_NAME",
+        "description": "CONSUMABLE.SODA_CAVITEA_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaCitreo",
+        "name": "CONSUMABLE.SODA_CITREO_NAME",
+        "description": "CONSUMABLE.SODA_CITREO_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SoadColdaCola",
+        "name": "CONSUMABLE.SODA_COLDACOLA_NAME",
+        "description": "CONSUMABLE.SODA_COLDACOLA_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaCream",
+        "name": "CONSUMABLE.SODA_CREAM_NAME",
+        "description": "CONSUMABLE.SODA_CREAM_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaDocPrepper",
+        "name": "CONSUMABLE.SODA_DOC_PREPPER_NAME",
+        "description": "CONSUMABLE.SODA_DOC_PREPPER_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaDotDew",
+        "name": "CONSUMABLE.SODA_DOT_DEW_NAME",
+        "description": "CONSUMABLE.SODA_DOT_DEW_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x4",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaDrLeper",
+        "name": "CONSUMABLE.SODA_DR_LEPER_NAME",
+        "description": "CONSUMABLE.SODA_DR_LEPER_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaNeueCola",
+        "name": "CONSUMABLE.SODA_NEUE_COLA_NAME",
+        "description": "CONSUMABLE.SODA_NEUE_COLA_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaSlush",
+        "name": "CONSUMABLE.SODA_SLUSH_NAME",
+        "description": "CONSUMABLE.SODA_SLUSH_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaSmite",
+        "name": "CONSUMABLE.SODA_SMITE_NAME",
+        "description": "CONSUMABLE.SODA_SMITE_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaTeethPoison",
+        "name": "CONSUMABLE.SODA_TEETH_POISON_NAME",
+        "description": "CONSUMABLE.SODA_TEETH_POISON_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_SodaWaterRomani",
+        "name": "CONSUMABLE.SODA_WATER_ROMANI_NAME",
+        "description": "CONSUMABLE.SODA_WATER_ROMANI_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_DRINK"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Food_Saltine_Crackers",
+        "name": "CONSUMABLE.SALTINE_CRACKER_NAME",
+        "description": "CONSUMABLE.SALTINE_CRACKER_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_FOOD"],
+        "details": {
+            "size": "5x3",
+            "weight": "1kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Food_High_Protein_Oatmeal",
+        "name": "CONSUMABLE.HIGH_PROTEIN_OATMEAL_NAME",
+        "description": "CONSUMABLE.HIGH_PROTEIN_OATMEAL_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_FOOD"],
+        "details": {
+            "size": "3x4",
+            "weight": "1.2kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Food_Papa_Spaghettis",
+        "name": "CONSUMABLE.PAPAS_SPAGHETTIS_NAME",
+        "description": "CONSUMABLE.PAPAS_SPAGHETTIS_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_FOOD"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Food_Canned_Mushrooms",
+        "name": "CONSUMABLE.CANNED_MUSHROOMS_NAME",
+        "description": "CONSUMABLE.CANNED_MUSHROOMS_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_FOOD"],
+        "details": {
+            "size": "2x3",
+            "weight": "0.5kg",
+            "rarity": "COMMON"
+        }
+    },
+    {
+        "id": "Item_Food_Bottle_Of_Ketchup",
+        "name": "CONSUMABLE.BOTTLE_OF_KETCHUP_NAME",
+        "description": "CONSUMABLE.BOTTLE_OF_KETCHUP_DESCRIPTION",
+        "image": "",
+        "category": ["ITEM_CONSUMABLE", "ITEM_FOOD"],
+        "details": {
+            "size": "2x4",
+            "weight": "2kg",
+            "rarity": "COMMON"
+        }
+    }
+]

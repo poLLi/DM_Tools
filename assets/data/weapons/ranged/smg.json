@@ -1,0 +1,15 @@
+[
+    {
+        "id": "Weapon_Ranged_SMG_Test_Item",
+        "name": "RANGED.SMG.TEST_WEAPON_NAME",
+        "description": "RANGED.SMG.TEST_WEAPON_DESCRIPTION",
+        "image": "",
+        "category": ["WEAPON", "WEAPON_RANGED"],
+        "details": {
+            "ammo": "na",
+            "size": "na",
+            "weight": "na",
+            "rarity": "COMMON"
+        }
+    }
+]

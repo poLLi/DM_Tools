@@ -20,11 +20,14 @@
 
                     <b-nav-item-dropdown :text="$t('MENU.MORE')" right>
                         <b-dropdown-header> > Database</b-dropdown-header>
-                        <b-dropdown-item :to="localePath('/data/weapons')">
-                            {{ $t('MENU.MORE_WEAPONS') }}
-                        </b-dropdown-item>
                         <b-dropdown-item :to="localePath('/data/items')">
                             {{ $t('MENU.MORE_ITEMS') }}
+                        </b-dropdown-item>
+                        <b-dropdown-item :to="localePath('/data/equipment')">
+                            {{ $t('MENU.MORE_EQUIPMENT') }}
+                        </b-dropdown-item>
+                        <b-dropdown-item :to="localePath('/data/weapons')">
+                            {{ $t('MENU.MORE_WEAPONS') }}
                         </b-dropdown-item>
                         <b-dropdown-item :to="localePath('/data/vehicles')">
                             {{ $t('MENU.MORE_VEHICLES') }}

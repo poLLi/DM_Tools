@@ -7,6 +7,40 @@
             </div>
 
             <div class="info">
+                <h2 class="title text-monospace">Version 1.2.2</h2>
+                <p class="text-muted">
+                    New Domain, New Translations, Preperation for Items Database
+                </p>
+                <div class="pl-4">
+                    <p class="text-primary h5">🐛 Bug-Fixes</p>
+                    <ul>
+                        <li>Fixed bunch of small typos in en-US translations</li>
+                    </ul>
+                    <p class="text-primary h5">✏️ Improvements</p>
+                    <ul>
+                        <li>
+                            New Domain ( <a href="https://deadmatter.tools">deadmatter.tools</a> ), old one will
+                            redirect to the new domain
+                        </li>
+                        <li>
+                            Added French Translation - Thanks to Dead Matter Francophone (
+                            <a href="https://discord.gg/RX64hjf" target="_blank" rel="noopener noreferrer">
+                                French DM Community Discord
+                            </a>
+                            )
+                        </li>
+                        <li>Added Chinese Translation - Thanks to HawxGT#7708</li>
+                        <li>Updated Turkish Translation - Thanks to OFLU#0390</li>
+                        <li>Added new localization Github Repository button to the Start page</li>
+                    </ul>
+                    <p class="text-primary h5">✨ Features</p>
+                    <ul>
+                        <li>Added bunch of backend stuff in preperation for the items Database</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info">
                 <h2 class="title text-monospace">Version 1.2.1</h2>
                 <div class="pl-4">
                     <p class="text-primary h5">🐛 Bug-Fixes</p>
