@@ -3,7 +3,7 @@
         <b-container>
             <div class="mb-5">
                 <h2 class="title text-primary">Changelog</h2>
-                <p class="desc pl-4">well... yea that what you would expext here</p>
+                <p class="desc pl-4">well... yea thats what you would expext here</p>
             </div>
 
             <div class="info">
@@ -39,7 +39,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="info">
                 <h2 class="title text-monospace">Version 1.2.1</h2>
                 <div class="pl-4">
