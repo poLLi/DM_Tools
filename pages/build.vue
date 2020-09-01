@@ -53,24 +53,25 @@
 
                                 <b-card-text>
                                     <span class="small text-secondary m-0 pb-2">
-                                        Benefit: {{ $t('BUILDER.OCCUPATION.' + occupation.benefit) }}
+                                        {{ $t('BUILDER.CARD.OCCUPATION_BENEFIT') }}:
+                                        {{ $t('BUILDER.OCCUPATION.' + occupation.benefit) }}
                                     </span>
                                     <b-badge v-if="occupation.perkType == 'neutral'" class="float-right">
-                                        Perk Points: {{ occupation.perkPoints }}
+                                        {{ $t('BUILDER.CARD.PERK_POINTS') }}: {{ occupation.perkPoints }}
                                     </b-badge>
                                     <b-badge
                                         v-if="occupation.perkType == 'positive'"
                                         class="float-right"
                                         variant="success"
                                     >
-                                        Perk Points: +{{ occupation.perkPoints }}
+                                        {{ $t('BUILDER.CARD.PERK_POINTS') }}: +{{ occupation.perkPoints }}
                                     </b-badge>
                                     <b-badge
                                         v-if="occupation.perkType == 'negative'"
                                         class="float-right"
                                         variant="danger"
                                     >
-                                        Perk Points: -{{ occupation.perkPoints }}
+                                        {{ $t('BUILDER.CARD.PERK_POINTS') }}: -{{ occupation.perkPoints }}
                                     </b-badge>
                                 </b-card-text>
                             </b-card>
@@ -191,7 +192,7 @@
                     <b-col>
                         <b-card class="shadow">
                             <b-card-title class="text-center p-2 title-rounded">
-                                Perk Points: {{ perkPoints }}
+                                {{ $t('BUILDER.CARD.PERK_POINTS') }}: {{ perkPoints }}
                             </b-card-title>
                             <p class="small pb-1">
                                 {{ $t('BUILDER.CARD.PERK_POINTS_DESCRIPTION') }}
@@ -228,14 +229,14 @@
                                         {{ $t('BUILDER.PERK.' + perk.title) }}
                                     </div>
                                     <div class="mr-3">
-                                        <b-badge>{{ perk.type }}</b-badge>
+                                        <b-badge>{{ $t('BUILDER.CARD.' + perk.type) }}</b-badge>
                                     </div>
                                     <div>
                                         <b-badge v-if="perk.perkType == 'positive'" variant="success">
-                                            Cost: +{{ perk.perkPoints }}
+                                            {{ $t('BUILDER.CARD.PERK_SELECTION_COST') }}: +{{ perk.perkPoints }}
                                         </b-badge>
                                         <b-badge v-if="perk.perkType == 'negative'" variant="danger">
-                                            Cost: -{{ perk.perkPoints }}
+                                            {{ $t('BUILDER.CARD.PERK_SELECTION_COST') }}: -{{ perk.perkPoints }}
                                         </b-badge>
                                     </div>
                                 </div>

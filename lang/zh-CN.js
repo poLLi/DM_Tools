@@ -30,8 +30,17 @@ export default {
     // PAGE: CHARACTER-BUILDER
     BUILDER: {
         CARD: {
+            PERK_POINTS: 'Perk Points',
+
             OCCUPATION_TITLE: '职业',
+            OCCUPATION_BENEFIT: 'Benefit',
+
             PERK_SELECTION_TITLE: '技能选择',
+            PERK_SELECTION_COST: 'Cost',
+            PERK_SELECTION_TRAIT: 'Trait',
+            PERK_SELECTION_HOBBY: 'Hobby',
+            PERK_SELECTION_SKILL: 'Skill',
+            PERK_SELECTION_STAT: 'Stat',
 
             CHARACTER_DATA_TITLE: '人物数据',
             CHARACTER_DATA_ATTRIBUTES_TITLE: '属性',

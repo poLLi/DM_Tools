@@ -30,8 +30,17 @@ export default {
     // PAGE: CHARACTER-BUILDER
     BUILDER: {
         CARD: {
+            PERK_POINTS: 'Perk Points',
+
             OCCUPATION_TITLE: 'Meslek',
+            OCCUPATION_BENEFIT: 'Benefit',
+            
             PERK_SELECTION_TITLE: 'Avantaj Seçimi',
+            PERK_SELECTION_COST: 'Cost',
+            PERK_SELECTION_TRAIT: 'Trait',
+            PERK_SELECTION_HOBBY: 'Hobby',
+            PERK_SELECTION_SKILL: 'Skill',
+            PERK_SELECTION_STAT: 'Stat',
 
             CHARACTER_DATA_TITLE: 'Karakter Verileri',
             CHARACTER_DATA_ATTRIBUTES_TITLE: 'Nitelikler',
