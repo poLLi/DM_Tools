@@ -18,7 +18,9 @@
                     <b-nav-item :to="localePath('/build')">{{ $t('MENU.BUILDER') }}</b-nav-item>
                     <b-nav-item :to="localePath('/map')">{{ $t('MENU.MAP') }}</b-nav-item>
 
-                    <b-nav-item-dropdown :text="$t('MENU.MORE')" right>
+                    <b-nav-item :to="localePath('/database')">{{ $t('MENU.DATABASE') }}</b-nav-item>
+
+                    <!-- <b-nav-item-dropdown :text="$t('MENU.MORE')" right>
                         <b-dropdown-header> > Database</b-dropdown-header>
                         <b-dropdown-item :to="localePath('/data/items')">
                             {{ $t('MENU.MORE_ITEMS') }}
@@ -38,7 +40,7 @@
                         <b-dropdown-item :to="localePath('/data/creatures')">
                             {{ $t('MENU.MORE_CREATURES') }}
                         </b-dropdown-item>
-                    </b-nav-item-dropdown>
+                    </b-nav-item-dropdown> -->
 
                     <b-nav-item :to="localePath('/contact')">{{ $t('MENU.CONTACT') }}</b-nav-item>
 
