@@ -183,6 +183,8 @@ export default {
                         html: `Something went wrong :( <br />Please contact a Developer about it <br /><br /><code>${err}</code>`,
                         confirmButtonText: 'Close',
                         focusConfirm: false
+                    }).then((res) => {
+                        this.input = '';
                     });
                 });
         },
