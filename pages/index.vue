@@ -21,13 +21,8 @@
                             Tools made with <b-icon icon="heart" class="text-primary"></b-icon> by
                             <span class="underline">Just-Look Network</span>
                         </p>
-                        <a
-                            class="btn btn-primary"
-                            href="https://discord.gg/YA7YmeA"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Community Discord
+                        <a class="btn btn-primary" href="https://discord.gg/8YG8XtT" target="_blank" rel="noopener">
+                            Discord
                         </a>
                         <a
                             class="btn btn-secondary"
