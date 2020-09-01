@@ -15,7 +15,6 @@ export default {
         MORE_CREATURES: '生物',
         MORE_EQUIPMENT: '设备',
         CONTACT: '联系我',
-        OPTIONS_LANG_TITLE: '> 更改语言',
         OPTIONS_EXTRA_TITLE: '> 其他',
         OPTIONS_CHANGELOG: 'Changelog'
     },

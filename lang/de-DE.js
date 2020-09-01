@@ -15,7 +15,6 @@ export default {
         MORE_CREATURES: 'Kreaturen',
         MORE_EQUIPMENT: 'Ausrüstung',
         CONTACT: 'Kontakt',
-        OPTIONS_LANG_TITLE: '> Sprache ändern',
         OPTIONS_EXTRA_TITLE: '> Extras',
         OPTIONS_CHANGELOG: 'Changelog'
     },

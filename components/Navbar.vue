@@ -47,7 +47,7 @@
                             <b-icon icon="tools"></b-icon>
                             <span class="sr-only">Options</span>
                         </template>
-                        <b-dropdown-header>{{ $t('MENU.OPTIONS_LANG_TITLE') }}</b-dropdown-header>
+                        <b-dropdown-header>Change Language</b-dropdown-header>
                         <b-dropdown-item
                             v-for="locale in availableLocales"
                             :key="locale.code"

@@ -15,7 +15,6 @@ export default {
         MORE_CREATURES: 'Yaratıklar',
         MORE_EQUIPMENT: 'Ekipman',
         CONTACT: 'İletişim',
-        OPTIONS_LANG_TITLE: '> Dili Değiştir',
         OPTIONS_EXTRA_TITLE: '> Ekstralar',
         OPTIONS_CHANGELOG: 'Changelog'
     },
