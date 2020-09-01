@@ -274,8 +274,8 @@
 </template>
 
 <script>
-import occupations from '~/assets/data/occupations.json';
-import perks from '~/assets/data/perks.json';
+import occupations from '~/assets/data/player/occupations.json';
+import perks from '~/assets/data/player/perks.json';
 
 export default {
     data() {
