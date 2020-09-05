@@ -10,24 +10,25 @@
                             class="mainhead-logo img-fluid"
                         />
                         <h2 class="text-uppercase text-white font-weight-medium">{{ $t('START.HEADLINE_TITLE') }}</h2>
-                        <p class="text-primary">( unofficial )</p>
+                        <p class="text-muted">( unofficial )</p>
                         <hr class="my-4" />
                     </b-col>
                     <b-col lg="8" class="text-white mb-5">
                         <p>{{ $t('START.HEADLINE_DESCRIPTION') }}</p>
                     </b-col>
                     <b-col lg="12 mt-5">
-                        <p class="font-weight-light text-secondary">
+                        <p class="font-weight-light text-secondary m-0">
                             Tools made with <b-icon icon="heart" class="text-primary"></b-icon> by
-                            <span class="underline">Just-Look Network</span>
+                            <span class="underline">PoLLi</span>
                         </p>
-                        <a
-                            class="btn btn-primary"
-                            href="https://discord.gg/YA7YmeA"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Community Discord
+                        <p class="text-muted font-weight-light">
+                            Like my work?
+                            <a class="" href="https://paypal.me/TPollerhof" target="_blank" rel="noopener">
+                                Buy me a Coffee
+                            </a>
+                        </p>
+                        <a class="btn btn-primary" href="https://discord.gg/8YG8XtT" target="_blank" rel="noopener">
+                            Discord
                         </a>
                         <a
                             class="btn btn-secondary"

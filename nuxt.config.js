@@ -85,21 +85,11 @@ export default {
     /*
      ** Nuxt.js dev-modules
      */
-    buildModules: [
-        // Doc: https://github.com/nuxt-community/eslint-module
-        '@nuxtjs/eslint-module'
-    ],
+    buildModules: ['@nuxtjs/eslint-module'],
     /*
      ** Nuxt.js modules
      */
-    modules: [
-        // Doc: https://bootstrap-vue.js.org
-        'bootstrap-vue/nuxt',
-        // Doc: https://axios.nuxtjs.org/usage
-        // '@nuxtjs/axios'
-        'vue-sweetalert2/nuxt',
-        'nuxt-i18n'
-    ],
+    modules: ['bootstrap-vue/nuxt', '@nuxtjs/axios', 'vue-sweetalert2/nuxt', 'nuxt-i18n'],
     i18n: {
         locales: [
             {
@@ -149,7 +139,9 @@ export default {
      ** Axios module configuration
      ** See https://axios.nuxtjs.org/options
      */
-    // axios: {},
+    axios: {
+        baseURL: 'https://api.deadmatter.tools/'
+    },
     /*
      ** Build configuration
      ** See https://nuxtjs.org/api/configuration-build/

@@ -7,15 +7,8 @@ export default {
         BUILDER: 'Création de personnage',
         MAP: 'Carte',
         MORE: 'Plus',
-        MORE_DATABASE: '> Database',
-        MORE_WEAPONS: 'Armes',
-        MORE_ITEMS: 'Objets',
-        MORE_VEHICLES: 'Véhicules',
-        MORE_FACTIONS: 'Factions',
-        MORE_CREATURES: 'Créatures',
-        MORE_EQUIPMENT: 'Équipement',
-        CONTACT: 'Contacte',
-        OPTIONS_LANG_TITLE: '> Changer de langue',
+        DATABASE: 'Base de Donnée',
+        CONTACT: 'Contact',
         OPTIONS_EXTRA_TITLE: '> Extras',
         OPTIONS_CHANGELOG: 'Changelog'
     },
@@ -31,8 +24,17 @@ export default {
     // PAGE: CHARACTER-BUILDER
     BUILDER: {
         CARD: {
+            PERK_POINTS: 'Perk Points',
+
             OCCUPATION_TITLE: 'Occupation',
+            OCCUPATION_BENEFIT: 'Benefit',
+
             PERK_SELECTION_TITLE: "Sélection d'atout",
+            PERK_SELECTION_COST: 'Cost',
+            PERK_SELECTION_TRAIT: 'Trait',
+            PERK_SELECTION_HOBBY: 'Hobby',
+            PERK_SELECTION_SKILL: 'Skill',
+            PERK_SELECTION_STAT: 'Stat',
 
             CHARACTER_DATA_TITLE: 'Données du personnage',
             CHARACTER_DATA_ATTRIBUTES_TITLE: 'Atout',
@@ -49,10 +51,10 @@ export default {
             CHARACTER_DATA_SKILLS_LOCKPICKING: 'Crochetage',
             CHARACTER_DATA_SKILLS_MEDICAL: 'Médical',
 
-            PERK_POINTS_DESCRIPTION: 'Vous devez avoir 0 points ou plus pour terminer la création de personnage..',
+            PERK_POINTS_DESCRIPTION: 'Vous devez avoir 0 points ou plus pour terminer la création du personnage..',
             PERK_POINTS_RESET_BUTTON: 'Reset',
             PERK_POINTS_SAVE_BUTTON: 'Sauvegarder le personnage',
-            PERK_POINTS_SAVE_TEXT: 'Votre url de création de personnage est près.',
+            PERK_POINTS_SAVE_TEXT: 'L\'url du personnage est près.',
             PERK_POINTS_COPY_CLIPBOARD: 'Copier dans le presse papier',
 
             EXTENDED_STATS_BUTTON_OPEN: 'Ouvrir les statistiques étendues.',

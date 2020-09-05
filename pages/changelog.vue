@@ -7,6 +7,33 @@
             </div>
 
             <div class="info">
+                <h2 class="title text-monospace">Version 1.2.3</h2>
+                <p class="text-muted">
+                    Item Database Test
+                </p>
+                <div class="pl-4">
+                    <p class="text-primary h5">🐛 Bug-Fixes</p>
+                    <ul>
+                        <li>
+                            Fixed some fr-FR translation stuff - Thanks to Dead Matter Francophone (
+                            <a href="https://discord.gg/RX64hjf" target="_blank" rel="noopener noreferrer">
+                                French DM Community Discord
+                            </a>
+                            )
+                        </li>
+                    </ul>
+                    <p class="text-primary h5">✏️ Improvements</p>
+                    <ul>
+                        <li>Added missing translations in Character Builder</li>
+                        <li>Changed Discord link on Start page to JLN Development Discord</li>
+                    </ul>
+                    <p class="text-primary h5">✨ Features</p>
+                    <ul>
+                        <li>Added Database Test Page (WIP)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info">
                 <h2 class="title text-monospace">Version 1.2.2</h2>
                 <p class="text-muted">
                     New Domain, New Translations, Preperation for Items Database

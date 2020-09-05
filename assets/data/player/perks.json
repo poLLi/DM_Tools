@@ -3,7 +3,7 @@
         "id": "1",
         "title": "CPR_TRAINING_TITLE",
         "description": "CPR_TRAINING_DESCRIPTION",
-        "type": "Trait",
+        "type": "PERK_SELECTION_TRAIT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -16,7 +16,7 @@
         "id": "2",
         "title": "ASTRONOMER_TITLE",
         "description": "ASTRONOMER_DESCRIPTION",
-        "type": "Trait",
+        "type": "PERK_SELECTION_TRAIT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -29,7 +29,7 @@
         "id": "3",
         "title": "OBSERVANT_TITLE",
         "description": "OBSERVANT_DESCRIPTION",
-        "type": "Trait",
+        "type": "PERK_SELECTION_TRAIT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -42,7 +42,7 @@
         "id": "4",
         "title": "HERBALIST_TITLE",
         "description": "HERBALIST_DESCRIPTION",
-        "type": "Trait",
+        "type": "PERK_SELECTION_TRAIT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -55,7 +55,7 @@
         "id": "5",
         "title": "PEANUT_ALLERGY_TITLE",
         "description": "PEANUT_ALLERGY_DESCRIPTION",
-        "type": "Trait",
+        "type": "PERK_SELECTION_TRAIT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -68,7 +68,7 @@
         "id": "6",
         "title": "PARANOID_TITLE",
         "description": "PARANOID_DESCRIPTION",
-        "type": "Trait",
+        "type": "PERK_SELECTION_TRAIT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -81,7 +81,7 @@
         "id": "7",
         "title": "UNIVERSAL_RECEIVER_TITLE",
         "description": "UNIVERSAL_RECEIVER_DESCRIPTION",
-        "type": "Trait",
+        "type": "PERK_SELECTION_TRAIT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -94,7 +94,7 @@
         "id": "8",
         "title": "UNIVERSAL_DONOR_TITLE",
         "description": "UNIVERSAL_DONOR_DESCRIPTION",
-        "type": "Trait",
+        "type": "PERK_SELECTION_TRAIT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -107,7 +107,7 @@
         "id": "9",
         "title": "JOGGER_TITLE",
         "description": "JOGGER_DESCRIPTION",
-        "type": "Hobby",
+        "type": "PERK_SELECTION_HOBBY",
         "effect": {
             "attribut": [
                 {
@@ -125,7 +125,7 @@
         "id": "10",
         "title": "NERD_TITLE",
         "description": "NERD_DESCRIPTION",
-        "type": "Hobby",
+        "type": "PERK_SELECTION_HOBBY",
         "effect": {
             "attribut": [
                 {
@@ -143,7 +143,7 @@
         "id": "11",
         "title": "CHESS_PLAYER_TITLE",
         "description": "CHESS_PLAYER_DESCRIPTION",
-        "type": "Hobby",
+        "type": "PERK_SELECTION_HOBBY",
         "effect": {
             "attribut": [
                 {
@@ -161,7 +161,7 @@
         "id": "12",
         "title": "PARTY_BOY_TITLE",
         "description": "PARTY_BOY_DESCRIPTION",
-        "type": "Hobby",
+        "type": "PERK_SELECTION_HOBBY",
         "effect": {
             "attribut": [
                 {
@@ -179,7 +179,7 @@
         "id": "13",
         "title": "RUNNER_TITLE",
         "description": "RUNNER_DESCRIPTION",
-        "type": "Hobby",
+        "type": "PERK_SELECTION_HOBBY",
         "effect": {
             "attribut": [
                 {
@@ -197,7 +197,7 @@
         "id": "14",
         "title": "STRENGTH_TRAINING_TITLE",
         "description": "STRENGTH_TRAINING_DESCRIPTION",
-        "type": "Hobby",
+        "type": "PERK_SELECTION_HOBBY",
         "effect": {
             "attribut": [
                 {
@@ -215,7 +215,7 @@
         "id": "15",
         "title": "WEEKEND_BARTENDER_TITLE",
         "description": "WEEKEND_BARTENDER_DESCRIPTION",
-        "type": "Hobby",
+        "type": "PERK_SELECTION_HOBBY",
         "effect": {
             "attribut": [
                 {
@@ -233,7 +233,7 @@
         "id": "16",
         "title": "WRESTLER_TITLE",
         "description": "WRESTLER_DESCRIPTION",
-        "type": "Hobby",
+        "type": "PERK_SELECTION_HOBBY",
         "effect": {
             "attribut": [
                 {
@@ -251,7 +251,7 @@
         "id": "17",
         "title": "AMATEUR_COOK_TITLE",
         "description": "AMATEUR_COOK_DESCRIPTION",
-        "type": "Skill",
+        "type": "PERK_SELECTION_SKILL",
         "effect": {
             "attribut": [],
             "skill": [
@@ -269,7 +269,7 @@
         "id": "18",
         "title": "AWFUL_COOK_TITLE",
         "description": "AWFUL_COOK_DESCRIPTION",
-        "type": "Skill",
+        "type": "PERK_SELECTION_SKILL",
         "effect": {
             "attribut": [],
             "skill": [
@@ -287,7 +287,7 @@
         "id": "19",
         "title": "METALWORKER_TITLE",
         "description": "METALWORKER_DESCRIPTION",
-        "type": "Skill",
+        "type": "PERK_SELECTION_SKILL",
         "effect": {
             "attribut": [],
             "skill": [
@@ -305,7 +305,7 @@
         "id": "20",
         "title": "GREEN_THUMB_TITLE",
         "description": "GREEN_THUMB_DESCRIPTION",
-        "type": "Skill",
+        "type": "PERK_SELECTION_SKILL",
         "effect": {
             "attribut": [],
             "skill": [
@@ -323,7 +323,7 @@
         "id": "21",
         "title": "HOBBYIST_TITLE",
         "description": "HOBBYIST_DESCRIPTION",
-        "type": "Skill",
+        "type": "PERK_SELECTION_SKILL",
         "effect": {
             "attribut": [],
             "skill": [
@@ -341,7 +341,7 @@
         "id": "22",
         "title": "GEARHEAD_TITLE",
         "description": "GEARHEAD_DESCRIPTION",
-        "type": "Skill",
+        "type": "PERK_SELECTION_SKILL",
         "effect": {
             "attribut": [],
             "skill": [
@@ -359,7 +359,7 @@
         "id": "23",
         "title": "VOLUNTEER_FIRE_FIGHTER_TITLE",
         "description": "VOLUNTEER_FIRE_FIGHTER_DESCRIPTION",
-        "type": "Skill",
+        "type": "PERK_SELECTION_SKILL",
         "effect": {
             "attribut": [],
             "skill": [
@@ -377,7 +377,7 @@
         "id": "24",
         "title": "BIG_BONED_TITLE",
         "description": "BIG_BONED_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -390,7 +390,7 @@
         "id": "25",
         "title": "OSTEOPOROSIS_TITLE",
         "description": "OSTEOPOROSIS_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -403,7 +403,7 @@
         "id": "26",
         "title": "BRAVE_TITLE",
         "description": "BRAVE_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -416,7 +416,7 @@
         "id": "27",
         "title": "FEARFUL_TITLE",
         "description": "FEARFUL_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -429,7 +429,7 @@
         "id": "28",
         "title": "NO_FEAR_TITLE",
         "description": "NO_FEAR_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -442,7 +442,7 @@
         "id": "29",
         "title": "FRIGHTFUL_TITLE",
         "description": "FRIGHTFUL_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -455,7 +455,7 @@
         "id": "30",
         "title": "FAST_METABOLISM_TITLE",
         "description": "FAST_METABOLISM_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -468,7 +468,7 @@
         "id": "31",
         "title": "SLOW_METABOLISM_TITLE",
         "description": "SLOW_METABOLISM_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -481,7 +481,7 @@
         "id": "32",
         "title": "IRON_STOMACH_TITLE",
         "description": "IRON_STOMACH_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -494,7 +494,7 @@
         "id": "33",
         "title": "WEAK_STOMACH_TITLE",
         "description": "WEAK_STOMACH_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -507,7 +507,7 @@
         "id": "34",
         "title": "SILENT_SEARCH_TITLE",
         "description": "SILENT_SEARCH_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -520,7 +520,7 @@
         "id": "35",
         "title": "NOISY_SEARCH_TITLE",
         "description": "NOISY_SEARCH_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -533,7 +533,7 @@
         "id": "36",
         "title": "THICK_SKINNED_TITLE",
         "description": "THICK_SKINNED_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -546,7 +546,7 @@
         "id": "37",
         "title": "THIN_SKINNED_TITLE",
         "description": "THIN_SKINNED_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -559,7 +559,7 @@
         "id": "38",
         "title": "NIMBLE_FINGERS_TITLE",
         "description": "NIMBLE_FINGERS_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -572,7 +572,7 @@
         "id": "39",
         "title": "SAUSAGE_FINGERS_TITLE",
         "description": "SAUSAGE_FINGERS_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -585,7 +585,7 @@
         "id": "40",
         "title": "HEAVY_WEIGHT_TITLE",
         "description": "HEAVY_WEIGHT_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -598,7 +598,7 @@
         "id": "41",
         "title": "LIGHT_WEIGHT_TITLE",
         "description": "LIGHT_WEIGHT_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -611,7 +611,7 @@
         "id": "42",
         "title": "LIGTH_STEP_TITLE",
         "description": "LIGTH_STEP_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
@@ -624,7 +624,7 @@
         "id": "43",
         "title": "HEAVY_STEP_TITLE",
         "description": "HEAVY_STEP_DESCRIPTION",
-        "type": "Stat",
+        "type": "PERK_SELECTION_STAT",
         "effect": {
             "attribut": [],
             "skill": [],
