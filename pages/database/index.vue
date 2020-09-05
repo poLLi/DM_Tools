@@ -14,10 +14,10 @@
                 @dismiss-count-down="countDownChanged"
             >
                 <b-icon icon="exclamation-circle" variant="danger" font-scale="1.5" class="mr-2"></b-icon>
-                <strong>WARNING:</strong> This Tool is still in Development! Almost everything is subject to change.
+                <strong>WARNING:</strong> This Tool is still in Development, only Test items available right now!
                 <small>Current Verion: Alpha</small>
                 <b-progress
-                    variant="warning"
+                    variant="danger"
                     :max="alert.dismissSecs"
                     :value="alert.dismissCountDown"
                     height="4px"

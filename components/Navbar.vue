@@ -20,28 +20,6 @@
 
                     <b-nav-item :to="localePath('/database')">{{ $t('MENU.DATABASE') }}</b-nav-item>
 
-                    <!-- <b-nav-item-dropdown :text="$t('MENU.MORE')" right>
-                        <b-dropdown-header> > Database</b-dropdown-header>
-                        <b-dropdown-item :to="localePath('/data/items')">
-                            {{ $t('MENU.MORE_ITEMS') }}
-                        </b-dropdown-item>
-                        <b-dropdown-item :to="localePath('/data/equipment')">
-                            {{ $t('MENU.MORE_EQUIPMENT') }}
-                        </b-dropdown-item>
-                        <b-dropdown-item :to="localePath('/data/weapons')">
-                            {{ $t('MENU.MORE_WEAPONS') }}
-                        </b-dropdown-item>
-                        <b-dropdown-item :to="localePath('/data/vehicles')">
-                            {{ $t('MENU.MORE_VEHICLES') }}
-                        </b-dropdown-item>
-                        <b-dropdown-item :to="localePath('/data/factions')">
-                            {{ $t('MENU.MORE_FACTIONS') }}
-                        </b-dropdown-item>
-                        <b-dropdown-item :to="localePath('/data/creatures')">
-                            {{ $t('MENU.MORE_CREATURES') }}
-                        </b-dropdown-item>
-                    </b-nav-item-dropdown> -->
-
                     <b-nav-item :to="localePath('/contact')">{{ $t('MENU.CONTACT') }}</b-nav-item>
 
                     <b-dropdown variant="link" toggle-class="text-decoration-none" no-caret right>

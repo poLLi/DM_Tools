@@ -14,7 +14,7 @@
                     <strong>WARNING:</strong> Almost everything is subject to change.
                     <small>Current Verion: Closed-Alpha</small>
                     <b-progress
-                        variant="warning"
+                        variant="danger"
                         :max="alert.dismissSecs"
                         :value="alert.dismissCountDown"
                         height="4px"

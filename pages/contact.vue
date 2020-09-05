@@ -15,11 +15,6 @@
                 <h3 class="title mt-5">Channels</h3>
                 <p>
                     Personal Discord: <span class="text-primary">PoLLi#4969</span><br />
-                    JLN Discord:
-                    <a href="https://discord.gg/YA7YmeA" target="_blank" rel="noopener noreferrer">
-                        discord.just-look.net
-                    </a>
-                    <br />
                     Development Discord:
                     <a href="https://discord.gg/8YG8XtT" target="_blank" rel="noopener noreferrer">
                         dev.just-look.net
